@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 *
 {
   margin: 0;
@@ -63,8 +64,9 @@ padding-left: 150PX;
   left: 0;
   width: 100%;
   height: 100%;
-  background:;
+  background:black;
   mix-blend-mode: ;
+  z-index: -10;
 }
 
 .social
@@ -138,6 +140,7 @@ padding-left: 150PX;
 .container1{
   z-index: 999;
   position: relative;
+
 }
 .img{
   
@@ -154,7 +157,12 @@ padding-block-end: 30px;
   
 }
 .carousel-margin{
-  padding-right: -50px;
+  padding-right: ;
+  margin: 0;
+  padding: 0;
+}
+.d-flex{
+  
 }
 .arrange{
   
@@ -163,6 +171,8 @@ padding-block-end: 30px;
   position: absolute;
   margin-left: -300px;
   z-index:-1;
+ color: #111;
+  background-size: cover;
   
 }
 .about{
@@ -172,6 +182,8 @@ padding-block-end: 30px;
   background-attachment: fixed;
   background-size: cover;
   background-color: #111;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
  
 }
 .header-about{
@@ -197,7 +209,7 @@ margin-top: 50px;
 margin-bottom: 30px;
 }
 .container{
-  
+  max-width: 100%;
   
 }
 .font-about{
@@ -210,7 +222,7 @@ margin-bottom: 30px;
   border: orange;
 }
 .mycard{
-  margin: 10px;
+  margin: 20px;
 }
 .mycard:hover {
   border-color:#f77500;
@@ -221,6 +233,9 @@ margin-bottom: 30px;
   border: 1px solid #cccccc;
   background-color: white;
 }
+.about-image{
+  border-radius: 20px;
+}
 .btn-color{
   background-color: #dc6815; /* Green */
   border: none;
@@ -229,7 +244,7 @@ margin-bottom: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   height: 50px;
   width: 200px;
   border-radius: 25px;
@@ -338,11 +353,13 @@ button{
 padding-left: 150px;
  padding-right: 150px;
 }
-/* text animation */
-.container2{
-  padding-top: 5%;
-
+.scroll{
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
+/* text animation */
+
 .job-font{
   font-size: 2.3rem;
   padding: 20px;
