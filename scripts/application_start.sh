@@ -1,4 +1,2 @@
 #!/bin/bash
-
-#!/bin/bash
-service httpd start
+sudo service apache2 start
