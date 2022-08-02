@@ -76,10 +76,10 @@ hooks:
 # During the ApplicationInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   ApplicationStart:
-    - location: scripts/application_start.sh
+    - location: scripts/application_start
       timeout: 300
       runas: ubuntu
   ApplicationStop:
-    - location: scripts/stop_server.sh
+    - location: scripts/stop_server
       timeout: 300
       runas: ubuntu
