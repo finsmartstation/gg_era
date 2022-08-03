@@ -29,7 +29,7 @@ header .logo
 
 .showcase
 {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -57,6 +57,16 @@ padding-left: 150PX;
   object-fit: cover;
   opacity: 0.8;
 }
+.fixed-video{
+  position: fixed;
+  z-index: -1;
+  margin: 0;
+ 
+}
+.overlap-about{
+ z-index: -2!important;
+}
+  
 .overlay
 {
   position: absolute;
@@ -168,7 +178,7 @@ padding-block-end: 30px;
   
 }
 .overlap{
-  position: absolute;
+  position: fixed;
   margin-left: -300px;
   z-index:-1;
  color: #111;
@@ -181,13 +191,14 @@ padding-block-end: 30px;
   
   background-attachment: fixed;
   background-size: cover;
+ 
   background-color: #111;
   scroll-behavior: smooth;
   overflow-x: hidden;
  
 }
 .header-about{
-  margin-top: 50px;
+  padding-top: 50px;
   position: relative;
   top: 0;
   left: 0;
@@ -355,8 +366,13 @@ padding-left: 150px;
 }
 .scroll{
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   overflow-x: hidden;
+  background-image: url(../img/ddd.png);
+  /* background-repeat: no-repeat; */
+  background-color: #111;
+  background-size: contain, cover;
+
 }
 /* text animation */
 
@@ -369,11 +385,12 @@ padding-left: 150px;
   line-height: 75px;
   margin: 100px;
   margin-bottom: 2%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 20PX;
+  font-family: 'Poppins', sans-serif;
  
   bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgb(248, 59, 2); /* Fallback color */
+  background: rgba(194, 88, 1, 0.979); /* Black background with 0.5 opacity */
   color: #f1f1f1;
 
   
@@ -452,9 +469,29 @@ padding: 50px;
 .container-7:hover .number {
   box-shadow: 0 0 0 500px #fffefd4a;
 }
+.container-9 {
+  width: 35rem;
+  height: 10rem;
+  background-color: #f1f1f100;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid rgb(221, 123, 2);
+  border-radius: 20px;
+  box-shadow: -3px -3px 20px rgba(204, 204, 204, 0.37);
+  /* border-radius: 100px 20px 0 20px; */
+  text-align: center;
+  overflow: hidden;
+  transition: 0.6s;
+  color: rgb(247, 105, 11);
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
+.container-9:hover .number {
+  box-shadow: 0 0 0 500px #fffefd;
+}
 
 .who{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  
   font-size: 3rem;
   font-weight: 500;
   color: #cccccc;
@@ -544,4 +581,15 @@ padding: 50px;
 .b-game-card:hover::before {
   opacity: 0.6;
   transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+.container-home{
+  position: relative;
+  padding: 50px;
+}
+.gg{
+  padding-bottom: 50px;
+}
+.bg{
+  background-color: #111;
+
 }
