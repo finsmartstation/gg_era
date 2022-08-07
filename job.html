@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technopark</title>
+    <title>Job</title>
   
     <link rel="icon" href="images/pngwing.com.png" type="image/x-icon" />
   
@@ -30,10 +30,16 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" href="./css/card3.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/language.css">
+    <link rel="stylesheet" href="./css/button-square.css">
     <!-- card  -->
   </head>
 
 <body class="about">
+  <center>
+    
+   </center>
   <div class="showcase">
     
     <canvas class="overlap overlap-about" id="c"></canvas>
@@ -49,7 +55,7 @@
         </button>
         <div class="img navbar-brand pl-3">
           <a href="nex.html" class="navbar-brand text-light pe-auto " data-aos="fade-up">
-            <img src="./img/era.png" width="100" class="d-inline-block align-top" height="70" /></a>
+            <img src="./img/era.png" width="100" class="d-inline-block align-top" style="width: 50px;height:35px"  /></a>
         </div>
         <div class="collapse navbar-collapse navbar-margin" id="navbarNav" >
           <div class="container d-flex justify-content-center">
@@ -63,8 +69,15 @@
               <a class="navbar-brand text-light m-0" style="color: inherit" href="job.html">
                 <img src="./img/job.png" alt="" width="150" height="40" />
               </a>
+              <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on" >EN</span>
+                <span class="off">DE</span>
+              </div>
             </div>
           </div>
+          
           <div class="end1">
             <img src="./img/line glow2.png" alt="" srcset="">
             </div>
@@ -77,15 +90,20 @@
     </nav>
     
   </div>
-  <div class="container p-3">
-    <div class="d-flex justify-content-center">
-      <img src="./img/signup.png" style="height: 50px; width: 120px" class="p-1" alt="" />
-      <img src="./img/login.png" style="height: 50px; width: 120px" class="p-1" alt="" />
+  <div class="container p-3 pt-5">
+    <div class="d-flex justify-content-center ">
+      <button class="clay btn btn-primary" style="height: 50px;width:120px">
+        <span class="btn-label">Signup</span>
+      </button>
+      <button class="clay btn btn-secondary" style="height: 50px;width:120px">
+        <span class="btn-label">Login</span>
+      </button>
+      <!-- <img src="./img/login.png" style="height: 50px; width: 120px" class="p-1" alt="" /> -->
     </div>
   </div>
   <div class="container">
     <div class="row pt-5 p-5 m-0">
-      <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center pl-5 col-12">
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center pl-5 col-12">
         <div class="row spacing-job" data-aos="fade-right">
           <div class="col-lg-12 col-sm-12">
             <h1 class="" style="
@@ -112,7 +130,7 @@
           <div class="col-lg-12 col-sm-12 col-12 p-2">
             <h1 style="
                   color: rgb(253, 253, 253);
-                  font-size: 5rem;
+                  font-size: 4rem;
                   font-weight: 600;
                  
                 ">
@@ -128,7 +146,7 @@
     <div class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center">
       <img src="" alt="" />
     </div>
-    <div class="container" style="width: 18rem;">
+    <div class="container" style="width: 22rem;">
     <div class="end d-flex justify-content-center pb-5" > 
       <img src="./img/box4.png" alt="" srcset="" class="img-fluid" >
       <h5 class="pt-5" style="
@@ -225,7 +243,7 @@ WITH THE BEST TEAMMATES</h5>
         </ol>
       </div>
     </div>
-    <div class="container" style="width: 18rem;">
+    <div class="container" style="width: 22rem;">
     <div class="end d-flex justify-content-center pt-5 pb-5 " > 
       <img src="./img/box4.png" alt="" srcset="" class="img-fluid" >
       <h5 class="pt-5" style="
@@ -235,6 +253,7 @@ WITH THE BEST TEAMMATES</h5>
   color: #ffff;
   position: absolute;
   font-size: 1rem;
+  top:2px
   
   ">WHO ARE WE LOOKING FOR?</h5>
   
@@ -277,7 +296,7 @@ WITH THE BEST TEAMMATES</h5>
         
         <div class="cards">
           <div class="card card-1">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <div class="card__icon"></div>
             <p class="card__exit">Improve your skills
             </p>
            
@@ -290,37 +309,29 @@ WITH THE BEST TEAMMATES</h5>
             </p>
           </div>
           <div class="card card-2">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
-            <p class="card__exit">Customer service</p>
+            <div class="card__icon"></div>
+            <p class="card__exit">Aspirants scholarship</p>
             <h2 class="card__title">
-              Learn the ways of coaching and
-              customer servicege base</h2>
+              
+You will receive $640/month
+for the duration of the program</h2>
             <p class="card__apply">
               <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
             </p>
           </div>
           <div class="card card-3">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
-            <p class="card__exit">Customer service</p>
+            <div class="card__icon"></div>
+            <p class="card__exit">Job after graduation </p>
             <h2 class="card__title">
-              Learn the ways of coaching and
-              customer servicege base</h2>
+              
+With an avg. salary of $2000/month</h2>
             <p class="card__apply">
               <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
             </p>
           </div>
-          <div class="card card-4">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
-            <p class="card__exit">Customer service</p>
-            <h2 class="card__title">
-              Learn the ways of coaching and
-              customer servicege base</h2>
-            <p class="card__apply">
-              <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </p>
-          </div>
+         
           <div class="card card-5">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
+            <div class="card__icon"></div>
             <p class="card__exit">Customer service</p>
             <h2 class="card__title">
               Learn the ways of coaching and
@@ -329,14 +340,7 @@ WITH THE BEST TEAMMATES</h5>
               <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
             </p>
           </div>
-          <div class="card card-1">
-            <div class="card__icon"><i class="fas fa-bolt"></i></div>
-            <p class="card__exit"><i class="fas fa-times"></i></p>
-            <h2 class="card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-            <p class="card__apply">
-              <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>

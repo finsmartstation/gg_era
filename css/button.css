@@ -1,0 +1,57 @@
+.button1 {
+    position: relative;
+    display: block;
+    background: transparent;
+    width: 120px;
+    height: 40px;
+    line-height: 82px;
+    text-align: center;
+    font-size: 15px;
+    font-weight:500 ;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #ffff;
+    /* margin: 40px auto; */
+    
+    box-sizing: border-box;
+  }
+  .button1:before,
+  .button1:after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    left: 0px;
+    height: 34px;
+    z-index: -1;
+  }
+  
+  .button1:before {
+    transform: perspective(15px) rotateX(10deg);
+  }
+  .button1:after {
+    top: 40px;
+    transform: perspective(15px) rotateX(-10deg);
+  }
+  
+  /* button1 Border Style */
+  
+  .button1.border1:before,
+  .button1.border1:after {
+    border: 4px solid #dba718;
+  }
+  .button1.border1:before {
+    border-bottom: none; /* to prevent the border-line showing up in the middle of the shape */
+  }
+  .button1.border1:after {
+    border-top: none; /* to prevent the border-line showing up in the middle of the shape */
+  }
+  
+  /* button1 hover styles */
+  
+  .button1.border1:hover:before,
+  .button1.border1:hover:after {
+    background: #020000db;
+  }
+  .button1.border1:hover {
+    color: #fff;
+  }

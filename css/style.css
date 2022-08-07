@@ -486,7 +486,7 @@ button {
   scroll-behavior: smooth;
   /* overflow-y: hidden; */
   overflow-x: hidden;
-  background-image: url(../img/ddd.png);
+  /* background-image: url(../img/ddd.png); */
   /* background-repeat: no-repeat; */
   background-color: #111;
   background-size: contain, cover;
