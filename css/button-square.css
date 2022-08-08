@@ -102,9 +102,7 @@ p {
     -ms-grid-row-span: 2;
   }
   
-  /**
-  include https://codepen.io/chrisbautista/pen/ZEryzKx.css
-  */
+  
   .btn {
     --button-color: lighten($colorCanvasInverted, 10%);
     --button-text-color: var(--app-text-color);
@@ -122,11 +120,11 @@ p {
     align-items: center;
   }
   .btn-primary {
-    --button-color: #0f75ae;
+    --button-color: #ed9209;
     --button-text-color: #fafbfc;
   }
   .btn-secondary {
-    --button-color: #88d2fc;
+    --button-color: #00060a;
     --button-text-color: #fafbfc;
   }
   .btn-group {
@@ -196,7 +194,7 @@ p {
   }
   
   a {
-    color: #06a8b8;
+    color: #050e0f;
     text-decoration: none;
   }
   a:hover {
@@ -259,16 +257,16 @@ p {
   .clay.btn-primary {
     --dark-inset-shadow: rgba(0, 0, 0, 0.25);
     --light-inset-shadow: rgba(194, 230, 250, 0.4);
-    --clay-box-shadow: rgba(0, 0, 0, 0.55);
-    --clay-background-color: #d7550e;
+    --clay-box-shadow: rgba(130, 60, 3, 0.55);;
+    --clay-background-color: #e46e0e;
     --clay-fg-color: #f1f2f3;
   }
   
   .clay.btn-secondary {
     --dark-inset-shadow: rgba(3, 84, 130, 0.25);
     --light-inset-shadow: rgba(255, 255, 255, 0.4);
-    --clay-box-shadow: rgba(3, 84, 130, 0.55);
-    --clay-background-color: #eabd09;
+    --clay-box-shadow: rgba(130, 60, 3, 0.55);
+    --clay-background-color: #141001;
     --clay-fg-color: #f1f2f3;
   }
   
