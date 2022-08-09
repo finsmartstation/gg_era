@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/language.css">
     <link rel="stylesheet" href="./css/button-square.css">
+    <!-- <link rel="stylesheet" href="./css/test1.css"> -->
     <!-- card  -->
   </head>
 
@@ -43,8 +44,8 @@
     <canvas class="overlap overlap-about" id="c"></canvas>
   </div>
  
-  <nav class=" navbar navbar-expand-lg  bg-transparent " style="z-index: 10000;">
-    <div class="container-fluid">
+  <!-- <nav class=" navbar navbar-expand-lg  bg-transparent " style="z-index: 10000;">
+    <div class="container-fluid ">
 
 
       <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -66,7 +67,7 @@
           <span class="on">EN</span>
           <span class="off">DE</span>
         </div>
-        <div class="container col-lg-6 col-md-12 col-sm-12 " class="collapse navbar-collapse" id="navbarNav" style="right: -60px;">
+        <div class="container55 col-lg-6 col-md-12 col-sm-12 " class="collapse navbar-collapse" id="navbarNav" >
 
           <div class="col-lg-11 col-sm-12 col-md-12 " data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
 
@@ -92,7 +93,63 @@
 
       </div>
     </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0 py-3" style="z-index: 10000;">
+    <div class="container-xl">
+      <!-- Logo -->
+      <!-- <a class="navbar-brand" href="#">
+        <img src="https://preview.webpixels.io/web/img/logos/clever-light.svg" class="h-8" alt="...">
+      </a> -->
+      <a href="#" class="navbar-brand text-light pe-auto " data-aos="fade-up">
+        <img src="./img/era.png" width="100"
+          class="h-8"
+          style="width: 50px;height:35px" /></a>
+      <!-- Navbar toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <!-- Nav -->
+        <div class="navbar-nav mx-lg-auto">
+          <a class="navbar-brand text-light m-0 " style="color: inherit" href="index.html">
+            <img src="./img/Untitled-1.png" alt="" width="150" height="40" />
+          </a>
+          <a class="navbar-brand text-light m-0" style="color: inherit" href="about.html">
+            <img src="./img/about.png" alt="" width="150" height="40" />
+          </a>
+          <a class="navbar-brand text-light m-0" style="color: inherit" href="job.html">
+            <img src="./img/job.png" alt="" width="150" height="40" />
+          </a>
+        </div>
+        <div class="end1">
+          <img src="./img/line glow2.png" alt="" srcset="">
+          </div>
+        <!-- Right navigation -->
+        
+          <!-- <a class="nav-item nav-link" href="#">Sign in</a> -->
+          <div class="switch2">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"  id="bt_redirect" onclick="redirect()">
+            <label for="language-toggle"></label>
+           <span  class="on">EN</span >
+            <span class="off">DE</span>
+          </div>
+        
+        <!-- Action -->
+        <!-- <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+          <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
+            Register
+          </a>
+        </div> -->
+      </div>
+    </div>
   </nav>
+  <script>
+    function redirect(){
+     var url = "http://ec2-3-132-235-255.us-east-2.compute.amazonaws.com/index.html";
+     window.location.href = url;
+  }
+   </script>
   <div class="container p-3 pt-5">
     <div class="d-flex justify-content-center ">
       <button class="clay btn btn-primary" style="height: 50px;width:120px">

@@ -28,6 +28,7 @@
   <script src="https://kit.fontawesome.com/f78a22d753.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/language.css">
   <link rel="stylesheet" href="./css/button-square.css">
+  <!-- <link rel="stylesheet" href="./css/test1.css"> -->
   <!-- card  -->
 </head>
 
@@ -69,11 +70,12 @@
                 <img src="./img/job.png" alt="" width="150" height="40" />
               </a>
               <div class="switch2">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="button"  id="bt_redirect" onclick="redirect()"  >
                 <label for="language-toggle"></label>
                 <span class="on" >EN</span>
                 <span class="off">DE</span>
               </div>
+             
 
             </div>
 
@@ -85,6 +87,12 @@
         </div>
       </div>
     </nav>
+    <script>
+     function redirect(){
+      var url = "http://ec2-3-132-235-255.us-east-2.compute.amazonaws.com/index.html";
+      window.location.href = url;
+   }
+    </script>
     <div class="col-lg-6 d-none d-lg-block d-print-block col-md-6 " id="navbar">
 
       <a href="#" class="navbar-brand text-light pe-auto" data-aos="fade-up">

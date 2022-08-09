@@ -7,6 +7,17 @@
   /* font-family: "Poppins", sans-serif; */
   /* font-family: 'Poppins';font-size: 22px; */
   font-family:Poppins,sans-serif;
+  scroll-behavior: smooth;
+  
+}
+.container55{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 header {
   position: absolute;
@@ -99,7 +110,7 @@ header {
     align-items: center;
       display: flex;
        position: absolute;
-    z-index: 100;
+    z-index: -10;
 }
 .md-block{
   position: relative;
