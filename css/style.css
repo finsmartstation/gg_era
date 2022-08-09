@@ -22,7 +22,7 @@ header {
 }
 #navbar{
   position:absolute;
-  top: -50px;
+  top: 0px;
   right: -400px;
 }
 @media screen and (max-width: 760px) {
@@ -66,7 +66,7 @@ header {
  display: none;
   }
   .dummy{
-    height: 45rem !important;
+    /* height: 45rem !important; */
   }
   
   .mob-text{
@@ -76,19 +76,23 @@ header {
     padding-top: 0 !important;
   }
   .job-text{
-    font-weight: 800;
+    font-weight: 500 !important;
     text-decoration: none;
     color: #ffff;
     position: absolute;
     font-size: 1.5rem !important;
     text-align: center;
   }
+  .container-10{
+    height: 45rem !important;
+
+  }
 }
 
 
 .end1{
   width: 100%;
-       top: 3px;
+       top: 2px;
        left: 0px;
     /* color: #262626; */
     justify-content: center;
@@ -99,6 +103,10 @@ header {
 }
 .md-block{
   position: relative;
+  /* top: 100px; */
+}
+@media screen and (max-width: 1200px) {
+
 }
 @media screen and (max-width: 990px) {
   .end1{
@@ -410,7 +418,7 @@ button {
   border: 1px solid #f77500;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 15px;
+  /* margin: 15px; */
 }
 /* card design  */
 .container-2 {
@@ -645,7 +653,7 @@ button {
   font-size: 2rem;
   font-weight: 300;
   color: #cccccc;
-  text-align: center;
+  /* text-align: center; */
 }
 /* cards style  */
 .l-container {
@@ -659,6 +667,15 @@ button {
 @media screen and (max-width: 760px) {
   .l-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .dummy{
+    min-height: 45px !important;
+  }
+  .mob-res{
+   top:100px !important;
+  }
+  .imgg{
+    width: 400px;
   }
 }
 

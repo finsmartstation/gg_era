@@ -1,9 +1,14 @@
 center{
   align-items: flex-end;
 }
+@media screen and  (min-width: 1000px) {
+.abs{
+  left: 200px ;
+}
+}
 .switch {
   left: 0;
-  padding-left: 0px;
+  padding-left: 10px;
 
     position: absolute;
     display: inline-block;
@@ -52,10 +57,15 @@ center{
       
      
     
-        position: absolute;
+        position: relative;
         display: inline-block;
         /* margin: 0 5px; */
         z-index: 10000;
+       
+      }
+      
+      .switch{
+        margin-left: 100px;
       }
   }
   

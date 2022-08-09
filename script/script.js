@@ -32,7 +32,7 @@ var animateButton = function(e) {
         sparkDist: 10,
         sparkSize: 2,
         
-        color: 'hsl(39, 100%, 50%)',
+        color: 'hsl(16, 88%, 54%)',
         baseLight: 50,
         addedLight: 10, // [50-10,50+10]
         shadowToTimePropMult: 6,
