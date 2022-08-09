@@ -38,10 +38,10 @@ h2 {
   }
   
   .pro .pricing-header {
-    background-color: #26de81;
+    background-color: #ea910b;
   }
   .pro .price-circle {
-    border: 10px solid #26de81;
+    border: 10px solid #ea910b;
     transition: all 0.4s;
   }
   .pro:hover .price-circle {
@@ -49,7 +49,7 @@ h2 {
   }
   .pro .buy-now:hover {
     background-image: none !important;
-    background-color: #26de81 !important;
+    background-color: #ea910b !important;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
   }
   
