@@ -33,6 +33,7 @@
     <script src="https://kit.fontawesome.com/f78a22d753.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/language.css">
     <link rel="stylesheet" href="./css/button-square.css">
+    <link rel="stylesheet" href="./css/lang.css">
     <!-- <link rel="stylesheet" href="./css/test1.css"> -->
     <!-- card  -->
   </head>
@@ -46,58 +47,6 @@
     <canvas class="overlap overlap-about" id="c"></canvas>
   </div>
   
-  
-    <!-- header -->
-    <!-- <nav class=" navbar navbar-expand-lg  bg-transparent " style="z-index: 10000;">
-      <div class="container-fluid ">
-
-
-        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="img navbar-brand pl-3">
-          <a href="#" class="navbar-brand text-light pe-auto " data-aos="fade-up">
-            <img src="./img/era.png" width="100"
-              class="d-inline-block align-top "
-              style="width: 50px;height:35px" /></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="switch">
-            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-            <label for="language-toggle"></label>
-            <span class="on" >EN</span></a>
-            <span class="off">DE</span>
-          </div>
-          <div class="container col-lg-6  col-md-12 col-sm-12 " class="collapse navbar-collapse" id="navbarNav" >
-
-            <div class="col-lg-11 col-sm-12 col-md-12 " data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
-
-              <a class="navbar-brand text-light m-0 " style="color: inherit" href="index.html">
-                <img src="./img/Untitled-1.png" alt="" width="150" height="40" />
-              </a>
-              <a class="navbar-brand text-light m-0" style="color: inherit" href="about.html">
-                <img src="./img/about.png" alt="" width="150" height="40" />
-              </a>
-              <a class="navbar-brand text-light m-0" style="color: inherit" href="job.html">
-                <img src="./img/job.png" alt="" width="150" height="40" />
-              </a>
-             
-
-            </div>
-
-          </div>
-          <div class="end1">
-            <img src="./img/line glow2.png" alt="" srcset="">
-            </div>
-
-
-
-        </div>
-      </div>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0 py-3" style="z-index: 10000;">
       <div class="container-xl">
         <!-- Logo -->
@@ -115,15 +64,26 @@
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <!-- Nav -->
-          <div class="navbar-nav mx-lg-auto">
+          <div class="navbar-nav mx-lg-auto en_lang">
             <a class="navbar-brand text-light m-0 " style="color: inherit" href="index.html">
-              <img src="./img/Untitled-1.png" alt="" width="150" height="40" />
+              <img src="./img/english 3rd/DEACTIVE HOME (2).png" alt="" width="150" height="40" />
             </a>
             <a class="navbar-brand text-light m-0" style="color: inherit" href="about.html">
-              <img src="./img/about.png" alt="" width="150" height="40" />
+              <img src="./img/english 3rd/ACTIVE ABOUT (2).png" alt="" width="150" height="40" />
             </a>
             <a class="navbar-brand text-light m-0" style="color: inherit" href="job.html">
-              <img src="./img/job.png" alt="" width="150" height="40" />
+              <img src="./img/english 3rd/DEACTIVE JOB (2).png" alt="" width="150" height="40" />
+            </a>
+          </div>
+          <div class="navbar-nav mx-lg-auto fr_lang">
+            <a class="navbar-brand text-light m-0 " style="color: inherit" href="index.html">
+              <img src="./img/german 2nd/DEACTIVE HOME (1).png" alt="" width="150" height="40" />
+            </a>
+            <a class="navbar-brand text-light m-0" style="color: inherit" href="about.html">
+              <img src="./img/german 2nd/ACTIVE ABOUT (1).png" alt="" width="150" height="40" />
+            </a>
+            <a class="navbar-brand text-light m-0" style="color: inherit" href="job.html">
+              <img src="./img/german 2nd/DEACTIVE JOB (1).png" alt="" width="150" height="40" />
             </a>
           </div>
           <div class="end1">
@@ -133,39 +93,27 @@
          
             <!-- <a class="nav-item nav-link" href="#">Sign in</a> -->
             <div class="switch2">
-              <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"  id="bt_redirect" onclick="redirect()">
+              <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"  id="lang-switch" class="fr">
               <label for="language-toggle"></label>
-              <span class="on" >EN</span>
-              <span class="off">DE</span>
+              <span class="on fr" >EN</span>
+              <span class="off en">DE</span>
             </div>
   
           </div>
-          <!-- Action -->
-          <!-- <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
-            <a href="#" class="btn btn-sm btn-primary w-full w-lg-auto">
-              Register
-            </a>
-          </div> -->
+        
         </div>
       </div>
     </nav>
-    <!-- <div class="col-lg-6 d-none d-lg-block d-print-block col-md-6 " id="navbar">
-
-      <a href="#" class="navbar-brand text-light pe-auto" data-aos="fade-up">
-        <img src="./img/circle gry black gredient.png" width="200" height="200" /></a>
-    </div> -->
-    <script>
-      function redirect(){
-       var url = "http://ec2-3-132-235-255.us-east-2.compute.amazonaws.com/index.html";
-       window.location.href = url;
-    }
-     </script>
-
+   
+   
   
-  <div class="container view">
+  <div class="container view" >
     <div class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center" data-aos="fade-up"
       data-aos-anchor-placement="bottom-bottom">
-      <div class="large-text">
+      <div class="large-text en_lang">
+        <p class="large-text text-center mob-text">GG ERA</p>
+      </div>
+      <div class="large-text  fr_lang">
         <p class="large-text text-center mob-text">GG ERA</p>
       </div>
 
@@ -173,42 +121,63 @@
     <div class="d-flex justify-content-center">
       <div class="container p-3">
         <div class="d-flex justify-content-center ">
-          <button class="clay btn btn-primary" style="height: 50px;width:150px">
+          <button class="clay btn btn-warning en_lang" style="height: 50px;width:150px">
             <span class="btn-label" >Signup</span>
           </button>
-          <button class="clay btn btn-secondary" style="height: 50px;width:150px">
+          <button class="clay btn btn-warning fr_lang" style="height: 50px;width:150px">
+            <span class="btn-label" >Anmelden</span>
+          </button>
+          <button class="clay btn btn-secondary en_lang" style="height: 50px;width:150px">
             <span class="btn-label" >Login</span>
           </button>
-          <!-- <img src="./img/login.png" style="height: 50px; width: 120px" class="p-1" alt="" /> -->
+          <button class="clay btn btn-secondary fr_lang" style="height: 50px;width:150px">
+            <span class="btn-label" >Anmeldung</span>
+          </button>
+         
         </div>
+        
       </div>
 
     </div>
     <div class="col-lg-12 pb-5">
       <div class="text-center p-5">
-        <p class="font-about ">The home of the programmers, where subscribers can play with them on the same team or
+        <p class="font-about en_lang">The home of the programmers, where subscribers can play with them on the same team or
           invest imerging stars </p>
+          <p class="font-about fr_lang">
+            Die Heimat der Programmierer, wo Abonnenten mit ihnen im selben Team spielen oder aufstrebende Stars investieren können </p>
       </div>
 
     </div>
-    <div class="container">
+    <div class="container" style="overflow: hidden;">
     <div class="row ">
       <div class="col-lg-6 col-sm-12 col-md-6 d-flex justify-content-center p-2 pb-5" data-aos="fade-right">
         <div class="box">
-          <div class="card mycard" style="width: 18rem; height: 10.5rem;background-color: transparent;">
+          <div class="card mycard" style="width: 20rem; height: 13.5rem;background-color: transparent;">
             <img class="card-img-top" src="./img/1123055.jpg" alt="Card image cap">
-            <div class="d-flex justify-content-center">
-              <button href="#" class=" btn-color">Try it now</button>
+            <div class="d-flex justify-content-center en_lang">
+              <button class="clay btn btn-warning en_lang" style="height: 50px;width:150px">
+                <span class="btn-label" >Try it now</span>
+              </button>
+              <button class="clay btn btn-warning fr_lang" >
+                <span class="btn-label" >Probieren Sie es jetzt</span>
+              </button>
             </div>
+            
           </div>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center p-2 pb-5" data-aos="fade-left">
         <div class="box ">
-          <div class="card mycard" style="width: 18rem; height: 10.5rem; background-color: transparent;">
+          <div class="card mycard" style="width: 20rem; height: 13.5rem; background-color: transparent;">
             <img class="card-img-top about-image" src="./img/2410199.jpg" alt="Card image cap">
-            <div class="d-flex justify-content-center">
-              <button href="#" class=" btn-color">Try it now</button>
+            <div class="d-flex justify-content-center en_lang">
+              <button class="clay btn btn-warning en_lang" style="height: 50px;width:150px">
+                <span class="btn-label" >Try it now</span>
+              </button>
+              <button class="clay btn btn-warning fr_lang" >
+                <span class="btn-label" >Probieren Sie es jetzt</span>
+              </button>
+              
             </div>
           </div>
         </div>
@@ -217,58 +186,10 @@
   </div>
   </div>
  
-<!-- <section>
-  <a href="#" class="pricing-card" data-aos="fade-left" style="text-decoration: none;">
-      <div>
-          <img src="./img/mask1.png" alt="" srcset="" width="100px" height="100px" >
-          <h3>Join</h3>
-          <h4> Party
+  <div class="en_lang">
+<div class="container p-5 " style="overflow: hidden;">
 
-            $16</h4>
-          <p>per hour</p>
-          <ul>
-              <li>100 Transaction</li>
-              <li>2% Cash Back</li>
-              <li>$10,000 limit</li>
-          </ul>
-          <Button class="btn primary">Choose Plan</Button>
-      </div>
-  </a>
-
-  <a href="#" class="pricing-card" style="text-decoration: none;">
-      <div>
-          <img src="./img/mask1.png" alt="" srcset="" width="100px" height="100px" data-aos="zoom-in-up">
-       
-          <h3>Popular</h3>
-          <h4>$29.99</h4>
-          <p>per Hour</p>
-          <ul>
-              <li>1000 Transaction</li>
-              <li>3.5% Cash Back</li>
-              <li>$100,000 limit</li>
-          </ul>
-          <Button class="btn blue">Choose Plan</Button>
-      </div>
-  </a>
-
-  <a href="#" class="pricing-card" data-aos="fade-right" style="text-decoration: none;">
-      <div>
-          <img src="./img/mask1.png" alt="" srcset="" width="100px" height="100px">
-       
-          <h3>Premium</h3>
-          <h4>$99.99</h4>
-          <p>per Day</p>
-          <ul>
-              <li>Unlimited Transaction</li>
-              <li>5% Cash Back</li>
-              <li>Unlimited Spending</li>
-          </ul>
-          <Button class="btn primary">Choose Plan</Button>
-      </div>
-  </a>
-</section>  -->
-<div class="container p-5">
-  <div class="column p-2 pb-5" data-aos="fade-up-left">
+  <div class="column p-2 pb-5 " data-aos="fade-up-left">
     <div class="pricing-card basic">
       <div class="pricing-header">
         <span class="plan-title ">CallDuty Warzone </span>
@@ -304,7 +225,7 @@
       </div>        
     </div>
   </div>
-  <div class="column pb-5">
+  <div class="column pb-5 ">
     <div class="pricing-card eco">
       <div class="pricing-header">
         <span class="plan-title">ECO PLAN</span>
@@ -340,7 +261,7 @@
       </div>
     </div>
   </div>
-  <div class="column pb-5" data-aos="fade-up-right">
+  <div class="column pb-5 " data-aos="fade-up-right">
     <div class="pricing-card pro">
       <div class="popular">POPULAR</div>
       <div class="pricing-header">
@@ -377,47 +298,151 @@
       </div>
     </div>
   </div>
-  <!-- <div class="column">
-    <div class="pricing-card business">
+ </div>
+</div>
+<div class="fr_lang">
+  <div class="container p-5 " style="overflow: hidden;">
+  <div class="column p-2 pb-5" data-aos="fade-up-left">
+    <div class="pricing-card basic">
       <div class="pricing-header">
-        <span class="plan-title">BUSINESS PLAN</span>
+        <span class="plan-title ">CallDuty Warzone </span>
         <div class="price-circle">
           <span class="price-title">
-            <small>$</small><span>59.95</span>
+            <small>$</small><span>1800</span>
+          </span>
+          <span class="info"></span>
+        </div>
+      </div>
+      <div class="badge-box">
+        <span>Pro Monat verdienen</span>
+      </div>
+      <ul>
+        <li>
+          <strong> Spielen Sie mit Profis und Prominenten</strong>
+        </li>
+        <li>
+          <strong></strong> Arbeiten Sie mit der GG ERA-Familie zusammen
+        </li>
+        <li>
+          <strong></strong> Spielen Sie Kneipen mit Rang &Lf
+        </li>
+        <li>
+          <strong>1 Frei</strong> Turniere mit Abonnenten
+        </li>
+       
+      </ul>
+      <div class="buy-button-box">
+        <a href="#" class="buy-now">Probieren Sie es jetzt</a>
+      </div>        
+    </div>
+  </div>
+  <div class="column pb-5 ">
+    <div class="pricing-card eco">
+      <div class="pricing-header">
+        <span class="plan-title">ECO PLAN</span>
+        <div class="price-circle">
+          <span class="price-title">
+            <small>$</small><span>2695</span>
           </span>
           <span class="info">/ Month</span>
         </div>
       </div>
       <div class="badge-box">
-        <span>Save 5%</span>
+        <span>Pro Monat verdienen</span>
       </div>
       <ul>
         <li>
-          <strong>Unlimited</strong> Domain
+          <strong> Spielen Sie mit Profis und Prominenten</strong>
         </li>
         <li>
-          <strong>250 GB</strong> Disk Space
+          <strong>50</strong> Spielen Sie Kneipen mit Rang &Lf
         </li>
         <li>
-          <strong>Unlimited</strong> Bandwith
+          <strong>1 Frei</strong> Turniere mit Abonnenten
         </li>
         <li>
-          <strong>5 Free</strong> Domains
+          <strong>2 Free</strong> Domänen
         </li>
         <li>
-          <strong>Unlimited FTP</strong> Account
+          <strong>Unbegrenztes FTP</strong> Konto
         </li>
       </ul>
       <div class="buy-button-box">
-        <a href="#" class="buy-now">BUY NOW</a>
+        <a href="#" class="buy-now">Pro Monat verdienen</a>
       </div>
     </div>
-  </div> -->
-</div>
-
   </div>
+  <div class="column pb-5 " data-aos="fade-up-right">
+    <div class="pricing-card pro">
+      <div class="popular">POPULAR</div>
+      <div class="pricing-header">
+        <span class="plan-title">PRO PLAN</span>
+        <div class="price-circle">
+          <span class="price-title">
+            <small>$</small><span>4395</span>
+          </span>
+          <span class="info">/ Month</span>
+        </div>
+      </div>
+      <div class="badge-box">
+        <span>Pro Monat verdienen</span>
+      </div>
+      <ul>
+        <li>
+          <strong>10</strong> Domains
+        </li>
+        <li>
+          <strong>150</strong> Spielen Sie Kneipen mit Rang &Lf
+        </li>
+        <li>
+          <strong>Unbegrenzt</strong> Bandbreite
+        </li>
+        <li>
+          <strong>3 Frei</strong> Turniere mit Abonnenten
+        </li>
+        <li>
+          <strong>Unbegrenztes FTP</strong> Konto
+        </li>
+      </ul>
+      <div class="buy-button-box">
+        <a href="#" class="buy-now">Pro Monat verdienen</a>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var checkbox = document.querySelector('input[type="checkbox"]');
+    
+    $('.en_lang').addClass("active-lang");
+    $('#lang-switch .en').addClass("active-flag");
+    checkbox.addEventListener('change', function () {
+        
+      if (checkbox.checked) {
+        // do this
+        console.log('Checked');
+        // disable english 
+        $('.fr_lang').addClass("active-lang"); 
+    console.log('Checked');
+   
+    $('.en_lang').removeClass("active-lang") 
 
-    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+      } else {
+        // do that
+        console.log('Not checked' );
+        $('.en_lang').addClass("active-lang");
+    
+    // Disable French
+    $('.fr_lang').removeClass("active-lang")
+      }
+    });
+  });
+</script>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./script/language.js"></script>
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/responsive.js"></script>
     <script src="./script/aos.js"></script>

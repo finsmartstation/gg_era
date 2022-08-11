@@ -144,11 +144,11 @@ h2 {
   }
   .pricing-card .badge-box span {
     display: inline-block;
-    border: 1px solid #4b7bec;
+    border: 1px solid #ece74b;
     padding: 4px 12px;
     border-radius: 25px;
     overflow: hidden;
-    color: #4b7bec;
+    color: #ecec4b;
   }
   .pricing-card .pricing-header {
     width: 100%;
@@ -221,6 +221,6 @@ h2 {
     color: white;
     padding: 10px 30px;
     border-radius: 20px;
-    background-image: linear-gradient(to left, #a55eea, #45aaf2);
+    background-image: linear-gradient(to left, #a60707, #f5ac01);
     margin-top: 20px;
   }

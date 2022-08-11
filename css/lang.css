@@ -1,0 +1,107 @@
+/* -------------- CSS --------------- */
+#lang-switch img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+  transition: all .5s;
+  margin: auto 3px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#lang-switch img:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.fr_lang,
+.en_lang {
+  display: none;
+  transition: display .5s;
+}
+
+/* Language */
+.active-lang {
+  display: flex !important;
+  transition: display .5s;
+  z-index: 10000;
+}
+
+.active-flag {
+  transition: all .5s;
+  opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Useless ------------------ */
+/* Don't copy/past this. It's just a cosmetic. */
+
+* {
+  margin: 0;
+  padding; 0;
+}
+
+body {
+  background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/moving-through-stars-in-space_-1zccenlb__F0000.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.main {
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  min-height: 500px;
+  box-shadow: 0 0 15px 0px black;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-top: 70px;
+}
+.main h2 {
+  justify-content: center;
+}
+.main h3 {
+  background-color: #151515;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+  margin-top: 20px;
+}
+.main p {
+  padding: 20px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid grey;
+}
+
+#lang-switch {
+  width: 100%;
+  background-color: #151515;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+}
+#lang-switch h1 {
+  margin: auto auto auto 0;
+  color: white;
+  font-family: "TW Cen MT";
+  font-size: 25px;
+  padding: 10px;
+}

@@ -119,8 +119,9 @@ p {
     justify-content: center;
     align-items: center;
   }
-  .btn-primary {
-    --button-color: #ed9209;
+  .btn-warning {
+    --button-color: 
+    #f2692f;
     --button-text-color: #fafbfc;
   }
   .btn-secondary {
@@ -177,7 +178,7 @@ p {
     margin-left: 6px;
   }
   .btn.btn-icon-only:hover {
-    background-color: rgba(136, 210, 252, 0.2);
+    background-color: rgba(7, 57, 86, 0.2);
   }
   .btn.btn-icon-only > .icon {
     font-size: 1.5rem;
@@ -254,7 +255,7 @@ p {
     /* Light inset shadow */
   }
   
-  .clay.btn-primary {
+  .clay.btn-warning {
     --dark-inset-shadow: rgba(0, 0, 0, 0.25);
     --light-inset-shadow: rgba(194, 230, 250, 0.4);
     --clay-box-shadow: rgba(130, 60, 3, 0.55);;
