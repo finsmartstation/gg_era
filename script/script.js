@@ -26,17 +26,17 @@ var animateButton = function(e) {
       
       opts = {
         
-        len: 20,
+        len: 25,
         count: 50,
         baseTime: 1,
-        addedTime: 10,
+        addedTime: 20,
         dieChance: .05,
         spawnChance: 1,
         sparkChance: .1,
         sparkDist: 10,
         sparkSize: 2,
         
-        color: 'hsl(16, 88%, 54%)',
+        color: 'hsl(hue,100%,light%)',
         baseLight: 50,
         addedLight: 10, // [50-10,50+10]
         shadowToTimePropMult: 6,
@@ -46,7 +46,7 @@ var animateButton = function(e) {
         cx: w / 2,
         cy: h / 2,
         repaintAlpha: .04,
-        hueChange: .1
+        hueChange: .05
       },
       
       tick = 0,
