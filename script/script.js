@@ -46,7 +46,7 @@ var animateButton = function(e) {
         cx: w / 2,
         cy: h / 2,
         repaintAlpha: .04,
-        hueChange: .05
+        hueChange: .1
       },
       
       tick = 0,
