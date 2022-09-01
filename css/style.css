@@ -4,8 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: 'Poppins';font-size: 22px; */
+ 
   font-family:Poppins,sans-serif;
   scroll-behavior: smooth;
   
@@ -76,9 +75,7 @@ header {
   .end1{
  display: none;
   }
-  .dummy{
-    /* height: 45rem !important; */
-  }
+
   
   .mob-text{
     font-size: 5rem !important;
@@ -114,7 +111,7 @@ header {
 }
 .md-block{
   position: relative;
-  /* top: 100px; */
+
 }
 @media screen and (max-width: 1200px) {
 
@@ -141,11 +138,9 @@ header {
       z-index: -5;
      height: 65rem !important;
     }
-    .container-10 {
-     
-    }
+  
     .job-text{
-      /* top: 0px; */
+     
 
       font-weight: 100;
       text-decoration: none;
@@ -187,7 +182,7 @@ header {
 
 header .logo {
   color: #fff;
-  text-transform: ;
+
   cursor: pointer;
 }
 
@@ -258,7 +253,7 @@ header .logo {
   width: 100%;
   height: 100%;
   background: black;
-  mix-blend-mode: ;
+
   z-index: -10;
 }
 
@@ -343,14 +338,11 @@ header .logo {
   padding-block-end: 30px;
 }
 .carousel-margin {
-  padding-right: ;
+
   margin: 0;
   padding: 0;
 }
-.d-flex {
-}
-.arrange {
-}
+
 
 .about {
   /* background-image: url(../img/ddd.png); */
@@ -424,8 +416,7 @@ header .logo {
   width: 200px;
   border-radius: 25px;
 }
-button {
-}
+
 .box {
   border: 1px solid #f77500;
   box-sizing: border-box;
@@ -789,10 +780,6 @@ button {
   z-index: -5;
   height: 45rem ;
 
-}
-.container-10 {
-  /* width: 35rem;
-  height: 45rem; */
 }
 
 #site-header {

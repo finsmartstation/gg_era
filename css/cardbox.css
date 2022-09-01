@@ -7,7 +7,10 @@
   padding: 40px;
   z-index: 1000;
 }
-
+.container33{
+  position: relative;
+  color: #fff;
+}
 .container22 .box {
   position: relative;
   width: 320px;
