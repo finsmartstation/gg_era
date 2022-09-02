@@ -9,8 +9,8 @@ center{
 .switch {
   left: 0;
   padding-left: 10px;
-
-    position: absolute;
+  top: 20px;
+    position: relative;
     display: inline-block;
     /* margin: 0 5px; */
     z-index: 100000;
@@ -18,7 +18,7 @@ center{
   .switch2 {
     right: 0px;
     padding-left: 15px;
-    top: 20px;
+    top: 8px;
   
       position: relative;
       display: inline-block;

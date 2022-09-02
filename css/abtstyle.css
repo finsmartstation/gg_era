@@ -258,7 +258,10 @@
     color: #706d7e;
   }
   .c-services__item:hover {
-    background-color: var(--color-brand-accent);
+    background-color: 
+    #2d2d47;
+    backdrop-filter: blur(10px);
+    
   }
   @media (min-width: 40.625em) {
     .c-services__item:hover {
