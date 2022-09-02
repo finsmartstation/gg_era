@@ -106,6 +106,7 @@
         </div>
       </div>
     </nav>
+ 
    
    
   
@@ -187,7 +188,96 @@
     </div>
   </div>
   </div>
- 
+ <style>
+  .plan_card{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-style: solid;
+    border-width: medium;
+    border-color: #F77500;
+    opacity: 0.7;
+    border-radius: 15px;
+    width: 400px;
+  }
+  .plan_table{
+    color: white;
+  }
+  .plan_card:hover {
+  opacity: 1.0;
+}
+/* .borderless table {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+} */
+.borderless td, .borderless th {
+    border: none;
+}
+@media screen and (max-width:768px) {
+  .plan_card{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-style: solid;
+    border-width: medium;
+    border-color: #F77500;
+    opacity: 0.7;
+    border-radius: 15px;
+    width: 220px;
+  }
+}
+</style>
+  <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+      <div class="card plan_card" >
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Tariff Plans</h5>
+          <div class="the-price">
+            <h1>
+                $10<span class="subscript">/mo</span></h1>
+            <small>1 month FREE trial</small>
+        </div>
+        <table class="table plan_table borderless">
+            <tr>
+                <td>
+                    1 Account
+                </td>
+            </tr>
+            <tr class="active">
+                <td>
+                    1 Project
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    100K API Access
+                </td>
+            </tr>
+            <tr class="active">
+                <td>
+                    100MB Storage
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Custom Cloud Services
+                </td>
+            </tr>
+            <tr class="active">
+                <td>
+                    Weekly Reports
+                </td>
+            </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <!-- <div class="en_lang">
 <div class="container p-5 " style="overflow: hidden;">
 
@@ -419,7 +509,7 @@
           <div class="row">
            
             <div class="col-xl-3 col-md-4 mb-30 ">
-              <div class="single-cta d-flex justify-content-center">
+              <div class="single-cta d-flex justify-content-center p-5">
                 <div>
                  
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -434,7 +524,7 @@
               </div>
           </div>
             <div class="col-xl-2 col-md-4 mb-30 d-flex justify-content-center">
-                <div class="single-cta d-flex justify-content-center">
+                <div class="single-cta d-flex justify-content-center p-5">
                   <div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-twitch" viewBox="0 0 16 16">
                       <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
@@ -450,7 +540,7 @@
                 </div>
             </div>
             <div class="col-xl-2 col-md-4 mb-30 d-flex justify-content-center">
-              <div class="single-cta d-flex justify-content-center">
+              <div class="single-cta d-flex justify-content-center p-5">
                 <div>
                  
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-discord" viewBox="0 0 16 16">
@@ -465,7 +555,7 @@
               </div>
           </div>
           <div class="col-xl-2 col-md-4 mb-30 d-flex justify-content-center">
-            <div class="single-cta d-flex justify-content-center">
+            <div class="single-cta d-flex justify-content-center p-5">
               <div>
                
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="White" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -480,7 +570,7 @@
             </div>
         </div>
         <div class="col-xl-3 col-md-4 mb-30 d-flex justify-content-center">
-          <div class="single-cta d-flex justify-content-center">
+          <div class="single-cta d-flex justify-content-center p-5">
             <div>
              
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
