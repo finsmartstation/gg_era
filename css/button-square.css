@@ -283,6 +283,7 @@ p {
   
   .clay.btn-icon-only.btn:hover {
     background-color: var(--clay-background-color);
+    
   }
   
   .btn + .btn {

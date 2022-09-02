@@ -1,6 +1,6 @@
 .container h1 {
 	text-align: center;
-	margin-bottom: 80px;
+	/* margin-bottom: 80px; */
 	color: rgba(235, 141, 11, 0.963);
     
 }
@@ -8,16 +8,20 @@
 .box66 {
     /* text-align: center; */
     /* align-items: center; */
-	background-color: #1d1e22;
+	/* background-color: #0d0e0b; */
 	padding: 20px 40px;
 	border-radius: 30px;
 	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
 	color: #f9f9f9;
+	border-color: #e36504;
+	backdrop-filter: blur(6px);
+	border-style: solid;
+	/* border-color: #92a8d1; */
 }
 
 ol {
 	list-style: none;
-	counter-reset: op-order-list;
+	counter-reset: no-order-list;
     
 }
 
@@ -29,7 +33,7 @@ li {
 }
 
 li::before {
-	content: counter(op-order-list);
+	content: counter();
 	width: 30px;
 	height: 30px;
 	margin-right: 10px;
