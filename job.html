@@ -45,7 +45,7 @@
     <canvas class="overlap overlap-about" id="c"></canvas>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0 py-3" style="z-index: 10000;">
+  <nav class="navbar navbar-expand-lg navbar-dark border  px-0 py-3 " id="navbar1" style="z-index: 10000;">
     <div class="container-xl">
       <!-- Logo -->
       <!-- <a class="navbar-brand" href="#">
@@ -96,14 +96,49 @@
           <span class="on fr">EN</span>
           <span class="off en">DE</span>
         </div>
+        
 
       </div>
 
     </div>
     </div>
   </nav>
+  <style>
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #000000;
+}
+.border{
+  border-bottom:2px solid !important;
+  border-bottom-color: 
+#ff6e30 !important; 
+}
 
-  <div class="container p-3 pt-5 " style="z-index: 10000;">
+.sticky + .content {
+  padding-top: 60px;
+  </style>
+  <script>
+    window.onscroll = function() {myFunction1()};
+
+var navbar = document.getElementById("navbar1");
+var sticky = navbar.offsetTop;
+
+function myFunction1() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+  if (window.pageYOffset <= sticky){
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
+
+  <div class="container p-3 pt-5 " style="z-index: 10;">
     <div class="d-flex justify-content-center ">
       <button class="clay btn btn-warning en_lang" style="height: 50px;width:150px">
         <a href="https://newggera.herokuapp.com/login " style="text-decoration: none; color: #ffff;"><span class="btn-label p-2">Signup</span></a>
