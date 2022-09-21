@@ -1,6 +1,5 @@
 #!/bin/bash
 sudo systemctl restart nginx
 
-cd /var/www/html/new
 sudo pm2 kill
-sudo pm2 start app.js
+sudo pm2 start /var/www/html/new/app.js
