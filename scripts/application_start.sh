@@ -1,2 +1,5 @@
 #!/bin/bash
-sudo service apache2 start
+sudo systemctl restart nginx
+
+cd /var/www/html/new
+node app.js 
