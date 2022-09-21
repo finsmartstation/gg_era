@@ -4,5 +4,5 @@ if [[ -n  $isExistApp ]]; then
     service httpd stop        
 fi
 
-killall -9 node
+pm2 kill
 sudo systemctl stop nginx
