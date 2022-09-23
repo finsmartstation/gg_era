@@ -162,4 +162,18 @@ router.post('/withdraw', verifyAccessToken, async (req, res) => {
 });
 
 
+router.patch('/change/status', async (req, res) => {
+        // res.send({data: req.body})
+    try {
+        const cUser = await USERDATA.findById(req.body.userId);
+        cUser.status = req.body.status;
+        const data = await cUser.save();
+        res.send({data: data, error: null})
+    } catch (error) {
+        console.log(error)
+        res.send({data: null, error: error.message})
+    }
+})
+
+
 module.exports = router;
