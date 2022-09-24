@@ -65,4 +65,7 @@ function  theChecker(){
   } else {
     nextButton.classList.remove('disabled');
   }
+
+  //a
 }
+
