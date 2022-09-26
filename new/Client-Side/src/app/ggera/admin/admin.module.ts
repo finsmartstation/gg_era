@@ -15,9 +15,11 @@ import { EarningsComponent } from './earnings/earnings.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { ViewSubscriberProfileComponent } from './view-subscriber-profile/view-subscriber-profile.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { SessionsComponent } from './sessions/sessions.component';
 
 @NgModule({
-    declarations: [DashboardComponent, ProRequestComponent, ProUserWithdrawRequestComponent, SubscriberListComponent, ProListComponent, EarningsComponent, ViewprofileComponent, ViewSubscriberProfileComponent],
+    declarations: [DashboardComponent, ProRequestComponent, ProUserWithdrawRequestComponent, SubscriberListComponent, ProListComponent, EarningsComponent, ViewprofileComponent, ViewSubscriberProfileComponent, TransactionsComponent, SessionsComponent],
     imports: [
         CommonModule,
         NgChartsModule,

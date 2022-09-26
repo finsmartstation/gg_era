@@ -4,7 +4,9 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { ProListComponent } from "./pro-list/pro-list.component";
 import { ProRequestComponent } from "./pro-request/pro-request.component";
 import { ProUserWithdrawRequestComponent } from "./pro-user-withdraw-request/pro-user-withdraw-request.component";
+import { SessionsComponent } from "./sessions/sessions.component";
 import { SubscriberListComponent } from "./subscriber-list/subscriber-list.component";
+import { TransactionsComponent } from "./transactions/transactions.component";
 import { ViewprofileComponent } from "./viewprofile/viewprofile.component";
 
 const routes: Routes = [
@@ -35,6 +37,14 @@ const routes: Routes = [
     {
         path:"view-subscriber-profile/:userid",
         component:ViewprofileComponent
+    },
+    {
+        path:"transactions",
+        component: TransactionsComponent
+    },
+    {
+        path:"sessions",
+        component: SessionsComponent
     },
     {
         path: "",

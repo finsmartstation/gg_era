@@ -6,10 +6,20 @@ const Schema = mongoose.Schema;
 
 const TransactionSchema = new Schema({
 
-    userId: String,
+    fromUserId:  { 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "userdata",
+        default: null
+     },
+    toUserId:  { 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "userdata",
+        default: null
+     },
     type: String,
     amount: String,
     status: String,
+    desc: String,
     date: Date,
 
 });

@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router()
 const USERDATA = require('../model/userData');
 const mongoose = require('mongoose');
+const sgMail = require('@sendgrid/mail');
+const { otpMailer } = require('../controller/sendGrid')
 
 /* multer start */
 const multer = require('multer');
@@ -174,6 +176,7 @@ router.patch('/change/status', async (req, res) => {
         res.send({data: null, error: error.message})
     }
 })
+
 
 
 module.exports = router;
