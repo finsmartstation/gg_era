@@ -30,8 +30,8 @@ router.post('/', async (req, res) => {
         },
       ],
       mode: 'payment',
-      success_url: `https://newggera.herokuapp.com/party/${partyId}/payment/success`,
-      cancel_url: `https://newggera.herokuapp.com/party/${partyId}/payment/failure`,
+      success_url: `http://login.ggera.com:8887/party/${partyId}/payment/success`,
+      cancel_url: `http://login.ggera.com:8887/party/${partyId}/payment/failure`,
     });
     res.json({ url: session.url });
   } catch (e) {
@@ -57,8 +57,8 @@ router.post('/addtowallet', async (req, res) => {
             }],
             mode: 'payment',
 
-            success_url: `https://newggera.herokuapp.com/account/`,
-            cancel_url: `https://newggera.herokuapp.com/account`,
+            success_url: `http://login.ggera.com:8887/account/`,
+            cancel_url: `http://login.ggera.com:8887/account`,
         })
         res.json({ url: session.url })
     } catch (e) {
