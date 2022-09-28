@@ -58,7 +58,7 @@ router.post('/addtowallet', async (req, res) => {
             mode: 'payment',
 
             success_url: `http://login.ggera.com:8887/account/`,
-            cancel_url: `http://login.ggera.com:8887/account`,
+            cancel_url: `http://login.ggera.com:8887/account/`,
         })
         res.json({ url: session.url })
     } catch (e) {
