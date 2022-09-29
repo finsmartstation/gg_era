@@ -172,7 +172,7 @@ const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
         providers: [
           {
             id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider('175613608118-or5k2udnug8clivm7enruru42qnk6qd4.apps.googleusercontent.com'),
+            provider: new GoogleLoginProvider('69901556059-imvod0aka3d7inoqaosogkufledpc57b.apps.googleusercontent.com'),
           }        
         ],
         onError: (err) => {
