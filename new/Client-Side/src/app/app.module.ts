@@ -82,6 +82,12 @@ import { LobbyProComponent } from './ggera/lobby/lobby-pro/lobby-pro.component';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { environment } from 'src/environments/environment';
 import { IndexComponent } from './index/index.component';
+import { IndexGgeraComponent } from './ggera/index-ggera/index-ggera.component';
+import { AboutComponent } from './ggera/about/about.component';
+import { JobComponent } from './ggera/job/job.component';
+import { RoasterComponent } from './ggera/roaster/roaster.component';
+import { ToggleComponent } from './ggera/toggle/toggle.component';
+import { PrivacyComponent } from './ggera/privacy/privacy.component';
 
 const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
 
@@ -142,7 +148,13 @@ const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
       AdminNavbarComponent,
       LobbyListingSubscriberComponent,
       LobbyProComponent,
-      IndexComponent
+      IndexComponent,
+      IndexGgeraComponent,
+      AboutComponent,
+      JobComponent,
+      RoasterComponent,
+      ToggleComponent,
+      PrivacyComponent
 
 
     

@@ -44,6 +44,12 @@ import { AdminGuard } from './common/guards/admin.guard';
 import { LobbyListingSubscriberComponent } from './ggera/lobby/lobby-listing-subscriber/lobby-listing-subscriber.component';
 import { LobbyProComponent } from './ggera/lobby/lobby-pro/lobby-pro.component';
 import { IndexComponent } from './index/index.component';
+import { IndexGgeraComponent } from './ggera/index-ggera/index-ggera.component';
+import { AboutComponent } from './ggera/about/about.component';
+import { JobComponent } from './ggera/job/job.component';
+import { RoasterComponent } from './ggera/roaster/roaster.component';
+import { ToggleComponent } from './ggera/toggle/toggle.component';
+import { PrivacyComponent } from './ggera/privacy/privacy.component';
 
 
 
@@ -52,7 +58,9 @@ const routes: Routes = [
     
     { path: '', redirectTo:'index',pathMatch: 'full'},
     // { path: '', canActivate: [AuthGuard ], component: HomePageComponent, redirectTo:'index',pathMatch: 'full'},
-    { path: 'index',  component: IndexComponent },
+    // { path: 'index',  component: IndexComponent },
+   
+    
     { path: 'login',  component: SigninComponent },
     { path: 'account', canActivate: [AuthGuard ],  component: AccountDetailsComponent },
     { path: 'profile', canActivate: [AuthGuard ],  component: ProfileComponent },
@@ -79,6 +87,11 @@ const routes: Routes = [
     { path: 'players', component: PlayersNewPageComponent },
     { path: 'my-orders2', component: MyOrderNormalComponent },
     { path: 'pre-party', component: HomePageNew1Component },
+    { path: 'index',  component: IndexGgeraComponent },
+    { path: 'about',  component: AboutComponent },
+    { path: 'job',  component: JobComponent },
+    { path: 'roaster',  component: RoasterComponent },
+    { path: 'privacy1',  component: PrivacyComponent},
 
     { path: 'coming-soon', canActivate: [AuthGuard ],  component: ComingSoonComponent },
     { path: 'support', canActivate: [AuthGuard ],  component: SupportComponent },

@@ -38,7 +38,9 @@
                 "src/assets/css/meanmenu.min.css",
                 "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
                 "src/styles.scss",
-                "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+                "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+                "node_modules/aos/dist/aos.css"
+
 
             ],
             "scripts": [
@@ -54,6 +56,9 @@
                 "src/assets/js/wow.min.js",
                 "src/assets/js/main.js",
                 "src/assets/userjs.js"
+               
+                , "node_modules/aos/dist/aos.js", 
+                "node_modules/jquery/dist/jquery.min.js"
                
             ],
             "vendorChunk": true,

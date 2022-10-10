@@ -17,6 +17,9 @@
     
 
 <style>
+    body{
+        background-color:none !important;
+    }
     .overlap {
     position: fixed;
     width: 100%;
@@ -25,6 +28,7 @@
     z-index: -2;
     color: #111;
     background-size: cover;
+    /* background-color:transparent !important; */
     opacity: 0.8;    
     top: 0;
     left: 0;
@@ -40,7 +44,7 @@
 
 </head>
 
-<body style="font-family: Poppins">
+<body style="font-family: Poppins; background-color: black !important;" onload="myFunction()">
     <app-root></app-root>
     <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
     <div class="zinble-cursor"></div>
@@ -48,6 +52,7 @@
     
     <canvas class="overlap" id="c"></canvas>
     <script src="assets/js/bg-animation.js"></script>
+    
 </body>
 
 </html>
