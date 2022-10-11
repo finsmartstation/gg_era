@@ -9,17 +9,21 @@ import { HeroService } from 'src/app/hero.service';
   styleUrls: ['./roaster.component.scss']
 })
 export class RoasterComponent implements OnInit {
-  proUsers:any;
+  proUsers$:Observable<any>;
   constructor(private adminservice:AdminService) { }
 
   ngOnInit(): void {
     AOS.init()
-    this.adminservice.getProUsers()
-    .subscribe(data=>{
+    this.proUsers$=this.adminservice.getProUsers()
+    .pipe(tap(e=>{
+     
+      console.log(e)
+    }))
+    // .subscribe(data=>{
       
-      this.proUsers=data;
-      console.log(this.proUsers.data)
-    })
+    //   this.proUsers=data;
+    //   console.log(this.proUsers.data)
+    // })
   //   .pipe(tap(e=>{
   //     console.log('elements',e)
   //   }))

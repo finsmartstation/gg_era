@@ -88,18 +88,11 @@ router.get(
 router.get(
   '/pro-list',
   async (req, res) => {
-    try {
-      const data = await UserData.find(
-        { proPlayer: true }
-      );
-      console.log('ssss pro-list')
-      res.send(data);
-
-    }
-    catch (err) {
-      console.log(err);
-    }
-
+    const data = await UserData.find(
+      { proPlayer: true }
+    );
+    console.log(data)
+    res.send({ data: data, error: null });
   });
 router.get(
   '/view-profile/:id',

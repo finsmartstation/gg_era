@@ -294,6 +294,7 @@
                 data-bs-target="#offcanvasExamplesandeep"
                 aria-controls="offcanvasExample"
              >
+             <ng-container *ngIf="proUsers$ | async as proUsers" >
                 <div class="row" *ngFor="let pro of proUsers">
                     <!-- {{pro.about}} -->
                     <div class="col-lg-3 col-sm-12 col-md-12 img-center">
@@ -467,6 +468,7 @@
                         </div>
                     </div>
                 </div>
+            </ng-container>
             </div>
         </div>
     </div>
