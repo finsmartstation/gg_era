@@ -18,7 +18,7 @@ export class RoasterComponent implements OnInit {
     .subscribe(data=>{
       
       this.proUsers=JSON.parse(JSON.stringify(data))
-      console.log(this.proUsers)
+      //console.log(this.proUsers)
     })
   //   .pipe(tap(e=>{
   //     console.log('elements',e)
