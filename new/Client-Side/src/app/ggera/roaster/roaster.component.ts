@@ -17,7 +17,7 @@ export class RoasterComponent implements OnInit {
     this.adminservice.getProUsers()
     .subscribe(data=>{
       
-      this.proUsers=data;
+      this.proUsers=JSON.parse(JSON.stringify(data))
       console.log(this.proUsers)
     })
   //   .pipe(tap(e=>{
