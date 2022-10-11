@@ -78,7 +78,7 @@ router.get(
   '/subscriber-list',
   async (req, res) => {
     const data = await UserData.find(
-      {proPlayer:false}
+      { proPlayer: false }
     );
     console.log(data)
     res.send({ data: data, error: null });
@@ -88,58 +88,64 @@ router.get(
 router.get(
   '/pro-list',
   async (req, res) => {
-    const data = await UserData.find(
-      {proPlayer:true}
-    );
-    console.log('ssss pro-list')
-    res.send({ data: data, error: null });
-  }
-);
+    try {
+      const data = await UserData.find(
+        { proPlayer: true }
+      );
+      console.log('ssss pro-list')
+      res.send(data);
+
+    }
+    catch (err) {
+      console.log(err);
+    }
+
+  });
 router.get(
   '/view-profile/:id',
-  async (req,res)=>{
-    try{
+  async (req, res) => {
+    try {
       console.log('entered')
-    var id=req.params.id;
-    const data = await UserData.find(
-      {_id:id}
-    );
-    console.log('data',data)
+      var id = req.params.id;
+      const data = await UserData.find(
+        { _id: id }
+      );
+      console.log('data', data)
 
-    res.send(data)
+      res.send(data)
 
     }
-    catch(err){
-     console.log(err);
+    catch (err) {
+      console.log(err);
     }
-    
+
   }
 )
 
 
 router.get(
   '/earnings',
-   async(req,res)=>{
-     const user_data= await UserData.find({proPlayer:true})
-     var total_balance=0;
-     for(var i=0;i<user_data.length;i++){
-      id=user_data[i]._id;
-      const wallet= await WalletData.aggregate([
+  async (req, res) => {
+    const user_data = await UserData.find({ proPlayer: true })
+    var total_balance = 0;
+    for (var i = 0; i < user_data.length; i++) {
+      id = user_data[i]._id;
+      const wallet = await WalletData.aggregate([
         {
-          $group:{
-          _id:id,  
-          balance: { $sum: "$balance" }
+          $group: {
+            _id: id,
+            balance: { $sum: "$balance" }
           }
         }
-        
-      ])  
-      total_balance=total_balance+wallet[0].balance;
-     }
 
-     console.log('total balance',total_balance);
-    res.send({data:total_balance,error:null})
-   }
-  );
+      ])
+      total_balance = total_balance + wallet[0].balance;
+    }
+
+    console.log('total balance', total_balance);
+    res.send({ data: total_balance, error: null })
+  }
+);
 router.patch(
   '/pro-request/withdraw/requests/:id',
   async (req, res) => {
@@ -154,23 +160,23 @@ router.patch(
       type: 'withdrawal',
       amount: requestData.amount,
       status: 'success',
-      date: new Date(), 
+      date: new Date(),
     })
     res.send({ data: 'OK', error: null });
   }
 );
 router.put('/update-profile/:id',
-async (req,res)=>{
-  var id=req.params.id;
-  var profile=req.body.profile;
-  console.log(profile)
-  console.log('update',id)
-  await UserData.findOneAndUpdate(
-    {_id:id},
-    profile
-  )
+  async (req, res) => {
+    var id = req.params.id;
+    var profile = req.body.profile;
+    console.log(profile)
+    console.log('update', id)
+    await UserData.findOneAndUpdate(
+      { _id: id },
+      profile
+    )
 
-  res.send({ data: 'OK', error: null });
-})
+    res.send({ data: 'OK', error: null });
+  })
 
 module.exports = router;

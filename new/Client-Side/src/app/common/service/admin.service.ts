@@ -66,7 +66,7 @@ export class AdminService {
         .get<ApiResponse<{ users: UserDetailedModel }>>(
             `${this.host}/admin/pro-list`
         )
-        .pipe(map((e) => e.data));
+        // .pipe(map((e) => e.data));
     }
     getProEarnings(){
         return this.http
