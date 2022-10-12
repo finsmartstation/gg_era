@@ -95,6 +95,14 @@ export class AdminService {
         return this.http.put<ApiResponse<string>>(
             `${this.host}/admin/update-profile/${id}` , { profile: profile, id: id });
       }
+    getRoaster(){
+        return this.http
+            .get<ApiResponse<{ users: UserDetailedModel }>>(
+                `${this.host}/admin/roaster`
+            )
+            .pipe(map((e) => e.data.users));
+
+    }
     
     
 

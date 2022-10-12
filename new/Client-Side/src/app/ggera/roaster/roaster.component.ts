@@ -14,19 +14,16 @@ export class RoasterComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init()
-    this.proUsers$=this.adminservice.getProUsers()
-    .pipe(tap(e=>{
+    // this.proUsers$=this.adminservice.getProUsers()
+    // .pipe(tap(e=>{
      
-      console.log(e)
-    }))
-    // .subscribe(data=>{
-      
-    //   this.proUsers=data;
-    //   console.log(this.proUsers.data)
-    // })
-  //   .pipe(tap(e=>{
-  //     console.log('elements',e)
-  //   }))
+    //   console.log(e)
+    // }))
+    this.proUsers$=this.adminservice.getRoaster()
+    .pipe(tap(e=>{
+       console.log(e)
+     }))
+    
     
    }
 
