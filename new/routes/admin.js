@@ -115,6 +115,15 @@ router.get(
   }
 )
 //here
+router.get(
+  '/roaster',
+  async (req, res) => {
+    const data = await UserData.find(
+      { proPlayer: true }
+    );
+    console.log(data)
+    res.send({ data: data, error: null });
+  });
 
 router.get(
   '/earnings',

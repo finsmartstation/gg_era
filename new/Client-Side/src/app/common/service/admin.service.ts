@@ -100,7 +100,7 @@ export class AdminService {
             .get<ApiResponse<{ users: UserDetailedModel }>>(
                 `${this.host}/admin/roaster`
             )
-            .pipe(map((e) => e.data.users));
+            .pipe(map((e) => e.data));
 
     }
     
