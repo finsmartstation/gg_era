@@ -6,7 +6,6 @@ npm i
 
 killall -9 node
 
-cd /var/www/html/new/
-
 pm2 kill
+cd /var/www/html/new/ 
 pm2 start app.js
