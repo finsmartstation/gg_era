@@ -5,6 +5,6 @@ sudo chmod -R 777 /var/www/html/new
 
 killall -9 node
  
-node /var/www/html/new/app.js
+npm start /var/www/html/new/app.js
 # source /etc/profile
 # sudo pm2 restart /var/www/html/new/app.js
