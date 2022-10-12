@@ -7,6 +7,6 @@ killall -9 node
 
 cd /var/www/html/new/
 
-pm2 kill
+sudo pm2 delete 0
 source /etc/profile
 pm2 start app.js
