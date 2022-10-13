@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import AOS from 'aos';
+
 
 
 @Component({
@@ -39,7 +39,7 @@ export class IndexGgeraComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
- 
+   
     
   }
 
