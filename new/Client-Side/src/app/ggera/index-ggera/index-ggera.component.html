@@ -1,63 +1,4 @@
-<link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-/>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-></script>
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-/>
-<link
-    href="https://fonts.googleapis.com/css?family=Lato:400,900%7CSource+Sans+Pro:700&display=swap"
-    rel="stylesheet"
-/>
-<script
-    src="https://kit.fontawesome.com/f78a22d753.js"
-    crossorigin="anonymous"
-></script>
-<link
-    rel="stylesheet"
-    href="https://unpkg.com/augmented-ui@2.0.0/augmented-ui.min.css"
-/>
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.css"
-/>
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/scroll/simplescrollbars.min.css"
-/>
-<script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-></script>
+
 
 <div class="scroll">
     <header>
@@ -84,7 +25,7 @@
                     <a
                         href="#"
                         class="navbar-brand text-light pe-auto"
-                        data-aos="fade-up"
+                      
                     >
                         <img
                             src="../../../assets/img/era.png"
@@ -102,7 +43,7 @@
                     >
                         <div
                             class="col-lg-12 col-sm-12 col-md-12"
-                            data-aos="fade-up"
+                          
                             data-aos-anchor-placement="top-bottom"
                         >
                             <a
@@ -185,7 +126,7 @@
                     <a
                         href="#"
                         class="navbar-brand text-light pe-auto"
-                        data-aos="fade-up"
+                       
                     >
                         <img
                             src="../../../assets/img/era.png"
@@ -203,7 +144,7 @@
                     >
                         <div
                             class="col-lg-12 col-sm-12 col-md-12"
-                            data-aos="fade-up"
+                       
                             data-aos-anchor-placement="top-bottom"
                         >
                             <a
@@ -274,7 +215,7 @@
             <a
                 href="#"
                 class="navbar-brand text-light pe-auto"
-                data-aos="fade-up"
+    
             >
                 <img
                     src="../../../assets/img/circle gry black gredient.png"
@@ -292,7 +233,7 @@
             <div class="row align-items-center">
                 <div
                     class="col-12 col-sm-12 col-lg-4 col-md-12 container-block"
-                    data-aos="fade-up-right"
+                  
                     style="top: 50px"
                 >
                     <h1>
@@ -389,77 +330,93 @@
 
                 <div
                     class="col-12 col-lg-8 col-md-12 col-sm-12 pb-5 pt-5 mob-res"
-                    data-aos="fade-up-left"
+                
                     style="top: 20px"
                 >
-                    <div
-                        id="carouselExampleIndicators"
-                        class="carousel slide"
-                        data-bs-ride="true"
-                        data-ride="carousel"
-                        data-interval="4000"
-                    >
-                        <div class="carousel-indicators">
-                            <button
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0"
-                                class="active"
-                                aria-current="true"
-                                aria-label="Slide 1"
-                            ></button>
-                            <button
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="1"
-                                aria-label="Slide 2"
-                            ></button>
+                <ngb-carousel [showNavigationArrows]="false"
+                interval="3000" >
+                    <ng-template ngbSlide >
+                      <div class="picsum-img-wrapper">
+                        <img src="../../../assets/img/game1.png" alt="Angular Carousel 1">
+                      </div>
+                      <div class="carousel-caption">
+                       
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img src="../../../assets/img/game2.png" alt="Angular Carousel 2">
+                      </div>
+                      <div class="carousel-caption">
+                        
+                      </div>
+                      
+                    </ng-template>
+
+                    <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                          <img src="../../../assets/img/game3.png" alt="Angular Carousel 2">
+                        </div>
+                        <div class="carousel-caption">
                           
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img
-                                    src="../../../assets/img/game1.png"
-                                    class="d-block w-100 img-fluid round"
-                                    alt="..."
-                                />
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="../../../assets/img/game2.png"
-                                    class="d-block w-100 img-fluid round"
-                                    alt="..."
-                                />
-                            </div>
                         
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                          <img src="../../../assets/img/game4.png" alt="Angular Carousel 2">
                         </div>
-                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
-                    </div>
+                        <div class="carousel-caption">
+                          
+                        </div>
+                        
+                      </ng-template>
+
+
+
+                  </ngb-carousel>
+
+
+
+                    
                 </div>
             </div>
         </div>
     </div>
+   
     <div class="dummy container-10">
         ewdadaefa
         <div class="hi btn">k</div>
     </div>
 
+      <!---will create button with ternary operator and click function--->
+      <div class="container">
+        <button (click)="onclick()" type="button" class="btn  btn-danger">
+            {{ReadMore?"Read More":"Read Less"}}
+          </button>
+    
+          <!--will create if condition my default it will
+            b hide on click it will toggle--->
+          <ng-container *ngIf="visible">
+              <div class="bg-white shadow-sm p-3">
+                  <h4>Hello World</h4>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse tempore aut molestiae, unde non soluta! A, nesciunt. Earum facere totam error, nam placeat, quia, veritatis aspernatur voluptate vitae fugit odit.
+                  </p>
+              </div>
+          </ng-container>
+      </div>
+    
+
+
+    
     <!-- new section  -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
 
     <div class="container landingpage pt-5" style="padding-top: 10% !important">
         <div class="game-selector">
-            <a href="#section2" id="imagebutton" class="game-button">
+            <a  (click)="onclick()" id="imagebutton" class="game-button">
                 <img
                     src="../../../assets/img/cod3.png"
                     id="imagebutton"
@@ -468,7 +425,7 @@
                     onclick="myFunction()"
                 />
             </a>
-            <a href="#section3" class="game-button" id="imagebutton2">
+            <a (click)="onclick2()" class="game-button" id="imagebutton2">
                 <img
                     src="../../../assets/img/apex.png"
                     id="imagebutton2"
@@ -478,7 +435,7 @@
                 />
             </a>
 
-            <a href="#section4" class="game-button" id="imagebutton3">
+            <a (click)="onclick3()" class="game-button" id="imagebutton3">
                 <img
                     src="../../../assets/img/Fortnite.png"
                     id="imagebutton3"
@@ -498,7 +455,7 @@
             class="col-lg-12 col-sm-12-col-md-12 p-3"
             style="overflow-x: hidden"
         >
-            <div class="movie-details" data-aos="fade-down-right">
+            <div class="movie-details"  *ngIf="visible">
                 <div class="movie-img" id="section2">
                     <!-- <img src="../../../assets/img/WZ-Season-Three-Announce-TOUT.jpg" /> -->
                     <iframe
@@ -541,7 +498,7 @@
             </div>
 
             <div class="col-lg-12 col-sm-12-col-md-12 p-3">
-                <div class="movie-details" data-aos="fade-down-left">
+                <div class="movie-details" *ngIf="visible2">
                     <div class="movie-img" id="section3">
                         <!-- <img src="../../../assets/img/apex1.png" class="img-fluid" /> -->
                         <iframe
@@ -599,7 +556,7 @@
                     data-aos-anchor-placement="bottom-bottom"
                     style="z-index: 100; overflow-x: hidden"
                 >
-                    <div class="movie-details" data-aos="zoom-out">
+                    <div class="movie-details"  *ngIf="visible3">
                         <div class="movie-img" id="section4">
                             <!-- <img src="../../../assets/img/maxresdefault.jpg" /> -->
                             <iframe
@@ -1029,7 +986,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                    
                                 >
                                     You’ve got the skills, we’ve got the pros.
                                     Meet your match
@@ -1045,7 +1002,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                    
                                 >
                                     WEN SUCHEN WIR?
                                 </h5>
@@ -1114,7 +1071,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                   
                                 >
                                     Sie haben die Fähigkeiten, wir haben die
                                     Profis. Treffen Sie Ihr Spiel
@@ -1196,7 +1153,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                  
                                 >
                                     Hire a game coach, get gud, destroy your
                                     opponents.
@@ -1267,7 +1224,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                   
                                 >
                                     Mieten Sie einen Spieltrainer, holen Sie
                                     sich Gud, zerstören Sie Ihre Gegner.
@@ -1331,7 +1288,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                  
                                 >
                                     Be part of the action in a tournament with
                                     pros and players
@@ -1347,7 +1304,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                               
                                 >
                                     WEN SUCHEN WIR?
                                 </h5>
@@ -1414,7 +1371,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                   
                                 >
                                     Seien Sie Teil der Action in einem Turnier
                                     mit Profis und Spielern
@@ -1495,7 +1452,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                    
                                 >
                                     Questions about our pro gamers? We’ve got
                                     you covered.
@@ -1511,7 +1468,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                               
                                 >
                                     WEN SUCHEN WIR?
                                 </h5>
@@ -1573,7 +1530,7 @@
 
                                         text-align: center;
                                     "
-                                    data-aos="fade-up"
+                                  
                                 >
                                     Fragen zu unseren Pro Gamern? Wir geben dir
                                     Deckung.
@@ -1614,21 +1571,9 @@
                 </div>
 
                <app-index-footer></app-index-footer>
-                <script
-                    src="https://code.jquery.com/jquery-3.6.0.min.js"
-                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-                    crossorigin="anonymous"
-                ></script>
-                <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-                <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+              
                 <!-- JavaScript Bundle with Popper -->
-                <script
-                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-                    crossorigin="anonymous"
-                ></script>
+             
             </div>
         </div>
     </div>

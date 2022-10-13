@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgChartsModule } from 'ng2-charts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -176,7 +177,8 @@ const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
     VgOverlayPlayModule,
     VgBufferingModule,
     NgxStripeModule.forRoot('pk_test_51LT4FJSBGyD7UYjV7Uzl35ECOGv6TAtzwwYlAokpfqWpLNoXEZq1Ov3RoijNAxrN5fRhYqxzedauoF7tyFlbgr9q002zPPPLTa'),
-    SocketIoModule.forRoot(config)
+    SocketIoModule.forRoot(config),
+    NgbModule
   ],
   providers: [HeroService,AuthGuard,
     {
