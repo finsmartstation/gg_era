@@ -7,4 +7,5 @@ sudo chmod -R 777 /var/www/html/new
  
 # npm start /var/www/html/new/app.js
 # source /etc/profile
-# sudo pm2 restart /var/www/html/new/app.js
+sudo pm2 kill
+sudo pm2 restart /var/www/html/new/app.js
