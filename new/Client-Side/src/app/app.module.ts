@@ -90,6 +90,8 @@ import { RoasterComponent } from './ggera/roaster/roaster.component';
 import { ToggleComponent } from './ggera/toggle/toggle.component';
 import { PrivacyComponent } from './ggera/privacy/privacy.component';
 import { IndexFooterComponent } from './ggera/index-footer/index-footer.component';
+import { TempNavComponent } from './ggera/temp-nav/temp-nav.component';
+import { TermsComponent } from './ggera/terms/terms.component';
 
 const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
 
@@ -157,7 +159,9 @@ const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
       RoasterComponent,
       ToggleComponent,
       PrivacyComponent,
-      IndexFooterComponent
+      IndexFooterComponent,
+      TempNavComponent,
+      TermsComponent
 
 
     

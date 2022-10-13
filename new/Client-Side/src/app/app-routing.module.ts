@@ -50,6 +50,7 @@ import { JobComponent } from './ggera/job/job.component';
 import { RoasterComponent } from './ggera/roaster/roaster.component';
 import { ToggleComponent } from './ggera/toggle/toggle.component';
 import { PrivacyComponent } from './ggera/privacy/privacy.component';
+import { TermsComponent } from './ggera/terms/terms.component';
 
 
 
@@ -91,7 +92,8 @@ const routes: Routes = [
     { path: 'about',  component: AboutComponent },
     { path: 'job',  component: JobComponent },
     { path: 'roaster',  component: RoasterComponent },
-    { path: 'privacy1',  component: PrivacyComponent},
+    { path: 'privacy',  component: PrivacyComponent},
+    { path: 'terms',  component: TermsComponent},
 
     { path: 'coming-soon', canActivate: [AuthGuard ],  component: ComingSoonComponent },
     { path: 'support', canActivate: [AuthGuard ],  component: SupportComponent },

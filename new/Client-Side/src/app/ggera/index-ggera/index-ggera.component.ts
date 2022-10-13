@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 
+
 @Component({
   selector: 'app-index-ggera',
   templateUrl: './index-ggera.component.html',
@@ -40,7 +41,6 @@ export class IndexGgeraComponent implements OnInit {
 
   ngOnInit(): void {
    
-    
   }
 
 }
