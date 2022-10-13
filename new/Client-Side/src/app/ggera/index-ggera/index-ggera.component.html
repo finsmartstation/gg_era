@@ -1,5 +1,3 @@
-
-
 <div class="scroll">
     <header>
         <!-- header -->
@@ -22,11 +20,7 @@
                 </button>
 
                 <div class="img navbar-brand pl-3">
-                    <a
-                        href="#"
-                        class="navbar-brand text-light pe-auto"
-                      
-                    >
+                    <a href="#" class="navbar-brand text-light pe-auto">
                         <img
                             src="../../../assets/img/era.png"
                             width="100"
@@ -41,11 +35,7 @@
                         class="collapse navbar-collapse"
                         id="navbarNav"
                     >
-                        <div
-                            class="col-lg-12 col-sm-12 col-md-12"
-                          
-                           
-                        >
+                        <div class="col-lg-12 col-sm-12 col-md-12">
                             <a
                                 class="navbar-brand text-light m-0"
                                 style="color: inherit"
@@ -123,11 +113,7 @@
                 </button>
 
                 <div class="img navbar-brand pl-3">
-                    <a
-                        href="#"
-                        class="navbar-brand text-light pe-auto"
-                       
-                    >
+                    <a href="#" class="navbar-brand text-light pe-auto">
                         <img
                             src="../../../assets/img/era.png"
                             width="100"
@@ -142,11 +128,7 @@
                         class="collapse navbar-collapse"
                         id="navbarNav"
                     >
-                        <div
-                            class="col-lg-12 col-sm-12 col-md-12"
-                       
-                            
-                        >
+                        <div class="col-lg-12 col-sm-12 col-md-12">
                             <a
                                 class="navbar-brand text-light m-0"
                                 id="img1"
@@ -212,11 +194,7 @@
             id="navbar"
             style="overflow: hidden"
         >
-            <a
-                href="#"
-                class="navbar-brand text-light pe-auto"
-    
-            >
+            <a href="#" class="navbar-brand text-light pe-auto">
                 <img
                     src="../../../assets/img/circle gry black gredient.png"
                     width="200"
@@ -233,7 +211,6 @@
             <div class="row align-items-center">
                 <div
                     class="col-12 col-sm-12 col-lg-4 col-md-12 container-block"
-                  
                     style="top: 50px"
                 >
                     <h1>
@@ -330,93 +307,86 @@
 
                 <div
                     class="col-12 col-lg-8 col-md-12 col-sm-12 pb-5 pt-5 mob-res"
-                
                     style="top: 20px"
                 >
-                <ngb-carousel [showNavigationArrows]="false"
-                interval="3000" >
-                    <ng-template ngbSlide >
-                      <div class="picsum-img-wrapper">
-                        <img src="../../../assets/img/game1.png" alt="Angular Carousel 1">
-                      </div>
-                      <div class="carousel-caption">
-                       
-                      </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                      <div class="picsum-img-wrapper">
-                        <img src="../../../assets/img/game2.png" alt="Angular Carousel 2">
-                      </div>
-                      <div class="carousel-caption">
-                        
-                      </div>
-                      
-                    </ng-template>
+                    <ngb-carousel
+                        [showNavigationArrows]="false"
+                        interval="3000"
+                    >
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img
+                                    src="../../../assets/img/game1.png"
+                                    alt="Angular Carousel 1"
+                                />
+                            </div>
+                            <div class="carousel-caption"></div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img
+                                    src="../../../assets/img/game2.png"
+                                    alt="Angular Carousel 2"
+                                />
+                            </div>
+                            <div class="carousel-caption"></div>
+                        </ng-template>
 
-                    <ng-template ngbSlide>
-                        <div class="picsum-img-wrapper">
-                          <img src="../../../assets/img/game3.png" alt="Angular Carousel 2">
-                        </div>
-                        <div class="carousel-caption">
-                          
-                        </div>
-                        
-                      </ng-template>
-                      <ng-template ngbSlide>
-                        <div class="picsum-img-wrapper">
-                          <img src="../../../assets/img/game4.png" alt="Angular Carousel 2">
-                        </div>
-                        <div class="carousel-caption">
-                          
-                        </div>
-                        
-                      </ng-template>
-
-
-
-                  </ngb-carousel>
-
-
-
-                    
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img
+                                    src="../../../assets/img/game3.png"
+                                    alt="Angular Carousel 2"
+                                />
+                            </div>
+                            <div class="carousel-caption"></div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <div class="picsum-img-wrapper">
+                                <img
+                                    src="../../../assets/img/game4.png"
+                                    alt="Angular Carousel 2"
+                                />
+                            </div>
+                            <div class="carousel-caption"></div>
+                        </ng-template>
+                    </ngb-carousel>
                 </div>
             </div>
         </div>
     </div>
-   
+
     <div class="dummy container-10">
         ewdadaefa
         <div class="hi btn">k</div>
     </div>
 
-      <!---will create button with ternary operator and click function--->
-      <div class="container">
-        <button (click)="onclick()" type="button" class="btn  btn-danger">
-            {{ReadMore?"Read More":"Read Less"}}
-          </button>
-    
-          <!--will create if condition my default it will
+    <!---will create button with ternary operator and click function--->
+    <div class="container">
+        <button (click)="onclick()" type="button" class="btn btn-danger">
+            {{ ReadMore ? "Read More" : "Read Less" }}
+        </button>
+
+        <!--will create if condition my default it will
             b hide on click it will toggle--->
-          <ng-container *ngIf="visible">
-              <div class="bg-white shadow-sm p-3">
-                  <h4>Hello World</h4>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse tempore aut molestiae, unde non soluta! A, nesciunt. Earum facere totam error, nam placeat, quia, veritatis aspernatur voluptate vitae fugit odit.
-                  </p>
-              </div>
-          </ng-container>
-      </div>
-    
+        <ng-container *ngIf="visible">
+            <div class="bg-white shadow-sm p-3">
+                <h4>Hello World</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Esse tempore aut molestiae, unde non soluta! A, nesciunt.
+                    Earum facere totam error, nam placeat, quia, veritatis
+                    aspernatur voluptate vitae fugit odit.
+                </p>
+            </div>
+        </ng-container>
+    </div>
 
-
-    
     <!-- new section  -->
-
- 
 
     <div class="container landingpage pt-5" style="padding-top: 10% !important">
         <div class="game-selector">
-            <a  (click)="onclick()" id="imagebutton" class="game-button">
+            <a (click)="onclick()" id="imagebutton" class="game-button">
                 <img
                     src="../../../assets/img/cod3.png"
                     id="imagebutton"
@@ -455,7 +425,7 @@
             class="col-lg-12 col-sm-12-col-md-12 p-3"
             style="overflow-x: hidden"
         >
-            <div class="movie-details"  *ngIf="visible">
+            <div class="movie-details" *ngIf="visible">
                 <div class="movie-img" id="section2">
                     <!-- <img src="../../../assets/img/WZ-Season-Three-Announce-TOUT.jpg" /> -->
                     <iframe
@@ -475,7 +445,8 @@
                     </div>
 
                     <div class="about-movie btn">
-                        <a  href="/login"
+                        <a
+                            href="/login"
                             class="btn10 btn pt-2 en_lang"
                             style="
                                 height: 60px !important;
@@ -530,7 +501,8 @@
                         </div>
 
                         <div class="about-movie btn">
-                            <a  href="/login"
+                            <a
+                                href="/login"
                                 class="btn10 btn pt-2 en_lang"
                                 style="
                                     height: 60px !important;
@@ -539,7 +511,8 @@
                             >
                                 <span class="btn-label">Join Party</span>
                             </a>
-                            <a href="/login"
+                            <a
+                                href="/login"
                                 class="btn10 btn pt-2 fr_lang"
                                 style="
                                     height: 60px !important;
@@ -553,10 +526,9 @@
                 </div>
                 <div
                     class="col-12 col-sm-12 col-lg-12 p-3 col-md-12 d-flex justify-content-center"
-                    
                     style="z-index: 100; overflow-x: hidden"
                 >
-                    <div class="movie-details"  *ngIf="visible3">
+                    <div class="movie-details" *ngIf="visible3">
                         <div class="movie-img" id="section4">
                             <!-- <img src="../../../assets/img/maxresdefault.jpg" /> -->
                             <iframe
@@ -589,7 +561,8 @@
                             </div>
 
                             <div class="about-movie btn">
-                                <a  href="/login"
+                                <a
+                                    href="/login"
                                     class="btn10 btn pt-2 en_lang"
                                     style="
                                         height: 60px !important;
@@ -598,7 +571,8 @@
                                 >
                                     <span class="btn-label">Join Party</span>
                                 </a>
-                                <a href="/login"
+                                <a
+                                    href="/login"
                                     class="btn10 btn pt-2 fr_lang"
                                     style="
                                         height: 60px !important;
@@ -700,7 +674,6 @@
                     </div>
                 </div>
                 <div class=" ">
-                
                     <div class="container22" style="z-index: 10">
                         <div class="box">
                             <span></span>
@@ -711,13 +684,18 @@
                                 <div class="content">
                                     <h2 class="en_lang">1-on-1 Training</h2>
                                     <p class="en_lang">
-                                        Improve your gameplay with 1-on-1 coacing session and master the skills you need to become a pro
+                                        Improve your gameplay with 1-on-1
+                                        coacing session and master the skills
+                                        you need to become a pro
                                     </p>
-                                    
+
                                     <h2 class="fr_lang">1-zu-1-Training</h2>
 
                                     <p class="fr_lang">
-                                        Verbessern Sie Ihr Gameplay mit 1-on-1-Coacing-Sitzungen und meistern Sie die Fähigkeiten, die Sie benötigen, um ein Profi zu werden
+                                        Verbessern Sie Ihr Gameplay mit
+                                        1-on-1-Coacing-Sitzungen und meistern
+                                        Sie die Fähigkeiten, die Sie benötigen,
+                                        um ein Profi zu werden
                                     </p>
                                 </div>
                             </a>
@@ -749,7 +727,6 @@
                             <div
                                 class="content"
                                 data-bs-toggle="modal"
-                                
                                 style="cursor: pointer"
                             >
                                 <h2 class="en_lang">
@@ -986,7 +963,6 @@
 
                                         text-align: center;
                                     "
-                                    
                                 >
                                     You’ve got the skills, we’ve got the pros.
                                     Meet your match
@@ -1002,7 +978,6 @@
 
                                         text-align: center;
                                     "
-                                    
                                 >
                                     WEN SUCHEN WIR?
                                 </h5>
@@ -1046,12 +1021,7 @@
                                 </div>
                             </div>
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video.jpg" />
                             </div>
                         </div>
                     </div>
@@ -1071,7 +1041,6 @@
 
                                         text-align: center;
                                     "
-                                   
                                 >
                                     Sie haben die Fähigkeiten, wir haben die
                                     Profis. Treffen Sie Ihr Spiel
@@ -1118,12 +1087,7 @@
                                 </div>
                             </div>
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video1.jpg" />
                             </div>
                         </div>
                     </div>
@@ -1134,12 +1098,7 @@
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video2.jpg" />
                             </div>
                             <div class="content">
                                 <h5
@@ -1153,7 +1112,6 @@
 
                                         text-align: center;
                                     "
-                                  
                                 >
                                     Hire a game coach, get gud, destroy your
                                     opponents.
@@ -1205,12 +1163,7 @@
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video3.jpg" />
                             </div>
                             <div class="content">
                                 <h5
@@ -1224,7 +1177,6 @@
 
                                         text-align: center;
                                     "
-                                   
                                 >
                                     Mieten Sie einen Spieltrainer, holen Sie
                                     sich Gud, zerstören Sie Ihre Gegner.
@@ -1288,7 +1240,6 @@
 
                                         text-align: center;
                                     "
-                                  
                                 >
                                     Be part of the action in a tournament with
                                     pros and players
@@ -1304,7 +1255,6 @@
 
                                         text-align: center;
                                     "
-                               
                                 >
                                     WEN SUCHEN WIR?
                                 </h5>
@@ -1346,12 +1296,7 @@
                             </div>
 
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video4.jpg" />
                             </div>
                         </div>
                     </div>
@@ -1371,7 +1316,6 @@
 
                                         text-align: center;
                                     "
-                                   
                                 >
                                     Seien Sie Teil der Action in einem Turnier
                                     mit Profis und Spielern
@@ -1418,12 +1362,7 @@
                             </div>
 
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video.jpg" />
                             </div>
                         </div>
                     </div>
@@ -1433,12 +1372,7 @@
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/cod1.jpg" />
                             </div>
                             <div class="content">
                                 <h5
@@ -1452,7 +1386,6 @@
 
                                         text-align: center;
                                     "
-                                    
                                 >
                                     Questions about our pro gamers? We’ve got
                                     you covered.
@@ -1468,7 +1401,6 @@
 
                                         text-align: center;
                                     "
-                               
                                 >
                                     WEN SUCHEN WIR?
                                 </h5>
@@ -1511,12 +1443,7 @@
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="img-box">
-                                <video
-                                    src="../../../assets/videos/apex.mp4"
-                                    autoplay
-                                    loop
-                                    [muted]="'muted'"
-                                ></video>
+                                <img src="../../../assets/img/video.jpg" />
                             </div>
                             <div class="content">
                                 <h5
@@ -1530,7 +1457,6 @@
 
                                         text-align: center;
                                     "
-                                  
                                 >
                                     Fragen zu unseren Pro Gamern? Wir geben dir
                                     Deckung.
@@ -1570,10 +1496,9 @@
                     </div>
                 </div>
 
-               <app-index-footer></app-index-footer>
-              
+                <app-index-footer></app-index-footer>
+
                 <!-- JavaScript Bundle with Popper -->
-             
             </div>
         </div>
     </div>
