@@ -179,13 +179,13 @@
         });
     };
 })();
-(function myFunction() {
+function myFunction() {
     $('input').on('change', function() {
   localStorage.input = $(this).is(':checked');
   console.log($(this).is(':checked'));
 });
     const onpageLoad = localStorage.getItem("lang") || "";
-    console.log("hi");
+    console.log(onpageLoad);
 
   if (onpageLoad === "fr_lang"){
     $('.fr_lang').addClass("active-lang"); 
@@ -203,11 +203,10 @@
            // Disable French
           $('.fr_lang').removeClass("active-lang")
   }
-  })
+  }
 
   document.addEventListener('DOMContentLoaded', function () {
     var checkbox = document.querySelector('input[type="checkbox"]');
-    
    
     
     $('.en_lang').addClass("active-lang");

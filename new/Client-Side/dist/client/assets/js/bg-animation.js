@@ -185,7 +185,7 @@ function myFunction() {
   console.log($(this).is(':checked'));
 });
     const onpageLoad = localStorage.getItem("lang") || "";
-    console.log("hi");
+    console.log(onpageLoad);
 
   if (onpageLoad === "fr_lang"){
     $('.fr_lang').addClass("active-lang"); 

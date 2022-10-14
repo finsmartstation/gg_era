@@ -1,8 +1,69 @@
-<div class="scroll" ng-init="myFunction()">
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+/>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+/>
+<link
+    href="https://fonts.googleapis.com/css?family=Lato:400,900%7CSource+Sans+Pro:700&display=swap"
+    rel="stylesheet"
+/>
+<script
+    src="https://kit.fontawesome.com/f78a22d753.js"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/augmented-ui@2.0.0/augmented-ui.min.css"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.css"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/addon/scroll/simplescrollbars.min.css"
+/>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+></script>
+
+<div class="scroll">
     <header>
         <!-- header -->
         <nav
-            class="navbar navbar-expand-lg "
+            class="navbar navbar-expand-lg en_lang"
             id="navbar1"
             style="z-index: 100000; left: 0"
         >
@@ -20,7 +81,11 @@
                 </button>
 
                 <div class="img navbar-brand pl-3">
-                    <a href="#" class="navbar-brand text-light pe-auto">
+                    <a
+                        href="#"
+                        class="navbar-brand text-light pe-auto"
+                        data-aos="fade-up"
+                    >
                         <img
                             src="../../../assets/img/era.png"
                             width="100"
@@ -35,7 +100,11 @@
                         class="collapse navbar-collapse"
                         id="navbarNav"
                     >
-                        <div class="col-lg-12 col-sm-12 col-md-12">
+                        <div
+                            class="col-lg-12 col-sm-12 col-md-12"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                        >
                             <a
                                 class="navbar-brand text-light m-0"
                                 style="color: inherit"
@@ -94,14 +163,119 @@
                 </div>
             </div>
         </nav>
-      
+        <nav
+            class="navbar navbar-expand-lg bg-transparent fr_lang"
+            id="navbar1"
+            style="z-index: 10000"
+        >
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler navbar-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="img navbar-brand pl-3">
+                    <a
+                        href="#"
+                        class="navbar-brand text-light pe-auto"
+                        data-aos="fade-up"
+                    >
+                        <img
+                            src="../../../assets/img/era.png"
+                            width="100"
+                            class="d-inline-block align-top d-block d-sm-block d-md-block d-lg-none"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div
+                        class="container col-lg-12 col-md-12 col-sm-12"
+                        class="collapse navbar-collapse"
+                        id="navbarNav"
+                    >
+                        <div
+                            class="col-lg-12 col-sm-12 col-md-12"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                        >
+                            <a
+                                class="navbar-brand text-light m-0"
+                                id="img1"
+                                style="color: inherit"
+                                href="/index"
+                            >
+                                <img
+                                    src="../../../assets/img/german 2nd/ACTIVE HOME (1).png"
+                                    alt=""
+                                    width="150"
+                                    height="40"
+                                />
+                            </a>
+                            <a
+                                class="navbar-brand text-light m-0"
+                                style="color: inherit"
+                                href="/about"
+                            >
+                                <img
+                                    src="../../../assets/img/german 2nd/DEACTIVE ABOUT (1).png"
+                                    alt=""
+                                    width="150"
+                                    height="40"
+                                />
+                            </a>
+                            <a
+                                class="navbar-brand text-light m-0"
+                                style="color: inherit"
+                                href="/job"
+                            >
+                                <!-- <img src="../../../assets/img/german 2nd/DEACTIVE JOB (1).png" alt="" width="150" height="40" /> -->
+                            </a>
+                            <a
+                                class="navbar-brand text-light m-0"
+                                style="color: inherit"
+                                href="/roaster"
+                            >
+                                <img
+                                    src="../../../assets/img/german 2nd/Dienstplan deactive.png"
+                                    alt=""
+                                    width="150"
+                                    height="40"
+                                />
+                            </a>
+                            <div class="switch">
+                                <input
+                                    id="language-toggle"
+                                    class="check-toggle check-toggle-round-flat"
+                                    type="checkbox"
+                                />
+                                <label for="language-toggle"></label>
+                                <span class="off">EN</span>
+                                <span class="on">DE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div
             class="col-lg-6 d-none d-lg-block d-print-block col-md-6"
             id="navbar"
             style="overflow: hidden"
         >
-            <a href="#" class="navbar-brand text-light pe-auto">
+            <a
+                href="#"
+                class="navbar-brand text-light pe-auto"
+                data-aos="fade-up"
+            >
                 <img
                     src="../../../assets/img/circle gry black gredient.png"
                     width="200"
@@ -118,11 +292,12 @@
             <div class="row align-items-center">
                 <div
                     class="col-12 col-sm-12 col-lg-4 col-md-12 container-block"
+                    data-aos="fade-up-right"
                     style="top: 50px"
                 >
                     <h1>
                         <a
-                            class=""
+                            class="en_lang"
                             href="#"
                             style="
                                 font-weight: 900;
@@ -131,7 +306,18 @@
                             "
                             >Play with a Pro and become a Pro</a
                         >
-                      
+                        <a
+                            class="fr_lang"
+                            href="#"
+                            style="
+                                font-weight: 900;
+                                text-decoration: none;
+                                color: #ffff;
+                            "
+                        >
+                            Spielen Sie mit einem Profi und werden Sie ein
+                            Profi</a
+                        >
                         <br />
                     </h1>
                     <h5
@@ -140,35 +326,60 @@
                             text-decoration: none;
                             color: #ffff;
                         "
-                        class=" text-center"
+                        class="en_lang text-center"
                     >
                         Choose between PREMADE PARTIES (entertainment), 101
                         COACHING (coaching session), or TOURNAMENT COMPANION
                         (request a pro for a tournament)
                     </h5>
-                    
+                    <h5
+                        style="
+                            font-weight: 400;
+                            text-decoration: none;
+                            color: #ffff;
+                        "
+                        class="fr_lang"
+                    >
+                        Wählen Sie zwischen PREMADE PARTIES (Unterhaltung), 101
+                        COACHING (Coaching Session) oder TURNIERBEGLEITER
+                        (Fordere einen Profi für ein Turnier an)
+                    </h5>
                     <div class="d-flex mobile">
                         <div class="container p-3">
                             <div class="d-flex justify-content-center">
                                 <a
                                     href="/login "
-                                    class="btn10 btn btn-warning "
+                                    class="btn10 btn btn-warning en_lang"
                                     style="text-decoration: none; color: #ffff"
                                     ><span class="btn-label p-2"
                                         >Signup</span
                                     ></a
                                 >
 
-                              
+                                <a
+                                    href="/login "
+                                    class="btn10 btn btn-warning fr_lang"
+                                    style="text-decoration: none; color: #ffff"
+                                    ><span class="btn-label p-2"
+                                        >Anmelden</span
+                                    ></a
+                                >
 
                                 <a
                                     href="/login "
-                                    class="btn10 btn "
+                                    class="btn10 btn en_lang"
                                     style="text-decoration: none; color: #ffff"
                                     ><span class="btn-label p-2">Login</span></a
                                 >
 
-                                
+                                <a
+                                    href="/login "
+                                    class="btn10 btn fr_lang"
+                                    style="text-decoration: none; color: #ffff"
+                                    ><span class="btn-label p-2"
+                                        >Anmeldung</span
+                                    ></a
+                                >
 
                                 <!-- <img src="../../../assets/img/roaster.png" style="height: 50px; width: 120px" class="p-1" alt="" /> -->
                             </div>
@@ -178,84 +389,77 @@
 
                 <div
                     class="col-12 col-lg-8 col-md-12 col-sm-12 pb-5 pt-5 mob-res"
+                    data-aos="fade-up-left"
                     style="top: 20px"
                 >
-                    <ngb-carousel
-                        [showNavigationArrows]="false"
-                        interval="3000"
+                    <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
+                        data-bs-ride="true"
+                        data-ride="carousel"
+                        data-interval="4000"
                     >
-                        <ng-template ngbSlide>
-                            <div class="picsum-img-wrapper">
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                          
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
                                 <img
                                     src="../../../assets/img/game1.png"
-                                    alt="Angular Carousel 1"
+                                    class="d-block w-100 img-fluid round"
+                                    alt="..."
                                 />
                             </div>
-                            <div class="carousel-caption"></div>
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <div class="picsum-img-wrapper">
+                            <div class="carousel-item">
                                 <img
                                     src="../../../assets/img/game2.png"
-                                    alt="Angular Carousel 2"
+                                    class="d-block w-100 img-fluid round"
+                                    alt="..."
                                 />
                             </div>
-                            <div class="carousel-caption"></div>
-                        </ng-template>
-
-                        <ng-template ngbSlide>
-                            <div class="picsum-img-wrapper">
-                                <img
-                                    src="../../../assets/img/game3.png"
-                                    alt="Angular Carousel 2"
-                                />
-                            </div>
-                            <div class="carousel-caption"></div>
-                        </ng-template>
-                        <ng-template ngbSlide>
-                            <div class="picsum-img-wrapper">
-                                <img
-                                    src="../../../assets/img/game4.png"
-                                    alt="Angular Carousel 2"
-                                />
-                            </div>
-                            <div class="carousel-caption"></div>
-                        </ng-template>
-                    </ngb-carousel>
+                        
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="dummy container-10">
         ewdadaefa
         <div class="hi btn">k</div>
     </div>
 
-    <!---will create button with ternary operator and click function--->
-    <div class="container">
-        <button (click)="onclick()" type="button" class="btn btn-danger">
-            {{ ReadMore ? "Read More" : "Read Less" }}
-        </button>
-
-        <ng-container *ngIf="visible">
-            <div class="bg-white shadow-sm p-3">
-                <h4>Hello World</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Esse tempore aut molestiae, unde non soluta! A, nesciunt.
-                    Earum facere totam error, nam placeat, quia, veritatis
-                    aspernatur voluptate vitae fugit odit.
-                </p>
-            </div>
-        </ng-container>
-    </div>
-
     <!-- new section  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <div class="container landingpage pt-5" style="padding-top: 10% !important">
         <div class="game-selector">
-            <a (click)="onclick()" id="imagebutton" class="game-button">
+            <a href="#section2" id="imagebutton" class="game-button">
                 <img
                     src="../../../assets/img/cod3.png"
                     id="imagebutton"
@@ -264,7 +468,7 @@
                     onclick="myFunction()"
                 />
             </a>
-            <a (click)="onclick2()" class="game-button" id="imagebutton2">
+            <a href="#section3" class="game-button" id="imagebutton2">
                 <img
                     src="../../../assets/img/apex.png"
                     id="imagebutton2"
@@ -274,7 +478,7 @@
                 />
             </a>
 
-            <a (click)="onclick3()" class="game-button" id="imagebutton3">
+            <a href="#section4" class="game-button" id="imagebutton3">
                 <img
                     src="../../../assets/img/Fortnite.png"
                     id="imagebutton3"
@@ -294,7 +498,7 @@
             class="col-lg-12 col-sm-12-col-md-12 p-3"
             style="overflow-x: hidden"
         >
-            <div class="movie-details" *ngIf="visible">
+            <div class="movie-details" data-aos="fade-down-right">
                 <div class="movie-img" id="section2">
                     <!-- <img src="../../../assets/img/WZ-Season-Three-Announce-TOUT.jpg" /> -->
                     <iframe
@@ -314,9 +518,8 @@
                     </div>
 
                     <div class="about-movie btn">
-                        <a
-                            href="/login"
-                            class="btn10 btn pt-2 "
+                        <a  href="/login"
+                            class="btn10 btn pt-2 en_lang"
                             style="
                                 height: 60px !important;
                                 text-decoration: none;
@@ -324,13 +527,21 @@
                         >
                             <span class="btn-label">Join Party</span>
                         </a>
-                      
+                        <a
+                            class="btn10 btn pt-2 fr_lang"
+                            style="
+                                height: 60px !important;
+                                text-decoration: none;
+                            "
+                        >
+                            <span class="btn-label">Party beitreten</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-12 col-sm-12-col-md-12 p-3">
-                <div class="movie-details" *ngIf="visible2">
+                <div class="movie-details" data-aos="fade-down-left">
                     <div class="movie-img" id="section3">
                         <!-- <img src="../../../assets/img/apex1.png" class="img-fluid" /> -->
                         <iframe
@@ -362,9 +573,8 @@
                         </div>
 
                         <div class="about-movie btn">
-                            <a
-                                href="/login"
-                                class="btn10 btn pt-2 "
+                            <a  href="/login"
+                                class="btn10 btn pt-2 en_lang"
                                 style="
                                     height: 60px !important;
                                     text-decoration: none;
@@ -372,15 +582,24 @@
                             >
                                 <span class="btn-label">Join Party</span>
                             </a>
-                       
+                            <a href="/login"
+                                class="btn10 btn pt-2 fr_lang"
+                                style="
+                                    height: 60px !important;
+                                    text-decoration: none;
+                                "
+                            >
+                                <span class="btn-label">Party beitreten</span>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div
                     class="col-12 col-sm-12 col-lg-12 p-3 col-md-12 d-flex justify-content-center"
+                    data-aos-anchor-placement="bottom-bottom"
                     style="z-index: 100; overflow-x: hidden"
                 >
-                    <div class="movie-details" *ngIf="visible3">
+                    <div class="movie-details" data-aos="zoom-out">
                         <div class="movie-img" id="section4">
                             <!-- <img src="../../../assets/img/maxresdefault.jpg" /> -->
                             <iframe
@@ -413,9 +632,8 @@
                             </div>
 
                             <div class="about-movie btn">
-                                <a
-                                    href="/login"
-                                    class="btn10 btn pt-2 "
+                                <a  href="/login"
+                                    class="btn10 btn pt-2 en_lang"
                                     style="
                                         height: 60px !important;
                                         text-decoration: none;
@@ -423,7 +641,17 @@
                                 >
                                     <span class="btn-label">Join Party</span>
                                 </a>
-                                
+                                <a href="/login"
+                                    class="btn10 btn pt-2 fr_lang"
+                                    style="
+                                        height: 60px !important;
+                                        text-decoration: none;
+                                    "
+                                >
+                                    <span class="btn-label"
+                                        >Party beitreten</span
+                                    >
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -435,7 +663,7 @@
                         box-shadow: 0 0 0 500px #2b2a296c;
                     }
                 </style>
-                <div class="container33 " style="z-index: 10">
+                <div class="container33 en_lang" style="z-index: 10">
                     <div
                         class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center p-3"
                     >
@@ -474,8 +702,48 @@
                     </div>
                 </div>
 
-               
+                <div class="container33 fr_lang" style="z-index: 10">
+                    <div
+                        class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center p-3"
+                    >
+                        <div class="d-flex justify-content-center">
+                            <div class="row">
+                                <div
+                                    class="col-lg-12 d-flex justify-content-center"
+                                >
+                                    <!-- <h3 class="p-3 pl-1" style="color: 
+         
+  #e3880b; font-weight: 800;  background-color: 
+  #3232322e;border-radius: 15px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);margin-bottom: none; ">
+  Möchtest du dein Können verbessern oder suchst du einfach nur eine Herausforderung?
+              </h3> -->
+                                </div>
+                                <div
+                                    class="col-lg-12 d-flex justify-content-center"
+                                >
+                                    <h4
+                                        class="p-3"
+                                        style="
+                                            color: #dddcda;
+                                            font-weight: 600;
+                                            background-color: #3232322e;
+                                            border-radius: 15px;
+                                            -webkit-backdrop-filter: blur(5px);
+                                            backdrop-filter: blur(5px);
+                                            top: -15px;
+                                        "
+                                    >
+                                        Wir haben die Profis, um es abzudecken.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class=" ">
+                
                     <div class="container22" style="z-index: 10">
                         <div class="box">
                             <span></span>
@@ -484,16 +752,16 @@
                                 style="text-decoration: none; cursor: pointer"
                             >
                                 <div class="content">
-                                    <h2 class="">1-on-1 Training</h2>
-                                    <p class="">
-                                        Improve your gameplay with 1-on-1
-                                        coacing session and master the skills
-                                        you need to become a pro
+                                    <h2 class="en_lang">1-on-1 Training</h2>
+                                    <p class="en_lang">
+                                        Improve your gameplay with 1-on-1 coacing session and master the skills you need to become a pro
                                     </p>
+                                    
+                                    <h2 class="fr_lang">1-zu-1-Training</h2>
 
-                                 
-
-                                  
+                                    <p class="fr_lang">
+                                        Verbessern Sie Ihr Gameplay mit 1-on-1-Coacing-Sitzungen und meistern Sie die Fähigkeiten, die Sie benötigen, um ein Profi zu werden
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -504,14 +772,18 @@
                                 style="text-decoration: none; cursor: pointer"
                             >
                                 <div class="content">
-                                    <h2 class="">Pro lobbies</h2>
-                                    <p class="">
+                                    <h2 class="en_lang">Pro lobbies</h2>
+                                    <p class="en_lang">
                                         Join a Lobby, play with the pros , and
                                         experience the game your way
                                     </p>
                                     <!-- <a href="#">Read More</a> -->
-                                   
-                                 
+                                    <h2 class="fr_lang">Pro Lobbys</h2>
+                                    <p class="fr_lang">
+                                        Tritt einer Lobby bei, spiele mit den
+                                        Profis und erlebe das Spiel auf deine
+                                        Weise
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -520,24 +792,30 @@
                             <div
                                 class="content"
                                 data-bs-toggle="modal"
+                                
                                 style="cursor: pointer"
                             >
-                                <h2 class="">
+                                <h2 class="en_lang">
                                     Tournament Companion Request
                                 </h2>
-                                <p class="">
+                                <p class="en_lang">
                                     Request an experienced Tournament / wager
                                     pro player to accompany you
                                 </p>
                                 <!-- <a href="#">Read More</a> -->
-                              
-                             
+                                <h2 class="fr_lang">
+                                    Antrag auf Turnierbegleiter
+                                </h2>
+                                <p class="fr_lang">
+                                    Fordern Sie einen erfahrenen
+                                    Turnier-/Wettprofispieler an Dich begleiten
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="container-home " style="z-index: 10">
+                <div class="container-home en_lang" style="z-index: 10">
                     <div
                         class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center p-3"
                     >
@@ -562,9 +840,64 @@
                         </div>
                     </div>
                 </div>
-               
+                <div class="container-home fr_lang" style="z-index: 10">
+                    <div
+                        class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center p-3"
+                    >
+                        <div class="container-9">
+                            <p class="number"></p>
+
+                            <h2
+                                style="font-size: 18px; font-weight: bold"
+                                class="p-2"
+                            >
+                                Können Sie nicht den richtigen Profi für Sie
+                                finden?
+                            </h2>
+                            <button class="clay btn btn-warning">
+                                <span class="btn-label p-2">Anmelden</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="container2"></div>
-               
+                <!-- <div class="end d-flex justify-content-center  ">
+    <img src="../../../assets/img/box3.png" alt="" srcset="" class="img-fluid imgg">
+    <h5 class=" job-text en_lang" data-aos="fade-up">WHO IS GGERA</h5>
+    <h5 class="pt-5 job-text fr_lang" data-aos="fade-up">GGERA IST EINE PLATTFORM, AUF DER SPIELER<br> BEZAHLEN MIT
+      DEN BESTEN TEAM KOLLEGEN ZU SPIELEN</h5>
+
+
+  </div> -->
+                <!-- <div class="en_lang">
+    <div class="container p-5 ">
+
+      <div class="box66 p-5 ">
+        <h1 style="font-weight: 900; margin-bottom: none;">'What are you looking for'</h1>
+
+        <h1 style="font-weight: 700; font-size: 20px;margin: none; color: white;">Take your game to the next level.</h1>
+        <h1 style="font-weight: 600; font-size: 20px;margin: none; color: white;">Play With The Pros.</h1>
+        <h1 style="font-weight: 600; font-size: 20px;margin: none; color: white;"> 1 - on - 1 &nbsp; training , pro
+          lobbies , and experienced matches. </h1>
+      </div>
+    </div>
+  </div>
+  <div class="fr_lang">
+    <div class="container p-5 ">
+
+      <div class="box66 p-5 ">
+        <h1 style="font-weight: 900; margin-bottom: none;">
+          'Wonach suchst du'</h1>
+
+        <h1 style="font-weight: 700; font-size: 20px;margin: none; color: white;">Bringen Sie Ihr Spiel auf das nächste Level.</h1>
+        <h1 style="font-weight: 600; font-size: 20px;margin: none; color: white;">
+          Spielen Sie mit den Profis.</h1>
+        <h1 style="font-weight: 600; font-size: 20px;margin: none; color: white;"> 1 - on - 1 &nbsp; 
+          Ausbildung, Profi
+                    Lobbys und erfahrene Spiele. </h1>
+      </div>
+    </div>
+  </div> -->
 
                 <!-- Modal -->
                 <div
@@ -681,12 +1014,12 @@
                     }
                 </style>
 
-                <div class="">
+                <div class="en_lang">
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="content">
                                 <h5
-                                    class="pt-5 "
+                                    class="pt-5 en_lang"
                                     style="
                                         font-weight: 800;
                                         text-decoration: none;
@@ -696,11 +1029,26 @@
 
                                         text-align: center;
                                     "
+                                    data-aos="fade-up"
                                 >
                                     You’ve got the skills, we’ve got the pros.
                                     Meet your match
                                 </h5>
-                              
+                                <h5
+                                    class="pt-5 fr_lang"
+                                    style="
+                                        font-weight: 800;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 3rem;
+
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
+                                >
+                                    WEN SUCHEN WIR?
+                                </h5>
                                 <ol style="color: white; font-size: larger">
                                     <li>
                                         Tough to find players that match your
@@ -741,22 +1089,104 @@
                                 </div>
                             </div>
                             <div class="img-box">
-                                <img src="../../../assets/img/video.jpg" />
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+                <div class="fr_lang">
+                    <div class="container d-flex justify-content-center pt-5">
+                        <div class="card2">
+                            <div class="content">
+                                <h5
+                                    class="pt-5"
+                                    style="
+                                        font-weight: 800;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 3rem;
+
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
+                                >
+                                    Sie haben die Fähigkeiten, wir haben die
+                                    Profis. Treffen Sie Ihr Spiel
+                                </h5>
+
+                                <ol style="color: white; font-size: larger">
+                                    <li>
+                                        Schwierig, Spieler zu finden, die Ihren
+                                        Fähigkeiten entsprechen? Nicht mehr.
+                                        Bringen Sie Ihr Spiel mit Profi-Matches
+                                        auf die nächste Stufe in vorgefertigten
+                                        Lobbys. Sie haben die Wahl: 2 Profis, 2
+                                        Spieler oder 1 Profi, 3 Spieler.
+                                    </li>
+                                    <li>
+                                        Spiele, die entwickelt wurden, um Ihnen
+                                        eine echte Herausforderung zu bieten.
+                                        Registrieren Sie sich noch heute und
+                                        teilen Sie uns Ihren Spielstil mit.
+                                    </li>
+                                </ol>
+                                <a
+                                    href="/login"
+                                    style="
+                                        background-color: rgb(255, 145, 0);
+                                        border-radius: 12px;
+                                        font-weight: 700;
+                                        color: #f7f7f7;
+                                        padding: 15px;
+                                        text-align: center;
+                                    "
+                                >
+                                    einer vorgefertigten Party beitreten</a
+                                >
+                                <div class="card-action">
+                                    <div class="name-container">
+                                        <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                        <div class="name-box">
+                                            <!-- <span style="color: rgb(246, 246, 246);">Find out what it takes below—our expectations of you—and join our team.</span> -->
+                                            <!-- <small>Jun 20, 2022</small> -->
+                                        </div>
+                                    </div>
+                                    <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                                </div>
+                            </div>
+                            <div class="img-box">
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ?test ends here  -->
-                <div class="">
+                <div class="en_lang">
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="img-box">
-                                <img src="../../../assets/img/video2.jpg" />
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
                             </div>
                             <div class="content">
                                 <h5
-                                    class="pt-5 "
+                                    class="pt-5 en_lang"
                                     style="
                                         font-weight: 500;
                                         text-decoration: none;
@@ -766,6 +1196,7 @@
 
                                         text-align: center;
                                     "
+                                    data-aos="fade-up"
                                 >
                                     Hire a game coach, get gud, destroy your
                                     opponents.
@@ -813,14 +1244,84 @@
                         </div>
                     </div>
                 </div>
-               
+                <div class="fr_lang">
+                    <div class="container d-flex justify-content-center pt-5">
+                        <div class="card2">
+                            <div class="img-box">
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
+                            </div>
+                            <div class="content">
+                                <h5
+                                    class="pt-5"
+                                    style="
+                                        font-weight: 500;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 2rem;
 
-                <div class="">
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
+                                >
+                                    Mieten Sie einen Spieltrainer, holen Sie
+                                    sich Gud, zerstören Sie Ihre Gegner.
+                                </h5>
+
+                                <ol style="color: white; font-size: larger">
+                                    <li>
+                                        Es ist einfach. Stellen Sie einen
+                                        Profispieler ein, der Sie mit
+                                        1-zu-1-Spieltrainingssitzungen
+                                        trainiert, Ihre Fähigkeiten verbessert
+                                        und loslegt das Schlachtfeld besitzen.
+                                        Bald werden Sie der am meisten beneidete
+                                        Spieler in Ihrer Lobby sein.
+                                    </li>
+                                    <li>
+                                        Buchen Sie jetzt Ihre
+                                        1-on-1-Game-Coaching-Sitzungen und
+                                        beginnen Sie mit dem Ranking.
+                                    </li>
+                                </ol>
+
+                                <button
+                                    style="
+                                        background-color: rgb(255, 145, 0);
+                                        border-radius: 12px;
+                                        font-weight: 700;
+                                        color: #f7f7f7;
+                                    "
+                                >
+                                    Buch Ihr Trainer
+                                </button>
+
+                                <div class="card-action">
+                                    <div class="name-container">
+                                        <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                        <div class="name-box">
+                                            <!-- <span style="color: rgb(246, 246, 246);">Find out what it takes below—our expectations of you—and join our team.</span> -->
+                                            <!-- <small>Jun 20, 2022</small> -->
+                                        </div>
+                                    </div>
+                                    <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="en_lang">
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
                             <div class="content">
                                 <h5
-                                    class="pt-5 "
+                                    class="pt-5 en_lang"
                                     style="
                                         font-weight: 800;
                                         text-decoration: none;
@@ -830,11 +1331,26 @@
 
                                         text-align: center;
                                     "
+                                    data-aos="fade-up"
                                 >
                                     Be part of the action in a tournament with
                                     pros and players
                                 </h5>
-                             
+                                <h5
+                                    class="pt-5 fr_lang"
+                                    style="
+                                        font-weight: 800;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 3rem;
+
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
+                                >
+                                    WEN SUCHEN WIR?
+                                </h5>
                                 <ol style="color: white; font-size: larger">
                                     <li>
                                         Join top gamers, from our pros to
@@ -873,22 +1389,22 @@
                             </div>
 
                             <div class="img-box">
-                                <img src="../../../assets/img/video4.jpg" />
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
                             </div>
                         </div>
                     </div>
                 </div>
-           
-
-                <div class=" pb-5">
+                <div class="fr_lang">
                     <div class="container d-flex justify-content-center pt-5">
                         <div class="card2">
-                            <div class="img-box">
-                                <img src="../../../assets/img/cod1.jpg" />
-                            </div>
                             <div class="content">
                                 <h5
-                                    class="pt-5 "
+                                    class="pt-5"
                                     style="
                                         font-weight: 800;
                                         text-decoration: none;
@@ -898,11 +1414,107 @@
 
                                         text-align: center;
                                     "
+                                    data-aos="fade-up"
+                                >
+                                    Seien Sie Teil der Action in einem Turnier
+                                    mit Profis und Spielern
+                                </h5>
+
+                                <ol style="color: white; font-size: larger">
+                                    <li>
+                                        Schließen Sie sich Top-Spielern, von
+                                        unseren Profis bis hin zu
+                                        herausfordernden Spielern, in einem
+                                        Turnier an, das Sie mit echten Preisen
+                                        belohnt. Tritt der Community bei, spiele
+                                        Kopf an Kopf und gewinne. Hast du das
+                                        Zeug dazu?
+                                    </li>
+                                    <li>
+                                        Melden Sie sich für unser nächstes
+                                        Turnier an und beanspruchen Sie Ihren
+                                        Platz an der Spitze
+                                    </li>
+                                </ol>
+
+                                <button
+                                    style="
+                                        background-color: rgb(255, 145, 0);
+                                        border-radius: 12px;
+                                        font-weight: 700;
+                                        color: #f7f7f7;
+                                    "
+                                >
+                                    Verbinden Der Wettbewerb
+                                </button>
+
+                                <div class="card-action">
+                                    <div class="name-container">
+                                        <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                        <div class="name-box">
+                                            <!-- <span style="color: rgb(246, 246, 246);">Find out what it takes below—our expectations of you—and join our team.</span> -->
+                                            <!-- <small>Jun 20, 2022</small> -->
+                                        </div>
+                                    </div>
+                                    <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                                </div>
+                            </div>
+
+                            <div class="img-box">
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="en_lang pb-5">
+                    <div class="container d-flex justify-content-center pt-5">
+                        <div class="card2">
+                            <div class="img-box">
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
+                            </div>
+                            <div class="content">
+                                <h5
+                                    class="pt-5 en_lang"
+                                    style="
+                                        font-weight: 800;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 3rem;
+
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
                                 >
                                     Questions about our pro gamers? We’ve got
                                     you covered.
                                 </h5>
-                               
+                                <h5
+                                    class="pt-5 fr_lang"
+                                    style="
+                                        font-weight: 800;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 3rem;
+
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
+                                >
+                                    WEN SUCHEN WIR?
+                                </h5>
                                 <ol style="color: white; font-size: larger">
                                     <li>
                                         Ask away. We’re here to help answer any
@@ -938,11 +1550,85 @@
                         </div>
                     </div>
                 </div>
-               
+                <div class="fr_lang pb-5">
+                    <div class="container d-flex justify-content-center pt-5">
+                        <div class="card2">
+                            <div class="img-box">
+                                <video
+                                    src="../../../assets/videos/apex.mp4"
+                                    autoplay
+                                    loop
+                                    [muted]="'muted'"
+                                ></video>
+                            </div>
+                            <div class="content">
+                                <h5
+                                    class="pt-5"
+                                    style="
+                                        font-weight: 800;
+                                        text-decoration: none;
+                                        color: #ffff;
+                                        position: relative;
+                                        font-size: 3rem;
 
-                <app-index-footer></app-index-footer>
+                                        text-align: center;
+                                    "
+                                    data-aos="fade-up"
+                                >
+                                    Fragen zu unseren Pro Gamern? Wir geben dir
+                                    Deckung.
+                                </h5>
+
+                                <ol style="color: white; font-size: larger">
+                                    <li>
+                                        Fragen Sie weg. Wir sind hier, um Ihnen
+                                        bei der Beantwortung Ihrer Fragen zu
+                                        unserem Pro-Gaming-Service zu helfen.
+                                    </li>
+                                </ol>
+
+                                <button
+                                    style="
+                                        background-color: rgb(255, 145, 0);
+                                        border-radius: 12px;
+                                        font-weight: 700;
+                                        color: #f7f7f7;
+                                    "
+                                >
+                                    Kontakt
+                                </button>
+
+                                <div class="card-action">
+                                    <div class="name-container">
+                                        <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                        <div class="name-box">
+                                            <!-- <span style="color: rgb(246, 246, 246);">Find out what it takes below—our expectations of you—and join our team.</span> -->
+                                            <!-- <small>Jun 20, 2022</small> -->
+                                        </div>
+                                    </div>
+                                    <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <app-index-footer></app-index-footer>
+                <script
+                    src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                    crossorigin="anonymous"
+                ></script>
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
                 <!-- JavaScript Bundle with Popper -->
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                    crossorigin="anonymous"
+                ></script>
             </div>
         </div>
     </div>

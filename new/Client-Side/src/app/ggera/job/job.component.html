@@ -1,4 +1,85 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!-- CSS only -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+        crossorigin="anonymous"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="./css/card2.css"> -->
+    <!-- <link rel="stylesheet" href="css/cards.css"> -->
+    <!-- <link rel="stylesheet" href="./test.css"> -->
+    <!-- card  -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,900%7CSource+Sans+Pro:700&display=swap"
+        rel="stylesheet"
+    />
+    <script
+        src="https://kit.fontawesome.com/f78a22d753.js"
+        crossorigin="anonymous"
+    ></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins"
+        rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="./css/test1.css"> -->
+    <!-- card  -->
+</head>
+
 <div class="about" style="font-family: popins" onload="myFunction()">
+    <script>
+        function myFunction() {
+            $("input").on("change", function () {
+                localStorage.input = $(this).is(":checked");
+                console.log($(this).is(":checked"));
+            });
+            const onpageLoad = localStorage.getItem("lang") || "";
+            console.log(onpageLoad);
+
+            if (onpageLoad === "fr_lang") {
+                $(".fr_lang").addClass("active-lang");
+                localStorage.setItem("lang", "fr_lang");
+                $(".en_lang").removeClass("active-lang");
+                $(function () {
+                    var test = localStorage.input === "true" ? true : false;
+                    $("input").prop("checked", test || false);
+                });
+            } else {
+                $(".en_lang").addClass("active-lang");
+                localStorage.removeItem("lang", "fr_lang");
+                localStorage.setItem("lang", "en_lang");
+                // Disable French
+                $(".fr_lang").removeClass("active-lang");
+            }
+        }
+    </script>
+
     <div class="showcase">
         <canvas class="overlap overlap-about" id="c"></canvas>
     </div>
@@ -39,7 +120,7 @@
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <!-- Nav -->
-                <div class="navbar-nav mx-lg-auto ">
+                <div class="navbar-nav mx-lg-auto en_lang">
                     <a
                         class="navbar-brand text-light m-0"
                         style="color: inherit"
@@ -84,7 +165,51 @@
                         />
                     </a>
                 </div>
-
+                <div class="navbar-nav mx-lg-auto fr_lang">
+                    <a
+                        class="navbar-brand text-light m-0"
+                        style="color: inherit"
+                        href="/index"
+                    >
+                        <img
+                            src="../../../assets/img/german 2nd/DEACTIVE HOME (1).png"
+                            alt=""
+                            width="150"
+                            height="40"
+                        />
+                    </a>
+                    <a
+                        class="navbar-brand text-light m-0"
+                        style="color: inherit"
+                        href="/about"
+                    >
+                        <img
+                            src="../../../assets/img/german 2nd/DEACTIVE ABOUT (1).png"
+                            alt=""
+                            width="150"
+                            height="40"
+                        />
+                    </a>
+                    <a
+                        class="navbar-brand text-light m-0"
+                        style="color: inherit"
+                        href="/job"
+                    >
+                        <!-- <img src="../../../assets/img/german 2nd/ACTIVE JOB (1).png" alt="" width="150" height="40" /> -->
+                    </a>
+                    <a
+                        class="navbar-brand text-light m-0"
+                        style="color: inherit"
+                        href="/roaster"
+                    >
+                        <img
+                            src="../../../assets/img/german 2nd/Dienstplan deactive.png"
+                            alt=""
+                            width="150"
+                            height="40"
+                        />
+                    </a>
+                </div>
                 <div class="end1">
                     <img
                         src="../../../assets/img/line glow2.png"
@@ -155,29 +280,43 @@
     <div class="container p-3 pt-5" style="z-index: 10">
         <div class="d-flex justify-content-center">
             <button
-                class="clay btn btn-warning "
+                class="clay btn btn-warning en_lang"
                 style="height: 50px; width: 150px"
             >
                 <a href="/login " style="text-decoration: none; color: #ffff"
                     ><span class="btn-label p-2">Signup</span></a
                 >
             </button>
-
             <button
-                class="clay btn btn-secondary "
+                class="clay btn btn-warning fr_lang"
+                style="height: 50px; width: 150px"
+            >
+                <a href="/login " style="text-decoration: none; color: #ffff"
+                    ><span class="btn-label p-2">Anmelden</span></a
+                >
+            </button>
+            <button
+                class="clay btn btn-secondary en_lang"
                 style="height: 50px; width: 150px"
             >
                 <a href="/login " style="text-decoration: none; color: #ffff"
                     ><span class="btn-label p-2">Login</span></a
                 >
             </button>
-
+            <button
+                class="clay btn btn-secondary fr_lang"
+                style="height: 50px; width: 150px"
+            >
+                <a href="/login " style="text-decoration: none; color: #ffff"
+                    ><span class="btn-label p-2">Anmeldung</span></a
+                >
+            </button>
             <!-- <img src="../../../assets/img/roaster.png" style="height: 50px; width: 120px" class="p-1" alt="" /> -->
         </div>
     </div>
 
     <div class="container" style="overflow: hidden">
-        <div class="row pt-5 p-5 m-0 ">
+        <div class="row pt-5 p-5 m-0 en_lang">
             <div
                 class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center pl-5 col-12"
             >
@@ -231,7 +370,60 @@
                 />
             </div>
         </div>
-
+        <div class="row pt-5 p-5 m-0 fr_lang">
+            <div
+                class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center pl-5 col-12"
+            >
+                <div class="row spacing-job" data-aos="fade-right">
+                    <div class="col-lg-12 col-sm-12">
+                        <h1
+                            class=""
+                            style="
+                                color: orange;
+                                font-size: 4rem;
+                                font-weight: 800;
+                                margin: 0%;
+                            "
+                        >
+                            ERHALTEN
+                        </h1>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <h1
+                            style="
+                                color: orange;
+                                font-size: 3.5rem;
+                                font-weight: 800;
+                                margin: 0%;
+                            "
+                        >
+                            EIN ECHTER JOB
+                        </h1>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12 p-2">
+                        <h1
+                            style="
+                                color: rgb(253, 253, 253);
+                                font-size: 3.5rem;
+                                font-weight: 600;
+                            "
+                        >
+                            VIDEOSPIELE SPIELEN
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center"
+                data-aos="fade-left"
+            >
+                <img
+                    style="width: 350px; height: 500px"
+                    src="../../../assets/img/job1.png"
+                    alt="military"
+                />
+            </div>
+        </div>
         <div
             class="col-12 col-sm-12 col-lg-12 col-md-12 d-flex justify-content-center"
         >
@@ -272,7 +464,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="">
+            <div class="en_lang">
                 <div class="container pt-5 pb-5">
                     <div>
                         <div class="container-fluid pb-5">
@@ -287,21 +479,12 @@
                                             style="height: 450px"
                                         >
                                             <div class="title pt-2">
-                                                <div class="p-5">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="50"
-                                                        height="50"
-                                                        fill="white"
-                                                        class="bi bi-telephone-forward"
-                                                        viewBox="0 0 16 16"
-                                                    >
-                                                        <path
-                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"
-                                                        />
-                                                    </svg>
-                                                </div>
-
+                                               <div class="p-5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-telephone-forward" viewBox="0 0 16 16">
+                                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
+                                                  </svg>
+                                               </div>
+                                               
                                                 <h2>
                                                     Become a Customer Service
                                                     Rep
@@ -331,19 +514,10 @@
                                         >
                                             <div class="title pt-4">
                                                 <div class="p-5">
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="50"
-                                                        height="50"
-                                                        fill="white"
-                                                        class="bi bi-pc-display-horizontal"
-                                                        viewBox="0 0 16 16"
-                                                    >
-                                                        <path
-                                                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"
-                                                        />
-                                                    </svg>
-                                                </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                                                        <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                                                      </svg>
+                                                   </div>
                                                 <h2>Become a Pro Gamer</h2>
                                             </div>
                                             <div class="price">
@@ -364,8 +538,74 @@
                     </div>
                 </div>
             </div>
+            <div class="fr_lang">
+                <div class="container pt-5 pb-5">
+                    <div>
+                        <div class="container-fluid pb-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 pb-3">
+                                        <div
+                                            class="card3 text-center"
+                                            style="height: 450px"
+                                        >
+                                            <div class="title pt-2">
+                                                <i
+                                                    class="fa fa-paper-plane"
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <h2>
+                                                    Werden Sie ein
+                                                    Kundendienstmitarbeiter
+                                                </h2>
+                                            </div>
+                                            <div class="price">
+                                                <!-- <h4><sup>$</sup>25</h4> -->
+                                            </div>
+                                            <div class="option pt-4">
+                                                <h6 class="p-2 text-light">
+                                                    Repräsentiere die
+                                                    Pro/Player-Gaming-Community
+                                                    von einem Coaching und
+                                                    Kunden Dienststellung.
+                                                </h6>
+                                            </div>
+                                            <a href="">Jetzt bewerben</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 pb-3">
+                                        <div
+                                            class="card3 text-center pb-1"
+                                            style="height: 450px"
+                                        >
+                                            <div class="title pt-4">
+                                                <i
+                                                    class="fa fa-plane"
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <h2>Werde Profi-Gamer</h2>
+                                            </div>
+                                            <div class="price">
+                                                <!-- <h4><sup>$</sup>50</h4> -->
+                                            </div>
+                                            <div class="option pt-3">
+                                                <h6 class="p-2 text-light pb-5">
+                                                    Verdienen Sie als
+                                                    Profi-Gamer durchschnittlich
+                                                    2000 $/Monat.
+                                                </h6>
+                                            </div>
+                                            <a href="">Jetzt bewerben</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="">
+        <div class="en_lang">
             <div class="container d-flex justify-content-center">
                 <div class="card2">
                     <div class="img-box" data-aos="fade-down">
@@ -373,7 +613,7 @@
                     </div>
                     <div class="content">
                         <h5
-                            class="pt-5 "
+                            class="pt-5 en_lang"
                             style="
                                 font-weight: 800;
                                 text-decoration: none;
@@ -434,13 +674,253 @@
                 </div>
             </div>
         </div>
+        <div class="fr_lang">
+            <div class="container d-flex justify-content-center">
+                <div class="card2">
+                    <div class="img-box" data-aos="fade-down">
+                        <img src="../../../assets/img/fort.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <h5
+                            class="pt-5"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
 
-        <div class="">
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            Bewerben Sie sich als Profispieler
+                        </h5>
+                        <h3
+                            style="
+                                color: #fff;
+                                font-weight: 300;
+                                font-size: x-large;
+                            "
+                        >
+                            Sie leben für Adrenalin, Heiterkeit und das Weite
+                            von Welten jenseits unserer eigenen. Du gedeihst im
+                            Wettbewerb und vor allem im Sieg – indem du alle
+                            besiegst, die vor dir stehen. Dein Leben ist größer
+                            als nur du. Du bist ein Symbol für alles, was in der
+                            Gaming-Welt richtig ist. Ein Neid auf Andere. Ein
+                            Wunderkind hinter dem Bildschirm.
+                        </h3>
+                        <p
+                            style="
+                                color: rgb(250, 231, 89);
+                                font-weight: 300;
+                                font-size: large;
+                            "
+                        >
+                            Sind Sie bereit, Ihre Karriere als ein Pro-Gamer auf
+                            das nächste Level? Der adrenalingeladene
+                            Nervenkitzel eines Profispielers ist anders als
+                            praktisch jeder Job auf der Welt. Werde fürs
+                            Training bezahlt unterqualifizierte Spieler und
+                            treten Sie Profi-Lobbys bei, um sich selbst und die
+                            Spieler unter Ihren Fittichen herauszufordern.
+                        </p>
+                        <div class="card-action">
+                            <div class="name-container">
+                                <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                <div class="name-box">
+                                    <span style="color: rgb(246, 246, 246)"
+                                        >Finden Sie unten heraus, was es braucht
+                                        – unsere Erwartungen an Sie – und machen
+                                        Sie mit unser Team.</span
+                                    >
+                                    <!-- <small>Jun 20, 2022</small> -->
+                                </div>
+                            </div>
+                            <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="end d-flex justify-content-center  ">
+        <img src="../../../assets/img/box3.png" alt="" srcset="" class="img-fluid imgg">
+        <h5 class="pt-5 job-text en_lang" data-aos="fade-up">GGERA IS A PLATFORM WHERE GAMERS PAY <br> TO PLAY
+          WITH THE BEST TEAMMATES</h5>
+        <h5 class="pt-5 job-text fr_lang" data-aos="fade-up">GGERA IST EINE PLATTFORM, AUF DER SPIELER<br> BEZAHLEN MIT
+          DEN BESTEN TEAM KOLLEGEN ZU SPIELEN</h5>
+  
+  
+      </div> -->
+
+        <!-- <div class="end d-flex justify-content-center pb-5 pt-5">
+        <img src="../../../assets/img/box3.png" alt="" srcset="" class="d-none d-lg-block d-md-block d-xl-block" class="d-sm-none d-md-block" >
+        <h5 class="pt-1 job-text3 en_lang" style="position: relative;
+                     
+   
+    
+    " data-aos="fade-up">Over 5,000 PROs received payouts for 2.2 million hours in 2021</h5>
+        <h5 class="pt-1 job-text3 fr_lang" style="position: relative;
+                     
+   
+    
+     " data-aos="fade-up">Über 5.000 PROs haben im Jahr 2021 Auszahlungen für 2,2 Millionen Stunden erhalten</h5>
+  
+      </div> -->
+        <!-- <div class="container">
+        <div class="row">
+          <div class="end  d-flex justify-content-center pb-5 pt-5">
+            <img src="../../../assets/img/box3.png" alt="" srcset="" class="img-fluid imgg">
+            <h5 class="pt-5 job-text en_lang" data-aos="fade-up">WHAT PRO-PLAYERS DO DURING THE <br> SESSION? </h5>
+            <h5 class="pt-5 job-text fr_lang" data-aos="fade-up">WAS PROFI-SPIELER WÄHREND DER <br> SITZUNG? </h5>
+  
+            <p class="job-text2 d-flex justify-content-center" >Perfect session KPI = bonus to your hourly payments and unlocking new ranks:</p>
+          </div>
+  
+        </div>
+      </div> -->
+        <!-- <div class="en_lang">
+        <div class="container p-3 ">
+  
+          <div class="box66 p-5 ">
+            <h1 style="font-weight: 800;">First Step</h1>
+            <ol data-aos="fade-left">
+              <li>Introduction by Pro;</li>
+              <li>Learning proper session structure depending on needs of customer;</li>
+              <li>Setting up goals for customer and helping them accomplish them.</li>
+  
+            </ol>
+          </div>
+  
+        </div>
+      </div>
+      <div class="fr_lang">
+        <div class="container p-3 ">
+  
+          <div class="box66 p-5 ">
+            <h1 style="font-weight: 800;">Erster Schritt</h1>
+            <ol data-aos="fade-left">
+              <li>Einführung von Pro;</li>
+              <li>Erlernen der richtigen Sitzungsstruktur in Abhängigkeit von den Bedürfnissen des Kunden;</li>
+              <li>Ziele für Kunden festlegen und ihnen helfen, diese zu erreichen.</li>
+  
+            </ol>
+          </div>
+  
+        </div>
+      </div>
+      <div class="en_lang">
+        <div class="container p-3">
+  
+          <div class="box66 p-5">
+            <h1 style="font-weight: 800;">Process</h1>
+            <ol data-aos="fade-left">
+              <li>Don't run away from customers, don't push solo without customers</li>
+              <li>Сheer up the clients if they are killed, tell them that you will resurrect them soon.
+              </li>
+              <li>Stay vocal more than 40% of the session so your team doesn't have spend a silent session </li>
+              <li>Control your emotions and understand how customers feel</li>
+              <li>Tell jokes and stories during the session at least 4 times/hour</li>
+  
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="fr_lang">
+        <div class="container p-3">
+  
+          <div class="box66 p-5">
+            <h1 style="font-weight: 800;">Verfahren</h1>
+            <ol data-aos="fade-left">
+              <li>Laufen Sie nicht vor Kunden weg, drängen Sie nicht alleine ohne Kunden</li>
+              <li>Muntere die Klienten auf, wenn sie getötet werden, sage ihnen, dass du sie bald wiederbeleben wirst.
+              </li>
+              <li>Bleiben Sie über 40 % der Sitzung lautstark, damit Ihr Team keine stille Sitzung verbringen muss </li>
+              <li>Kontrollieren Sie Ihre Emotionen und verstehen Sie, wie sich Kunden fühlen</li>
+              <li>Erzählen Sie während der Sitzung mindestens 4 Mal pro Stunde Witze und Geschichten</li>
+  
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="en_lang">
+        <div class="container p-3">
+  
+          <div class="box66 p-5">
+            <h1 style="font-weight: 800;">FeedBack</h1>
+            <ol data-aos="fade-left">
+              <li>Make compliments when the customer makes a
+                kill / some good moves</li>
+              <li> Help customer analyze previous game results and stats in-between
+                games while standing in the queue and after a session</li>
+              <li> Provide sandwich feedback on mistakes. If your team loses,
+                don't be silent, discuss it.</li>
+  
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="fr_lang">
+        <div class="container p-3">
+  
+          <div class="box66 p-5">
+            <h1 style="font-weight: 600;font-size: 2rem;">Rückmeldung</h1>
+            <ol data-aos="fade-left">
+              <li>Machen Sie Komplimente, wenn der Kunde a macht
+                kill / einige gute Moves</li>
+              <li> Helfen Sie dem Kunden, zwischendurch Ergebnisse und Statistiken früherer Spiele zu analysieren
+                Spiele, während Sie in der Warteschlange stehen und nach einer Sitzung</li>
+              <li>Geben Sie Sandwich-Feedback zu Fehlern. Wenn Ihr Team verliert,
+                schweige nicht, diskutiere darüber.</li>
+  
+            </ol>
+          </div>
+        </div>
+      </div> -->
+
+        <!-- <div class="container">
+        <div class="row">
+          <div class="end  d-flex justify-content-center  pt-5">
+            <img src="../../../assets/img/box3.png" alt="" srcset="" class="img-fluid imgg">
+            <h5 class="pt-5 job-text en_lang " data-aos="fade-up" style="top:55px">WHO ARE WE LOOKING FOR? <br> </h5>
+            <h5 class="pt-5 job-text fr_lang " data-aos="fade-up" style="top:55px">WEN SUCHEN WIR? <br> </h5>
+            
+  
+           
+          </div>
+  
+        </div>
+      </div>
+      <div class="container">
+        <div class="box1">
+          <div class="end d-flex justify-content-center  pb-5">
+            <img src="../../../assets/img/BORDER FRAME WHO ARE WE.png" alt="" srcset="" width="75%">
+  
+            <div class="row p-5 pt-5 d-flex justify-content-center" style="position: absolute;">
+              <div class="col-lg-3 col-sm-4 col-md-4 col-4">
+                <img src="../../../assets/img/K_D2.png" alt="" srcset="" class="img-fluid" data-aos="fade-left">
+              </div>
+              <div class="col-lg-3 col-sm-4 col-md-4 col-4"> <img src="../../../assets/img/k_D3.png" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="col-lg-3 col-sm-4 col-md-4 col-4"><img src="../../../assets/img/K_D1.png" alt="" srcset=" " class="img-fluid" data-aos="fade-right">
+              </div>
+  
+  
+  
+            </div>
+  
+          </div>
+        </div>
+      </div> -->
+
+        <div class="en_lang">
             <div class="container d-flex justify-content-center pt-5">
                 <div class="card2">
                     <div class="content">
                         <h5
-                            class="pt-5 "
+                            class="pt-5 en_lang"
                             style="
                                 font-weight: 800;
                                 text-decoration: none;
@@ -453,6 +933,21 @@
                             data-aos="fade-up"
                         >
                             Pro Meets Player
+                        </h5>
+                        <h5
+                            class="pt-5 fr_lang"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
+
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            WEN SUCHEN WIR?
                         </h5>
 
                         <ol style="color: white">
@@ -493,8 +988,65 @@
                 </div>
             </div>
         </div>
+        <div class="fr_lang">
+            <div class="container d-flex justify-content-center pt-5">
+                <div class="card2">
+                    <div class="content">
+                        <h5
+                            class="pt-5"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
 
-        <div class="">
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            Profi trifft Spieler
+                        </h5>
+
+                        <ol style="color: white">
+                            <li>
+                                Stellen Sie sich Ihren Spielern als Profispieler
+                                vor.
+                            </li>
+                            <li>
+                                Jeder Kunde muss anders geschult werden. Lernen
+                                Sie ihre Bedürfnisse kennen und vereinbaren Sie
+                                eine Gaming-Coaching-Sitzung passend.
+                            </li>
+                            <li>
+                                Setze Ziele für jeden Spieler und leite ihn an,
+                                jedes einzelne zu erreichen.
+                            </li>
+                        </ol>
+
+                        <div class="card-action">
+                            <div class="name-container">
+                                <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                <div class="name-box">
+                                    <span style="color: rgb(246, 246, 246)"
+                                        >Apex Legends</span
+                                    >
+                                    <!-- <small>Jun 20, 2022</small> -->
+                                </div>
+                            </div>
+                            <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img
+                            src="https://i.pinimg.com/564x/23/bf/f9/23bff93d3917bcf05c53184d3ae393ef.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="en_lang">
             <div class="container d-flex justify-content-center pt-5">
                 <div class="card2">
                     <div class="img-box">
@@ -508,7 +1060,7 @@
 
                     <div class="content">
                         <h5
-                            class="pt-5 "
+                            class="pt-5 en_lang"
                             style="
                                 font-weight: 800;
                                 text-decoration: none;
@@ -521,6 +1073,21 @@
                             data-aos="fade-up"
                         >
                             In-Game Protocol
+                        </h5>
+                        <h5
+                            class="pt-5 fr_lang"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
+
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            WEN SUCHEN WIR?
                         </h5>
 
                         <ol style="color: white">
@@ -563,13 +1130,85 @@
                 </div>
             </div>
         </div>
+        <div class="fr_lang">
+            <div class="container d-flex justify-content-center pt-5">
+                <div class="card2">
+                    <div class="img-box">
+                        <video
+                            src="../../../assets/videos/video1.mp4"
+                            autoplay
+                            [muted]="'muted'"
+                            loop
+                        ></video>
+                    </div>
 
-        <div class=" pb-5">
+                    <div class="content">
+                        <h5
+                            class="pt-5"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
+
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            Protokoll im Spiel
+                        </h5>
+
+                        <ol style="color: white">
+                            <li>
+                                Ignoriere den Spieler im Spiel nicht. Du bist
+                                hier, um ihnen zu helfen (auch wenn das
+                                bedeutet, zu verlieren).
+                            </li>
+                            <li>
+                                Wenn Spieler getötet werden, muntere sie auf und
+                                versichere ihnen, dass du auf dem Weg bist, sie
+                                wiederzubeleben.
+                            </li>
+                            <li>
+                                Stellen Sie sicher, dass das Spiel nicht
+                                verstummt. Sprechen Sie für mehr als 40 % des
+                                Spiels.
+                            </li>
+                            <li>
+                                Bleiben Sie cool, kontrollieren Sie Ihre
+                                Emotionen und nehmen Sie die Perspektive des
+                                Spielers ein, den Sie trainieren.
+                            </li>
+                            <li>
+                                Machen Sie Witze und erzählen Sie mindestens
+                                viermal pro Stunde Geschichten, um das Geplänkel
+                                am Laufen zu halten.
+                            </li>
+                        </ol>
+
+                        <div class="card-action">
+                            <div class="name-container">
+                                <!-- <img src="data:image/png;base64,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" class="avatar" alt=""> -->
+                                <div class="name-box">
+                                    <span style="color: rgb(246, 246, 246)"
+                                        >COD</span
+                                    >
+                                    <!-- <small>Jun 20, 2022</small> -->
+                                </div>
+                            </div>
+                            <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="en_lang pb-5">
             <div class="container d-flex justify-content-center pt-5">
                 <div class="card2">
                     <div class="content">
                         <h5
-                            class="pt-5 "
+                            class="pt-5 en_lang"
                             style="
                                 font-weight: 800;
                                 text-decoration: none;
@@ -583,7 +1222,21 @@
                         >
                             Stats Feedback
                         </h5>
+                        <h5
+                            class="pt-5 fr_lang"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
 
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            WEN SUCHEN WIR?
+                        </h5>
                         <ol style="color: white">
                             <li>
                                 Compliment the player for making a kill or some
@@ -622,467 +1275,601 @@
                 </div>
             </div>
         </div>
-        <div class=" pb-5">
-           
-
-            <style>
-                .card2 {
-                    width: 900px;
-                    background: rgba(100, 2, 2, 0.43);
-                    border-radius: 15px;
-                    padding: 1rem;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 1.5rem;
-                    transition: 0.3s ease-in-out;
-                }
-
-                .card2:hover {
-                    box-shadow: 0.3px 4px 7px rgba(212, 147, 19, 0.426);
-                }
-
-                .card2 .img-box {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px;
-                }
-
-                .card2 .img-box img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-fit: cover;
-                }
-
-                .card2 .img-box video {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-fit: cover;
-                }
-
-                .card2 .content {
-                    padding: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                }
-
-                .card2 .content h3 {
-                    font-size: 1.1rem;
-                }
-
-                .card2 .content p {
-                    font-size: 0.8rem;
-                    color: gray;
-                }
-
-                .card2 .card2-action {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 2rem;
-                }
-
-                .card2 .card2-action .name-container {
-                    display: flex;
-                    gap: 1rem;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .card2 .card2-action .name-container .avatar {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    outline-width: 1px;
-                    outline-color: orange;
-                    outline-offset: 1px;
-                    outline-style: dotted;
-                }
-
-                .card2 .card2-action .name-container .name-box {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .card2 .card2-action .name-container .name-box span {
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                }
-
-                .card2 .card2-action .name-container .name-box small {
-                    color: gray;
-                }
-
-                @media screen and (max-width: 800px) {
-                    .card2 {
-                        margin: 1rem;
-                    }
-                }
-
-                @media screen and (max-width: 600px) {
-                    .card2 {
-                        grid-template-columns: 1fr;
-                        margin: 1rem;
-                    }
-                }
-            </style>
-
-            <!-- new section  -->
-
-            <style>
-                .section2 {
-                    width: 100%;
-                    height: 100vh;
-                    box-sizing: border-box;
-                    padding: 140px 0;
-                    background: #000000;
-                }
-
-                .card3 {
-                    position: relative;
-                    max-width: 350px;
-                    height: auto;
-                    background: linear-gradient(-45deg, #fe0847, #feae3f);
-                    border-radius: 15px;
-                    margin: 0 auto;
-                    padding: 0;
-                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-                    transition: 0.5s;
-                    overflow: hidden;
-                }
-
-                .card3:hover {
-                    transform: scale(1.1);
-                }
-
-                .col-sm-4:nth-child(1) .card,
-                .col-sm-4:nth-child(1) .card .title .fa {
-                    background-image: linear-gradient(
-                        89.7deg,
-                        rgba(255, 232, 27, 1) 13%,
-                        rgba(255, 17, 17, 1) 100.1%
-                    );
-                }
-
-                .col-sm-4:nth-child(2) .card,
-                .col-sm-4:nth-child(2) .card .title .fa {
-                    background-image: linear-gradient(
-                        89.7deg,
-                        rgba(0, 32, 95, 1) 2.8%,
-                        rgba(132, 53, 142, 1) 97.8%
-                    );
-                }
-
-                .col-sm-4:nth-child(3) .card,
-                .col-sm-4:nth-child(3) .card .title .fa {
-                    background-image: linear-gradient(
-                        111.6deg,
-                        rgba(73, 235, 221, 1) -0%,
-                        rgba(83, 222, 219, 1) 7.1%,
-                        rgba(105, 191, 217, 1) 13.4%,
-                        rgba(127, 157, 214, 1) 18%,
-                        rgba(155, 113, 208, 1) 23.9%,
-                        rgba(178, 73, 201, 1) 28.8%,
-                        rgba(200, 45, 192, 1) 33.3%,
-                        rgba(213, 42, 180, 1) 38%,
-                        rgba(232, 44, 145, 1) 44.2%,
-                        rgba(239, 45, 128, 1) 52.4%,
-                        rgba(249, 66, 107, 1) 59.7%,
-                        rgba(252, 105, 98, 1) 67.3%,
-                        rgba(252, 105, 98, 1) 74.4%,
-                        rgba(254, 145, 92, 1) 82.2%,
-                        rgba(255, 189, 86, 1) 88.2%,
-                        rgba(254, 227, 80, 1) 92.8%,
-                        rgba(254, 248, 75, 1) 98.4%
-                    );
-                }
-
-                .card3:before {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 40%;
-                    background: rgba(255, 255, 255, 0.1);
-                    z-index: 1;
-                    transform: skewY(-5deg) scale(1.5);
-                }
-
-                .title .fa {
-                    color: #fff;
-                    font-size: 60px;
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 100px;
-                    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-                }
-
-                .title h2 {
-                    position: relative;
-                    margin: 20px 0 0;
-                    padding: 0;
-                    color: #fff;
-                    font-size: 28px;
-                    z-index: 2;
-                }
-
-                .price {
-                    position: relative;
-                    z-index: 2;
-                }
-
-                .price h4 {
-                    margin: 0;
-                    padding: 20px 0;
-                    color: #fff;
-                    font-size: 60px;
-                }
-
-                .option {
-                    position: relative;
-                    z-index: 2;
-                }
-
-                .option ul {
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .option ul li {
-                    margin: 0 0 10px;
-                    padding: 0;
-                    list-style: none;
-                    color: #fff;
-                    font-size: 16px;
-                }
-
-                .card3 a {
-                    position: relative;
-                    z-index: 2;
-                    background: #fff;
-                    color: crimson;
-                    width: 150px;
-                    height: 40px;
-                    line-height: 40px;
-                    border-radius: 40px;
-                    display: block;
-                    text-align: center;
-                    margin: 20px auto 0;
-                    font-size: 16px;
-                    cursor: pointer;
-                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-                }
-
-                .card3 a:hover {
-                    text-decoration: none;
-                }
-            </style>
-
-
-            <style>
-                ul {
-                    margin: 0px;
-                    padding: 0px;
-                }
-
-                .footer-section {
-                    /* background: #151414; */
-                    position: relative;
-                }
-
-                .footer-cta {
-                    border-bottom: 1px solid #373636;
-                }
-
-                .single-cta i {
-                    color: #ff5e14;
-                    font-size: 30px;
-                    float: left;
-                    margin-top: 8px;
-                }
-
-                .cta-text {
-                    padding-left: 15px;
-                    display: inline-block;
-                }
-
-                .cta-text h4 {
-                    color: #fff;
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin-bottom: 2px;
-                }
-
-                .cta-text span {
-                    color: #757575;
-                    font-size: 15px;
-                }
-
-                .footer-content {
-                    position: relative;
-                    z-index: 2;
-                }
-
-                .footer-pattern img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 330px;
-                    background-size: cover;
-                    background-position: 100% 100%;
-                }
-
-                .footer-logo {
-                    margin-bottom: 30px;
-                }
-
-                .footer-logo img {
-                    max-width: 200px;
-                }
-
-                .footer-text p {
-                    margin-bottom: 14px;
-                    font-size: 14px;
-                    color: #7e7e7e;
-                    line-height: 28px;
-                }
-
-                .footer-social-icon span {
-                    color: #fff;
-                    display: block;
-                    font-size: 20px;
-                    font-weight: 700;
-                    font-family: "Poppins", sans-serif;
-                    margin-bottom: 20px;
-                }
-
-                .footer-social-icon a {
-                    color: #fff;
-                    font-size: 16px;
-                    margin-right: 15px;
-                }
-
-                .footer-social-icon i {
-                    height: 40px;
-                    width: 40px;
-                    text-align: center;
-                    line-height: 38px;
-                    border-radius: 50%;
-                }
-
-                .facebook-bg {
-                    background: #3b5998;
-                }
-
-                .twitter-bg {
-                    background: #55acee;
-                }
-
-                .google-bg {
-                    background: #dd4b39;
-                }
-
-                .footer-widget-heading h3 {
-                    color: #fff;
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin-bottom: 40px;
-                    position: relative;
-                }
-
-                .footer-widget-heading h3::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: -15px;
-                    height: 2px;
-                    width: 50px;
-                    background: #ff5e14;
-                }
-
-                .footer-widget ul li {
-                    display: inline-block;
-                    float: left;
-                    width: 50%;
-                    margin-bottom: 12px;
-                }
-
-                .footer-widget ul li a:hover {
-                    color: #ff5e14;
-                }
-
-                .footer-widget ul li a {
-                    color: #878787;
-                    text-transform: capitalize;
-                }
-
-                .subscribe-form {
-                    position: relative;
-                    overflow: hidden;
-                }
-
-                .subscribe-form input {
-                    width: 100%;
-                    padding: 14px 28px;
-                    background: #2e2e2e;
-                    border: 1px solid #2e2e2e;
-                    color: #fff;
-                }
-
-                .subscribe-form button {
-                    position: absolute;
-                    right: 0;
-                    background: #ff5e14;
-                    padding: 13px 20px;
-                    border: 1px solid #ff5e14;
-                    top: 0;
-                }
-
-                .subscribe-form button i {
-                    color: #fff;
-                    font-size: 22px;
-                    transform: rotate(-6deg);
-                }
-
-                .copyright-area {
-                    /* background: #202020; */
-                    padding: 25px 0;
-                }
-
-                .copyright-text p {
-                    margin: 0;
-                    font-size: 14px;
-                    color: #878787;
-                }
-
-                .copyright-text p a {
-                    color: #ff5e14;
-                }
-
-                .footer-menu li {
-                    display: inline-block;
-                    margin-left: 20px;
-                }
-
-                .footer-menu li:hover a {
-                    color: #ff5e14;
-                }
-
-                .footer-menu li a {
-                    font-size: 14px;
-                    color: #878787;
-                }
-            </style>
-
-
-           
+        <div class="fr_lang pb-5">
+            <div class="container d-flex justify-content-center pt-5">
+                <div class="card2">
+                    <div class="content">
+                        <h5
+                            class="pt-5"
+                            style="
+                                font-weight: 800;
+                                text-decoration: none;
+                                color: #ffff;
+                                position: relative;
+                                font-size: 3rem;
+
+                                text-align: center;
+                            "
+                            data-aos="fade-up"
+                        >
+                            Statistik-Feedback
+                        </h5>
+
+                        <ol style="color: white">
+                            <li>
+                                Machen Sie dem Spieler ein Kompliment für einen
+                                Kill oder einige allgemein großartige Moves im
+                                Spiel.
+                            </li>
+                            <li>
+                                Analysieren Sie Spielergebnisse und vergleichen
+                                Sie sie mit früheren Spielen, die Wachstum
+                                zeigen, während Sie sich in der Warteschlange
+                                befinden und nach jeder Sitzung.
+                            </li>
+                            <li>
+                                Geben Sie konstruktives Feedback zu Fehlern.
+                                Entscheiden Sie sich immer für Diskussionen
+                                statt Schweigen.
+                            </li>
+                        </ol>
+
+                        <div class="card-action">
+                            <div class="name-container">
+                                <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADhCAMAAADmr0l2AAABblBMVEX////mOx/W4+sdGDj0qYHjjGHOdU0AADMAFTn3q4L7roQAFjnY5e3T4erlLQD+sIXtPB0YFTfkIADjkGTlNBPlMAsABTTkhlYUFzgACTTji2Dl7/boflfV6vMODzbTeE7MZTV2U1KluL/+9/b0sapiRUvI1t7wPR3qX03AhW3jnXvw9Pf86efvjYL3ysX86ObraFj2wbvwl43508+QKi1UIDTaOSHypp6mdGONYlrbmHjFiW84KT/voHbMaj/atarZ09K1xc3sdWb0t7DuhnrENCWbLCwnGTfTNyKpLyo7HDbpWEXoSjN6JjC5MidVPUeGXlhDMEKdbWAAACPlVjboeU+uZEjayMLcs7PgoobenpvesZ/rb2FHHjVqJDJbITOAJy/DfVyTXE7lZkMfCy6kn6daVWdzbn3Iw8k2PFe2tr8AABs2OFFbO0L/4NH4wad5eor4vqHKXirolHvFQy6AS0LbWjhwQkHfko3bu716j9qMAAARhUlEQVR4nO2di1/TShbH20AJSZ/pIyWBprdCwZaHKIqlUC2IVgUFqoiv615x1737uNfd63rV/37nkaTpi86ZpLR+Pvl9/Cg2pcm3Z+acMzMnk0DAly9fvnz58uXLly9fvnz58uXLly9f46n5lY2169fvLSDdu359bWNlftRX5JVWNhZW3x4mkWIO4f8fvl1d2FgZ9fW50crajfU04sqkgz2VziDQ4PqNtR/RmvNrq4fJvmidmIerPxbktYWrCG4wW0sIcn3hB2muK7cPkjEGy3VZMpY8WBh/O15f56KzGd+ujZrgIq3cyPDTmYzJ4I1xNePGXhLU7/opk9y/NmqWHtq4mnRpvJbSyfWNUfN0yEs8E3GcrHht3Vs8irg3LmFjft97PIp4Y9RoRPdgIR2iWOb6qOkC1w6Sw8LDSq6PuJ3eHk7rbCmdXBgh3spBbLh4WMmrIwv894ZtPqp0ckQ9cW+ovc+p5P4I8K4dDs15dit2cOnNdI25eSYSS4ngJhb6eSmRSPAQpmOXnLvdZmueCOf+gyc/N2amscIzjZ/f3Xz6cIkH83K96T4TXyLx9F0YYc1M2JqZCaNXEOaj+5sYH8CZXL08vnWm6JB41Jh2sE10YE7PPP7LLw+ePgwuMWLG9i6L74DFvSQePp7uSefknEGc4cfvHtwPskDGrl4K3vwhi3tZetTHej3tOR2+9SA4GDFzcBl8myx8iUeDzNdJGQ7fZCA8HBe++0A+rPDjzYGI6aHbkKl9BoNwPGzFmYcDCYfdSg+Y+JaehPkIw5sDPzuzPky+dbb0jKeBUsLHgz98mNFin210tPSY1YF2KfxkaeDHD28mgzU/g3pQp6bvDz5B8t5w+NYYh0cJfgOiRnprsAmDyaFk3iusfE9dGJDNhMHYMEZPjAEiuPSzCwMiEz5hSNqGEQ73WMe3D10ZEIkl9Y55PrS4xzo/kfiFLwbamn7Icpqkx8tsrB0QyVUDRQo/Yho9edwN2TKYoMsYQQEZkm6ktKcZzW3m+U9AkFcMTdUMpfPlmV/Yxr9eRsNrzA20R4xQNFEUVaMTTlSPtiqVSmFH7EBkBfSykV5lnuDtCvKGuLNVqlYrBUNVDUNBMgxVVHeOS5NxWZZkWd7e0XiaKGqkb73iY/agXT1QEYvVuCwhyfFqaatwdHJyVDiubCM4adKUJBfENsAHrDNRXnnSefYZ3g4DGhPb8RYIMlccCdnNfo0qfqw6Adm8KJE3gKvsgO09UCxOdqD0UfzI0UWZcjWq2G0v+Ng9TDDxxGlAsRBnwkPGLTsaKVugp0p64Wfesi8hJZz2U5n5JiflZsvRTA8e1dvKeLAqswFYQ3KmocaRzMyH1OqF0+znQyZ0X4uxDjDgI0caKpbZ+p9pwmO7F05Dli3SrucvIAZM3GxZUKyADChVVS5A9yYEGDCYeGf7GKUB4kMm3LESGlATdW1CiAGDiVs2oAozIALcstooxIsiJd2VYexBVuEdgCIMD7XRbStSAOIgVsbV0BcwDGwDVI7YQ4QlCxCSyWC5yrlvgNbhW4BaE9hCUTZjdUKmSRknoJt0BlYG03IyYgkSI4jkgh0ooMvb/HzXgYD2dIxYhQPaycz0Uxifi1lSSIzAgA9sQFCUJ5JKdidkHRCa4o8UMBcTdAwmVCgeTritUA/thPxuhn0mxtSmBShaBsSDwK7xn4PKcVhuWF7mHRSQd3aGeSrNUqJhRokJ6kRluVppNiulqiz3YJRkCR9ulsoyfrvtZcAW5J1gA7dQ240qJ/iKpclmQ1U1TVNVo7AtdwQOWSoVVBEfFtWdCrKi3QmngX2Qe1gIbqH2cILE+fi2otoTZoaIINoAmxOiHRcUcacq20MmaKTnbqPsc2m2zE5oFOTJeAVZTsSik5+KWnDYUD7Cs4V4ZpS+RVVLstVGgblakNePznNUSyboypK2hRqgVmyWtpFKlWZhBzdGZ2xEhxHaSaFZwW/ZrmwVtaq8TU0IG04QxXgAgVGeAj4QDWQGtSRJ28Q/khlDWY5PbjerbZ1Q3q5sS/HWe+JSVYqfYKtqjxmWQDvEFesBk2ktPXwfOjdIItPhNqVOP9r9AnEzym+h0AdwKWKGZ9n+kIMvPRcKvdAmDPvaa7UaMhL6uztKkIPIvI6DaNSrneuhFPjUPAui8CCBlQqF3qtGMW4RlCvHxeJxCTH24JOkEj5ambQQ5WNDfR8KpT6Az8sRKHi6YPAwFdJDogVYKxefqYZiGNpfqz2GT/K2ho4iT/qsYDZouWiIIaQ5sP/m6ISwoaCp58iCumJOyCAA7W8fkd8w/v7rP7rHT3LlH79+NPDRvz1TqYdF2VpDR4A6GJBjUMgRBYPBDxjwRBHL2GmUjY/z88+w4382H/hnuYNPqv4amP8XjvJaYPnfDXK4LCq/YcAQ+NwckZDrlg8C+JsibmODSPHfKQICnA986gT8FJhfpkcDgd9Jm5a2ReMrBkzBv9w0lA+wItENiAI97YS/Bz5qqAv+PTD/3y4vU/s0H/iooqP/CXyiB+UtzfiKDZiCV+aDvcwavwW/GvacU036dFwoFtb+W+s1Yqp9WkMHtz5Zw6n4kWJ8CfFZEOxl4Jm2BRj6YjhmDXEe02us1POoOGGc8/VBeL69z3Vb0p/YgjiVgU860UkL7ZzPi8JzGS4nSsPEuUaGE2DhBRgKCI+DcDfKg0cCPQFUFB7ACWVCe8ELCE3WOO8sw4AoGZ2ggQIkMnmvvQ9xpWrgOMGXiQbT+Pt/j4Z1xjHYhGSJUOUGTMIAQatKDsA5E9AxoGC2IB7PiwTwOQ8gbJVpg/PeVRQn9Pciz+Q9nXMiuXaK58zAQMg1lghSNxoSedaXUJTHkx0YMMvjwYE3GC7w3n2Mx0tk7kiFLU9IVTppiH6dqwsGY7AbffkSGdoJdTJFbY96GQ1YxF+LsqNzdkFoKsMLSDrhCZkOVSGRQqIzasoJAtS5boKNwe4Q5RruEiFA0psmlAYEkC5/4uEgXwu9NMDEhxQaTtAlpq3OWKjf0fE/NT3VcUBu0ilRPBzk8qHgMT2/BYN66gsFVJROE+r5fH5yMnTnzp2O0aGk0El+NFpK/TnugMHTc3Ottme+VpvsnmCzSyxQrv2cc3eFS+uDjrJm1VxvkUidKJ7GluV4uWz+QF4y31Ax112mH3FvHgEE5PaiWNbddWathVwqnOzs7JwUC83m8QlZkWgeF8lLhRJ9h7U+D193GQmgtdCrkXInuaiSWm1crK1qhob+WOXbiqEWyVtsCwJKKTsBYXGQO5PBSpi1CCQfNcvsFE1UjcbOUXFrq3h00jBUUWtFy9baJ3zdxQaEZTK8uSiRde8EKSaRt3DzM5RmdVKupbJ6TQplsylpstpUsLM1cCyx8rQZjoUlGxCWi/KOJoislWwN9y+SRGtFRKffcSgfqk0WNZy7kIyO9kFw+YFDwNEE53jQBLxJ2qiyg68dD/OUk9rnn/744yen/vhjKoVzOg13wjjN7qAVMm2AsPEg54jeBKRxgoyYSL25WK19no3Uz87uWjo7q8/W53DLJDVDdKw0EX7qAhDExz0nQ0XdKLEgjuGYdG6uPtuuN6c1zEWyAbMSz4UTBc/duziVXS8jluIkhuN4WDs9/XzWoqu/mTvVUXjQSOls3PSiDX4DgmfV+OZFLUDz/gmxIsULBjWSPjd3eqp/foP06jP6cW6OmtcoxKWK6UShFUBOQOi86L6rHZusXEZVi4pVmocIMSMW/mlu0uygSlG1wjx/HgOf2XaVygSX3llVa7hvmSsVoTmHQvQ10XwL4fsLfxSEr03wrS615LxLy16KCXXgteqYcQNtuDkfeHXJVZxA2my0CJ3VozVnxYXznqWZhiu/Bq9CcLup32bLho45UkmWHAUyrSJYlKW54uOoa3blRoluWfW/rQk2qVpBsicU43addviWu3NxrNG7GfJSJX6x62OtKhI0LkKybhqRq/a9Ei4CBBFHlYVbLxPEG1eFzfpRo2xWyGKTWYuHctmciZkJP3LhP4k46mR4ig07ldj82SwgRWNf3PXI5BKZjJJklMZQvvDjwTsdDQQE8/HVqnUj3pymFOLEVlWOH5NhkVaIy9WtBm2fCrzAt1tpnh3XuKoNu7T0P/MucjSkR2i0y+EVUtN82s7/3DZPpAzP3S8edEKs5/kvmpWr2BXO9gvql7wXLYWrXtSLToj0fCo/9ZvasduBiacdoYNeAHJV/ELve+mj51NTU/kXDa2bT2u8yKODXGtJ7eK898XVzJqtP6cwYf5c6djNwlDO85jPC0DgjJolt+koFQFEiFNfFK3VBzXly1SeHvEAkPd2evCdL71kAmLE8x2VxkF159zCm5riXGxxiHvXDk/a6IcpW/n8i68NVW18fZHPt151D8jZQj1KZu5MTTkR8+ZfLf3kHpD7JlfALg99AdtgeumO20Qmzb/fA+teeBcppQ8idHsGN/vkubcgrsMfMqCbXWPdTT1hkRLZi5upyzgBXBhsl2s3kz7FpUsXG5GvqqIF6GpPGb7C35YSIVMXGdGVl+G6baklvuL7lkjt2iAjukq3Xe5l4TJSkPLKQYj5UxfncBEjqFwtFJIS50GIed7SHyL3WwK5MWGbAfsgctZoW2dwv6mTi16YPk11AiLEfCdeKJTibqRueyAWaEuZNs314DMhiXTdeiF1yudJ3W0mY4q3Pv253o+vh1I66w67bfJm/8YbPHcrB3s1zwsRTzPgaTxvdsbjyEhjmQ8pIF8olD37FgN+lV49u+A6bOOjWPB1PQvFQ4BCTvgGegKld9ttA+bXMsmDl7lcLqQPJmqXXs4JQu7KywPmxwFlvNv0ntXPpGOZ1fruYkTIvQEDZu9GhMjibi53th9jM6OX2xgvMBCmY7G3LyM5dJERQYC30awgCBH85URywst1BkZvHxg2aDmU0Am5HL7KK+ivXBloQv1VDv8q+m7wb+eE14Med+thA8Wav8C/pZFn2DfpbDOcAU2YrQsCNb5gMb7c6/8YbXRWj7e77+NJEVzs6rfvuZx9ZYIQxXYAmtA0YNTxMYgx8v3bQR9I7x9Y0P0wDdQskwhOaKOzTQjrhaQHLl5p/yD0Ejbkt4Pup4bHhvBQDcc8N7Zb7HDv9fdIJxy5KmrCNwDC7F1iwMXuD6OQ31/vbaJTpq1L4FrwHCSrG+JGufoaG64HXMuEQiTF3EhJDHT2wB6QucXvr/evxugTVb3ugFRk7BsLfsN268dGFb1C/skyEuopAtHeA3tTRr6vpmNebHzbUwvJTPB15GI2einEGKgbMhHqeh2/e7e/AdsohdfDe2Tm6r6QY7gIqzuxEepZwtftYfoptzwsvkBglvEaBIG0t0hdH0iopwhfdFADbWl2eHyBAOtFoAsW8HULtQG+NFsWyGf29qA9P3qYfIgwyngZi4QQR4sLjKiT+NA3QoyAj4OwXu6HqGdf1Un2Ok58IELarXJnCLGLUdez1To1X3Ss+AD9cNG88Eiu/iaUdUAiuGzqTZ0GHPtt48IH8jS7EXMAFKnffZXKmkq9umvSoea5y+4/L4kPEC3Q1S9GLBKUU9axhFZ6HkHms76DgYoONT50EDL2Q2TEFmL3QXyU2XyXyRcILLMS4i6GEbswIhHzCCvfEPOXnoSsgNROu4uYiNKQH1C6il5kxxMumS/A7mqosXavIJ7FxWhUiKJ/yP8EZrxLdC9OMXdEyhhd3N1FYAhtd3cx2qPR9tfldr+WlgUAotU0I3ZTZcYbQfO0xJrVuFF0JM3T0nJ0yIijNB/VcI04qt7nFHvA4NCozUc1O6x2OgbmMzUExOg4tE6HIt4ijhse0rKXVhw/PCJIavMD4mGh3MYlZDQaGQ/P2U/L7swYnR1vPKJlFPs5KNEvjbnxHFqOQBGjwo9gO6eWZ3HkYMCM4n73o9GZWqaU/TCjAmX7MeFsIcpZ1GKjTv9K/heZ/eHZ2rXs0KivxZcvX758+fLly5cvX758+fLly5cvX/31f8rolgDByjy0AAAAAElFTkSuQmCC" class="avatar" alt=""> -->
+                                <div class="name-box">
+                                    <!-- <span style="color: rgb(246, 246, 246);">Find out what it takes below—our expectations of you—and join our team.</span> -->
+                                    <!-- <small>Jun 20, 2022</small> -->
+                                </div>
+                            </div>
+                            <!-- <img src="https://s2.svgbox.net/octicons.svg?ic=share" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="img-box" data-aos="fade-down">
+                        <video
+                            src="../../../assets/videos/feedback.mp4"
+                            autoplay
+                            loop
+                            [muted]="'muted'"
+                        ></video>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <style>
+            .card2 {
+                width: 900px;
+                background: rgba(100, 2, 2, 0.43);
+                border-radius: 15px;
+                padding: 1rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+                transition: 0.3s ease-in-out;
+            }
+
+            .card2:hover {
+                box-shadow: 0.3px 4px 7px rgba(212, 147, 19, 0.426);
+            }
+
+            .card2 .img-box {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+
+            .card2 .img-box img {
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-fit: cover;
+            }
+
+            .card2 .img-box video {
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-fit: cover;
+            }
+
+            .card2 .content {
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .card2 .content h3 {
+                font-size: 1.1rem;
+            }
+
+            .card2 .content p {
+                font-size: 0.8rem;
+                color: gray;
+            }
+
+            .card2 .card2-action {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+            }
+
+            .card2 .card2-action .name-container {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card2 .card2-action .name-container .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                outline-width: 1px;
+                outline-color: orange;
+                outline-offset: 1px;
+                outline-style: dotted;
+            }
+
+            .card2 .card2-action .name-container .name-box {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card2 .card2-action .name-container .name-box span {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+
+            .card2 .card2-action .name-container .name-box small {
+                color: gray;
+            }
+
+            @media screen and (max-width: 800px) {
+                .card2 {
+                    margin: 1rem;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .card2 {
+                    grid-template-columns: 1fr;
+                    margin: 1rem;
+                }
+            }
+        </style>
+
+        <!-- new section  -->
+
+        <style>
+            .section2 {
+                width: 100%;
+                height: 100vh;
+                box-sizing: border-box;
+                padding: 140px 0;
+                background: #000000;
+            }
+
+            .card3 {
+                position: relative;
+                max-width: 350px;
+                height: auto;
+                background: linear-gradient(-45deg, #fe0847, #feae3f);
+                border-radius: 15px;
+                margin: 0 auto;
+                padding: 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+                transition: 0.5s;
+                overflow: hidden;
+            }
+
+            .card3:hover {
+                transform: scale(1.1);
+            }
+
+            .col-sm-4:nth-child(1) .card,
+            .col-sm-4:nth-child(1) .card .title .fa {
+                background-image: linear-gradient(
+                    89.7deg,
+                    rgba(255, 232, 27, 1) 13%,
+                    rgba(255, 17, 17, 1) 100.1%
+                );
+            }
+
+            .col-sm-4:nth-child(2) .card,
+            .col-sm-4:nth-child(2) .card .title .fa {
+                background-image: linear-gradient(
+                    89.7deg,
+                    rgba(0, 32, 95, 1) 2.8%,
+                    rgba(132, 53, 142, 1) 97.8%
+                );
+            }
+
+            .col-sm-4:nth-child(3) .card,
+            .col-sm-4:nth-child(3) .card .title .fa {
+                background-image: linear-gradient(
+                    111.6deg,
+                    rgba(73, 235, 221, 1) -0%,
+                    rgba(83, 222, 219, 1) 7.1%,
+                    rgba(105, 191, 217, 1) 13.4%,
+                    rgba(127, 157, 214, 1) 18%,
+                    rgba(155, 113, 208, 1) 23.9%,
+                    rgba(178, 73, 201, 1) 28.8%,
+                    rgba(200, 45, 192, 1) 33.3%,
+                    rgba(213, 42, 180, 1) 38%,
+                    rgba(232, 44, 145, 1) 44.2%,
+                    rgba(239, 45, 128, 1) 52.4%,
+                    rgba(249, 66, 107, 1) 59.7%,
+                    rgba(252, 105, 98, 1) 67.3%,
+                    rgba(252, 105, 98, 1) 74.4%,
+                    rgba(254, 145, 92, 1) 82.2%,
+                    rgba(255, 189, 86, 1) 88.2%,
+                    rgba(254, 227, 80, 1) 92.8%,
+                    rgba(254, 248, 75, 1) 98.4%
+                );
+            }
+
+            .card3:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 40%;
+                background: rgba(255, 255, 255, 0.1);
+                z-index: 1;
+                transform: skewY(-5deg) scale(1.5);
+            }
+
+            .title .fa {
+                color: #fff;
+                font-size: 60px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 100px;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .title h2 {
+                position: relative;
+                margin: 20px 0 0;
+                padding: 0;
+                color: #fff;
+                font-size: 28px;
+                z-index: 2;
+            }
+
+            .price {
+                position: relative;
+                z-index: 2;
+            }
+
+            .price h4 {
+                margin: 0;
+                padding: 20px 0;
+                color: #fff;
+                font-size: 60px;
+            }
+
+            .option {
+                position: relative;
+                z-index: 2;
+            }
+
+            .option ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            .option ul li {
+                margin: 0 0 10px;
+                padding: 0;
+                list-style: none;
+                color: #fff;
+                font-size: 16px;
+            }
+
+            .card3 a {
+                position: relative;
+                z-index: 2;
+                background: #fff;
+                color: crimson;
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 40px;
+                display: block;
+                text-align: center;
+                margin: 20px auto 0;
+                font-size: 16px;
+                cursor: pointer;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .card3 a:hover {
+                text-decoration: none;
+            }
+        </style>
+
+<app-index-footer></app-index-footer>
+
+        <style>
+            ul {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .footer-section {
+                /* background: #151414; */
+                position: relative;
+            }
+
+            .footer-cta {
+                border-bottom: 1px solid #373636;
+            }
+
+            .single-cta i {
+                color: #ff5e14;
+                font-size: 30px;
+                float: left;
+                margin-top: 8px;
+            }
+
+            .cta-text {
+                padding-left: 15px;
+                display: inline-block;
+            }
+
+            .cta-text h4 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 2px;
+            }
+
+            .cta-text span {
+                color: #757575;
+                font-size: 15px;
+            }
+
+            .footer-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            .footer-pattern img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 330px;
+                background-size: cover;
+                background-position: 100% 100%;
+            }
+
+            .footer-logo {
+                margin-bottom: 30px;
+            }
+
+            .footer-logo img {
+                max-width: 200px;
+            }
+
+            .footer-text p {
+                margin-bottom: 14px;
+                font-size: 14px;
+                color: #7e7e7e;
+                line-height: 28px;
+            }
+
+            .footer-social-icon span {
+                color: #fff;
+                display: block;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: "Poppins", sans-serif;
+                margin-bottom: 20px;
+            }
+
+            .footer-social-icon a {
+                color: #fff;
+                font-size: 16px;
+                margin-right: 15px;
+            }
+
+            .footer-social-icon i {
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 38px;
+                border-radius: 50%;
+            }
+
+            .facebook-bg {
+                background: #3b5998;
+            }
+
+            .twitter-bg {
+                background: #55acee;
+            }
+
+            .google-bg {
+                background: #dd4b39;
+            }
+
+            .footer-widget-heading h3 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 40px;
+                position: relative;
+            }
+
+            .footer-widget-heading h3::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -15px;
+                height: 2px;
+                width: 50px;
+                background: #ff5e14;
+            }
+
+            .footer-widget ul li {
+                display: inline-block;
+                float: left;
+                width: 50%;
+                margin-bottom: 12px;
+            }
+
+            .footer-widget ul li a:hover {
+                color: #ff5e14;
+            }
+
+            .footer-widget ul li a {
+                color: #878787;
+                text-transform: capitalize;
+            }
+
+            .subscribe-form {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .subscribe-form input {
+                width: 100%;
+                padding: 14px 28px;
+                background: #2e2e2e;
+                border: 1px solid #2e2e2e;
+                color: #fff;
+            }
+
+            .subscribe-form button {
+                position: absolute;
+                right: 0;
+                background: #ff5e14;
+                padding: 13px 20px;
+                border: 1px solid #ff5e14;
+                top: 0;
+            }
+
+            .subscribe-form button i {
+                color: #fff;
+                font-size: 22px;
+                transform: rotate(-6deg);
+            }
+
+            .copyright-area {
+                /* background: #202020; */
+                padding: 25px 0;
+            }
+
+            .copyright-text p {
+                margin: 0;
+                font-size: 14px;
+                color: #878787;
+            }
+
+            .copyright-text p a {
+                color: #ff5e14;
+            }
+
+            .footer-menu li {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .footer-menu li:hover a {
+                color: #ff5e14;
+            }
+
+            .footer-menu li a {
+                font-size: 14px;
+                color: #878787;
+            }
+        </style>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var checkbox = document.querySelector('input[type="checkbox"]');
+
+                $(".en_lang").addClass("active-lang");
+                $("#lang-switch .en").addClass("active-flag");
+                checkbox.addEventListener("change", function () {
+                    if (checkbox.checked) {
+                        // do this
+
+                        // disable english
+                        $(".fr_lang").addClass("active-lang");
+                        localStorage.setItem("lang", "fr_lang");
+                        $(".en_lang").removeClass("active-lang");
+
+                        console.log("Checked");
+                    } else {
+                        // do that
+                        console.log("Not checked");
+                        $(".en_lang").addClass("active-lang");
+                        localStorage.removeItem("lang", "fr_lang");
+                        localStorage.setItem("lang", "en_lang");
+                        // Disable French
+                        $(".fr_lang").removeClass("active-lang");
+                    }
+                });
+            });
+
+            $(this).classList.add("active-lang");
+            if (onpageLoad != null && onpageLoad == "fr_lang") {
+                tSwitcher.checked = true;
+                console.log("engg");
+            }
+            $(this).classList.add(onpageLoad);
+
+            //   var tSwitcher = document.getElementById('lang-switch');
+            // let element = document.body;
+
+            // let onpageLoad = localStorage.getItem("lang") || "";
+            // if(onpageLoad != null && onpageLoad  == 'en_lang'){
+            //   tSwitcher.checked = true;
+            // }
+            // element.classList.add(onpageLoad);
+
+            // function themeToggle(){
+            //   console.log("checkkkkkkkkkkkkkkkk");
+            //   if(tSwitcher.checked){
+            //       localStorage.setItem('lang', 'en_lang');
+            //         element.classList.add('active-lang');
+            //     } else {
+            //       localStorage.setItem('lang', '');
+            //         element.classList.remove('active-lang');
+            //     }
+            // }
+        </script>
+
+        <script>
+            AOS.init({
+                duration: 1200,
+            });
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script/language.js"></script>
+        <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+        <script src="./script/script.js"></script>
+        <script src="./script/responsive.js"></script>
+        <script src="./script/aos.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./test.js"></script>
     </div>
-</div>
-<div class="container">
-    <app-index-footer></app-index-footer>
 </div>
