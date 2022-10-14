@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgChartsModule } from 'ng2-charts';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -89,6 +90,8 @@ import { RoasterComponent } from './ggera/roaster/roaster.component';
 import { ToggleComponent } from './ggera/toggle/toggle.component';
 import { PrivacyComponent } from './ggera/privacy/privacy.component';
 import { IndexFooterComponent } from './ggera/index-footer/index-footer.component';
+import { TempNavComponent } from './ggera/temp-nav/temp-nav.component';
+import { TermsComponent } from './ggera/terms/terms.component';
 
 const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
 
@@ -156,7 +159,9 @@ const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
       RoasterComponent,
       ToggleComponent,
       PrivacyComponent,
-      IndexFooterComponent
+      IndexFooterComponent,
+      TempNavComponent,
+      TermsComponent
 
 
     
@@ -176,7 +181,8 @@ const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
     VgOverlayPlayModule,
     VgBufferingModule,
     NgxStripeModule.forRoot('pk_test_51LT4FJSBGyD7UYjV7Uzl35ECOGv6TAtzwwYlAokpfqWpLNoXEZq1Ov3RoijNAxrN5fRhYqxzedauoF7tyFlbgr9q002zPPPLTa'),
-    SocketIoModule.forRoot(config)
+    SocketIoModule.forRoot(config),
+    NgbModule
   ],
   providers: [HeroService,AuthGuard,
     {

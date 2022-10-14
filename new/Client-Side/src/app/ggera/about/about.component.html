@@ -1,29 +1,4 @@
-<script>
-    function myFunction() {
-        $("input").on("change", function () {
-            localStorage.input = $(this).is(":checked");
-            console.log($(this).is(":checked"));
-        });
-        const onpageLoad = localStorage.getItem("lang") || "";
-        console.log(onpageLoad);
 
-        if (onpageLoad === "fr_lang") {
-            $(".fr_lang").addClass("active-lang");
-            localStorage.setItem("lang", "fr_lang");
-            $(".en_lang").removeClass("active-lang");
-            $(function () {
-                var test = localStorage.input === "true" ? true : false;
-                $("input").prop("checked", test || false);
-            });
-        } else {
-            $(".en_lang").addClass("active-lang");
-            localStorage.removeItem("lang", "fr_lang");
-            localStorage.setItem("lang", "en_lang");
-            // Disable French
-            $(".fr_lang").removeClass("active-lang");
-        }
-    }
-</script>
 <div class="about">
     <div class="showcase">
         <!-- <canvas class="overlap overlap-about" id="c"></canvas> -->
@@ -66,7 +41,7 @@
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <!-- Nav -->
-                <div class="navbar-nav mx-lg-auto en_lang">
+                <div class="navbar-nav mx-lg-auto ">
                     <a
                         class="navbar-brand text-light m-0"
                         style="color: inherit"
@@ -111,51 +86,7 @@
                         />
                     </a>
                 </div>
-                <div class="navbar-nav mx-lg-auto fr_lang">
-                    <a
-                        class="navbar-brand text-light m-0"
-                        style="color: inherit"
-                        href="/index"
-                    >
-                        <img
-                            src="../../../assets/img/german 2nd/DEACTIVE HOME (1).png"
-                            alt=""
-                            width="150"
-                            height="40"
-                        />
-                    </a>
-                    <a
-                        class="navbar-brand text-light m-0"
-                        style="color: inherit"
-                        href="/about"
-                    >
-                        <img
-                            src="../../../assets/img/german 2nd/ACTIVE ABOUT (1).png"
-                            alt=""
-                            width="150"
-                            height="40"
-                        />
-                    </a>
-                    <a
-                        class="navbar-brand text-light m-0"
-                        style="color: inherit"
-                        href="/job"
-                    >
-                        <!-- <img src="../../../assets/img/german 2nd/DEACTIVE JOB (1).png" alt="" width="150" height="40" /> -->
-                    </a>
-                    <a
-                        class="navbar-brand text-light m-0"
-                        style="color: inherit"
-                        href="/roaster"
-                    >
-                        <img
-                            src="../../../assets/img/german 2nd/Dienstplan deactive.png"
-                            alt=""
-                            width="150"
-                            height="40"
-                        />
-                    </a>
-                </div>
+           
                 <div class="end1">
                     <img
                         src="../../../assets/img/line glow2.png"
@@ -180,61 +111,7 @@
         </div>
     </nav>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var checkbox = document.querySelector('input[type="checkbox"]');
-
-            $(".en_lang").addClass("active-lang");
-            $("#lang-switch .en").addClass("active-flag");
-            checkbox.addEventListener("change", function () {
-                if (checkbox.checked) {
-                    // do this
-
-                    // disable english
-                    $(".fr_lang").addClass("active-lang");
-                    localStorage.setItem("lang", "fr_lang");
-                    $(".en_lang").removeClass("active-lang");
-
-                    console.log("Checked");
-                } else {
-                    // do that
-                    console.log("Not checked");
-                    $(".en_lang").addClass("active-lang");
-                    localStorage.removeItem("lang", "fr_lang");
-                    localStorage.setItem("lang", "en_lang");
-                    // Disable French
-                    $(".fr_lang").removeClass("active-lang");
-                }
-            });
-        });
-
-        $(this).classList.add("active-lang");
-        if (onpageLoad != null && onpageLoad == "fr_lang") {
-            tSwitcher.checked = true;
-            console.log("engg");
-        }
-        $(this).classList.add(onpageLoad);
-
-        //   var tSwitcher = document.getElementById('lang-switch');
-        // let element = document.body;
-
-        // let onpageLoad = localStorage.getItem("lang") || "";
-        // if(onpageLoad != null && onpageLoad  == 'en_lang'){
-        //   tSwitcher.checked = true;
-        // }
-        // element.classList.add(onpageLoad);
-
-        // function themeToggle(){
-        //   console.log("checkkkkkkkkkkkkkkkk");
-        //   if(tSwitcher.checked){
-        //       localStorage.setItem('lang', 'en_lang');
-        //         element.classList.add('active-lang');
-        //     } else {
-        //       localStorage.setItem('lang', '');
-        //         element.classList.remove('active-lang');
-        //     }
-        // }
-    </script>
+   
     <style>
         .sticky {
             position: fixed;
@@ -292,21 +169,13 @@
             </div>   
         </div>
 
-        <!-- <div class="large-text">
-            <img src="../../../assets/img/about.jpg" alt="" class="img-fluid">
-        </div> -->
-            <!-- <div class="large-text en_lang">
-                <p class="large-text text-center mob-text">GGERA</p>
-            </div>
-            <div class="large-text fr_lang">
-                <p class="large-text text-center mob-text">GGERA</p>
-            </div> -->
+    
         </div>
         <div class="d-flex justify-content-center">
             <div class="container p-3">
                 <div class="d-flex justify-content-center">
                     <button
-                        class="clay btn btn-warning en_lang"
+                        class="clay btn btn-warning "
                         style="height: 50px; width: 150px"
                     >
                         <a
@@ -315,18 +184,9 @@
                             ><span class="btn-label p-2">Signup</span></a
                         >
                     </button>
+                  
                     <button
-                        class="clay btn btn-warning fr_lang"
-                        style="height: 50px; width: 150px"
-                    >
-                        <a
-                            href="/login "
-                            style="text-decoration: none; color: #ffff"
-                            ><span class="btn-label p-2">Anmelden</span></a
-                        >
-                    </button>
-                    <button
-                        class="clay btn btn-secondary en_lang"
+                        class="clay btn btn-secondary "
                         style="height: 50px; width: 150px"
                     >
                         <a
@@ -335,32 +195,11 @@
                             ><span class="btn-label p-2">Login</span></a
                         >
                     </button>
-                    <button
-                        class="clay btn btn-secondary fr_lang"
-                        style="height: 50px; width: 150px"
-                    >
-                        <a
-                            href="/login "
-                            style="text-decoration: none; color: #ffff"
-                            ><span class="btn-label p-2">Anmeldung</span></a
-                        >
-                    </button>
+                   
                 </div>
             </div>
         </div>
-        <!-- <div class="col-lg-12 pb-5">
-            <div class="text-center p-5">
-                <p class="font-about en_lang">
-                    The home of the programmers, where subscribers can play with
-                    them on the same team or invest in emerging stars
-                </p>
-                <p class="font-about fr_lang">
-                    Die Heimat der Programmierer, wo Abonnenten mit ihnen im
-                    selben Team spielen oder aufstrebende Stars investieren
-                    können
-                </p>
-            </div>
-        </div> -->
+        
         <div class="container" style="overflow: hidden">
             <div class="row">
                 <div
@@ -382,9 +221,9 @@
                                 src="https://cdn.antaranews.com/cache/800x533/2021/05/15/IMG_0394.jpg"
                                 alt="Card image cap"
                             />
-                            <div class="d-flex justify-content-center en_lang">
+                            <div class="d-flex justify-content-center ">
                                 <button
-                                    class="clay btn btn-warning en_lang"
+                                    class="clay btn btn-warning "
                                     style="height: 50px; width: 150px"
                                 >
                                     <a
@@ -399,19 +238,7 @@
                                         ></a
                                     >
                                 </button>
-                                <button class="clay btn btn-warning fr_lang">
-                                    <a
-                                        href="/login "
-                                        style="
-                                            text-decoration: none;
-                                            color: #ffff;
-                                        "
-                                    >
-                                        <span class="btn-label"
-                                            >Probieren Sie es jetzt</span
-                                        ></a
-                                    >
-                                </button>
+                           
                             </div>
                         </div>
                     </div>
@@ -633,7 +460,7 @@
         }
     </style>
 
-    <div class="en_lang">
+    <div class="">
         <section class="container" style="z-index: 100">
             <h2 class="text-center text-light font-weight-bold headingg pb-5">
                 <span>About GGERA</span>
@@ -739,119 +566,7 @@
             </div>
         </section>
     </div>
-    <div class="fr_lang">
-        <section class="container" style="z-index: 100">
-            <h2 class="text-center text-light font-weight-bold headingg pb-5">
-                <span>Über GGERA</span>
-            </h2>
-            `
-            <div class="container">
-                <div class="col-lg-6 pb-5 col-sm-12 col-md-6">
-                    <div class="card1 plan_card1 m-2 hover-div box1">
-                        <span></span>
-                        <h3
-                            class="text-center p-3 font-weight-normal"
-                            data-aos="fade-right"
-                        >
-                            Wir verstehen aufstrebende Gamer, die
-                            Unangefochtenen und diejenigen, die nach
-                            Gemeinschaft suchen
-                        </h3>
-                        <p
-                            class="text-left pl-5 pt-2 pr-5"
-                            style="font-weight: 200"
-                        >
-                            Das ist der Grund hinter GGEra. Wir glauben, dass
-                            jeder sein eigenes einzigartiges Potenzial hat
-                            großartig zu sein, aber es kann schwierig sein, Ihr
-                            Potenzial auszuschöpfen, wenn Sie alleine sind oder
-                            kopfüber tauchen in ein Spiel, das du nicht ganz
-                            verstehst.
-                        </p>
-                        <p class="text-left pl-5 pr-5 pb-5">
-                            Wir waren auch dort.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-5 col-sm-12 col-md-6">
-                    <div class="card1 plan_card1 m-2 hover-div box1">
-                        <span></span>
-                        <h3
-                            class="text-center p-3 font-weight-normal"
-                            data-aos="fade-left"
-                        >
-                            Eine Community, um Ihre Gaming-Identität zu
-                            entdecken.
-                        </h3>
-                        <p
-                            class="text-left pl-5 pt-2 pr-5 pb-5"
-                            style="font-weight: 200"
-                        >
-                            Stärken und Schwächen. Leidenschaft für Spiele.
-                            Honen Sie Ihre Fähigkeiten. Und als E-Gamer wachsen;
-                            ein Internetsportler. <br />
-                            Das ist unser Fokus. Egal, ob Sie selbst ein Profi
-                            werden oder Ihr Spiel verbessern möchten, unsere
-                            Plattform bringt Sie dorthin. Die Profis, die wir
-                            einstellen, decken alle Aspekte ab: von Strategie,
-                            Kommunikation und Teamwork bis hin zu mentaler
-                            Stärke und Reflexen.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-5 col-sm-12 col-md-6">
-                    <div class="card1 plan_card1 m-2 hover-div box1">
-                        <span></span>
-                        <h3
-                            class="text-center p-3 font-weight-normal"
-                            data-aos="fade-up"
-                        >
-                            Ein Spielerlebnis wie kein anderes.
-                        </h3>
-                        <p
-                            class="text-left pl-5 pt-2 pr-5 pb-5"
-                            style="font-weight: 200"
-                        >
-                            Wir wissen, dass Sie eine Erfahrung brauchen, wenn
-                            Sie bereit sind, Ihr Gaming den nächsten Schritt zu
-                            machen das wird dich an deine Grenzen bringen und
-                            dir zeigen, wie weit du gehen kannst. <br />
-                            Wir schaffen Erlebnisse, mit denen Sie genau das tun
-                            können – egal, ob Sie dafür einen unserer Profis
-                            engagieren Trainieren Sie eins zu eins oder spielen
-                            Sie in Turnieren gegen einige der besten Spieler da
-                            draußen. Wir bringen die ganze Action direkt auf
-                            Ihren Bildschirm. <br />
-                            Das ist das Ziel von GGera. Für diejenigen, die die
-                            Lücke zwischen Spieler und Profi schließen danach
-                            suchen.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-5 col-sm-12 col-md-6">
-                    <div class="card1 plan_card1 m-2 hover-div box1">
-                        <span></span>
-                        <h3
-                            class="text-center p-3 font-weight-normal"
-                            data-aos="fade-up"
-                        >
-                            Zusammen schaffen wir eine leistungsstarke,
-                            herausfordernde Plattform.
-                        </h3>
-                        <p
-                            class="text-left pl-5 pt-2 pr-5 pb-5"
-                            style="font-weight: 200"
-                        >
-                            Begleiten Sie uns bei diesem Bestreben, damit das
-                            Spielen wieder Spaß macht. Erklimme die Ränge,
-                            entdecke einen echten Gegner, und verfeinern Sie
-                            Ihre Fähigkeiten.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+
 
     <app-index-footer></app-index-footer>
 
@@ -862,23 +577,5 @@
       </div>
     </div> -->
 
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-    ></script>
-    <script src="./script/language.js"></script>
-    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-    <script src="./script/script.js"></script>
-    <script src="./script/responsive.js"></script>
-    <script src="./script/aos.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"
-    ></script>
-    <script src="./test.js"></script>
 </div>
