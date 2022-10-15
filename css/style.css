@@ -29,6 +29,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: top 0.2s ease-in-out;
+ 
 }
 #navbar{
   position:absolute;
